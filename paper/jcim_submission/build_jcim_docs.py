@@ -575,14 +575,14 @@ def build_supporting_information() -> tuple[Path, Path]:
         "",
         "*Department of Physics, Capital Normal University, Beijing 100048, China*",
         "",
-        "Repository: `https://github.com/QIANCHANGKING/quantumchem-ai` | Archival DOI: `<ZENODO_DOI>`",
+        "Repository: `https://github.com/QIANCHANGKING/quantumchem-ai` | Archival DOI: `10.5281/zenodo.24501860`",
         "",
         "---",
         "",
         "## Section S1: Offline Reproduction and 115+ Automated Verification Guide",
         "",
         "1. **Environment Setup (Python 3.12 + uv):**",
-        "   - Clone `https://github.com/QIANCHANGKING/quantumchem-ai` (or unpack the Zenodo archive `<ZENODO_DOI>`).",
+        "   - Clone `https://github.com/QIANCHANGKING/quantumchem-ai` (or unpack the Zenodo archive `10.5281/zenodo.24501860`).",
         "   - Run `uv sync` in the repository root to create the locked Python 3.12 virtual environment (`.venv`).",
         "   - Copy `config/settings.example.toml` to `config/settings.toml` only when connecting live SSH clusters or LLM endpoints; offline verification requires zero credentials.",
         "2. **Full Offline Quality & Test Gate (115+ Tests):**",
@@ -693,7 +693,7 @@ In this work, we introduce **QuantumChem AI**, an open-source (MIT-licensed) aut
 4. **End-to-End Experimental Validation & Scientific Discovery:** Verified against 10 real Gaussian 16 golden benchmarks, real Multiwfn 3.8(dev) wavefunction analysis of `Al12Cu`, and an autonomous 9-project, 230-job (221 Gaussian 16 runs, 1,399.78 CPU core-hours, 100% convergence with 7 automated 4f repairs) production study of heavy lanthanide $\\mathrm{{Ln@Au_5}}$ ($\\mathrm{{Ln}} = \\mathrm{{Gd}}$–$\\mathrm{{Lu}}$), revealing a trivalent $8\\mathrm{{e}}^-$ superatom HOMO–LUMO gap rigidity plateau ($2.524$–$2.812$ eV), localized $4f$ spin decoupling, and divalent $\\mathrm{{Yb^{{2+}}}}$ spin delocalization.
 5. **Anti-Hallucination LLM Collaboration:** A `pydantic-ai` planning/interpretation layer protected by deterministic `build_plan()` dry-run validation and unit-conversion-aware numerical grounding, achieving **{zh_acc}** (Chinese) and **{en_acc}** (English) accuracy across a live 50+50 bilingual scientific instruction benchmark.
 
-We confirm that this manuscript is original, has not been published previously, and is not under consideration elsewhere. The author declares no competing financial interests. All source code, 115+ offline tests, golden datasets, Multiwfn logs, `Ln@Au5` production summaries, and bilingual LLM evaluation suites are openly available under the MIT license at `https://github.com/QIANCHANGKING/quantumchem-ai` and archived at `<ZENODO_DOI>`.
+We confirm that this manuscript is original, has not been published previously, and is not under consideration elsewhere. The author declares no competing financial interests. All source code, 115+ offline tests, golden datasets, Multiwfn logs, `Ln@Au5` production summaries, and bilingual LLM evaluation suites are openly available under the MIT license at `https://github.com/QIANCHANGKING/quantumchem-ai` and archived at `10.5281/zenodo.24501860`.
 
 Thank you for your time and consideration.
 

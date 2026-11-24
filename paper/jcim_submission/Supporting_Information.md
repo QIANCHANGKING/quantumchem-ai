@@ -6,14 +6,14 @@ Changtian Qian
 
 *Department of Physics, Capital Normal University, Beijing 100048, China*
 
-Repository: `https://github.com/QIANCHANGKING/quantumchem-ai` | Archival DOI: `<ZENODO_DOI>`
+Repository: `https://github.com/QIANCHANGKING/quantumchem-ai` | Archival DOI: `10.5281/zenodo.24501860`
 
 ---
 
 ## Section S1: Offline Reproduction and 115+ Automated Verification Guide
 
 1. **Environment Setup (Python 3.12 + uv):**
-   - Clone `https://github.com/QIANCHANGKING/quantumchem-ai` (or unpack the Zenodo archive `<ZENODO_DOI>`).
+   - Clone `https://github.com/QIANCHANGKING/quantumchem-ai` (or unpack the Zenodo archive `10.5281/zenodo.24501860`).
    - Run `uv sync` in the repository root to create the locked Python 3.12 virtual environment (`.venv`).
    - Copy `config/settings.example.toml` to `config/settings.toml` only when connecting live SSH clusters or LLM endpoints; offline verification requires zero credentials.
 2. **Full Offline Quality & Test Gate (115+ Tests):**

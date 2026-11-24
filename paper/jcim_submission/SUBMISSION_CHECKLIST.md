@@ -22,27 +22,22 @@ Follow these steps before uploading the final submission package to ACS Paragon 
 
 ---
 
-## Phase 2: Push to GitHub & Mint Permanent Zenodo Archival DOI
+## Phase 2: Push to GitHub & Mint Permanent Zenodo Archival DOI (Completed)
 
-1. Public repository created and pushed: `https://github.com/QIANCHANGKING/quantumchem-ai` (`main` branch, tag `v0.1.0`).
-2. Link GitHub to **Zenodo** (`https://zenodo.org`):
-   - Log into Zenodo using **Log in with GitHub**.
-   - Open **Account -> GitHub** (`https://zenodo.org/account/settings/github/`).
-   - Flip the toggle **ON** for `QIANCHANGKING/quantumchem-ai`.
-3. Mint the release & DOI:
-   - On GitHub (`https://github.com/QIANCHANGKING/quantumchem-ai/releases`), go to **Releases -> Draft a new release**.
-   - Select tag `v0.1.0` (targeting `main`), title it `QuantumChem AI v0.1.0 (JCIM Submission Release)`, and click **Publish release**.
-   - Return to Zenodo's **GitHub** settings page within ~1–2 minutes and copy the minted permanent DOI badge (format `10.5281/zenodo.XXXXXXX`).
+1. Public repository pushed: `https://github.com/QIANCHANGKING/quantumchem-ai` (`main` branch, tag `v0.1.0`).
+2. GitHub–Zenodo webhook integration enabled and release published (`https://github.com/QIANCHANGKING/quantumchem-ai/releases/tag/v0.1.0`).
+3. Permanent Zenodo archival DOI minted and populated:
+   - Version `v0.1.0` DOI: `10.5281/zenodo.24501860` (`https://zenodo.org/records/24501860`)
+   - Concept DOI (all versions): `10.5281/zenodo.24501859`
 
 ---
 
-## Phase 3: Replace Remaining Placeholders & Recompile Final PDFs
+## Phase 3: Replace Remaining Author Placeholders & Recompile Final PDFs
 
-Replace the four remaining explicit placeholders across `README_EN.md`, `paper/jcim_submission/manuscript.tex`, `paper/jcim_submission/build_jcim_docs.py`, `paper/jcim_submission/Cover_Letter.md`, and `paper/jcim_submission/Suggested_Reviewers.md` (`https://github.com/QIANCHANGKING/quantumchem-ai` is already populated):
+Both `https://github.com/QIANCHANGKING/quantumchem-ai` and `10.5281/zenodo.24501860` are populated. Replace only the three remaining author-specific placeholders across `paper/jcim_submission/manuscript.tex`, `paper/jcim_submission/build_jcim_docs.py`, `paper/jcim_submission/Cover_Letter.md`, and `paper/jcim_submission/Suggested_Reviewers.md`:
 
 | Placeholder | Replace With | Locations |
 | :--- | :--- | :--- |
-| `<ZENODO_DOI>` | `10.5281/zenodo.XXXXXXX` | `README_EN.md`, `manuscript.tex`, `build_jcim_docs.py`, `Cover_Letter.md` |
 | `<CORRESPONDING_EMAIL>` | Author institutional/contact email | `manuscript.tex`, `Cover_Letter.md`, `Suggested_Reviewers.md`, `build_jcim_docs.py` |
 | `<ORCID_ID>` | `0000-000X-XXXX-XXXX` | `manuscript.tex`, `Cover_Letter.md`, `build_jcim_docs.py` |
 | `<FUNDING_GRANT_NUMBER>` | Grant agency & number (or remove line if unfunded) | `manuscript.tex` (Acknowledgments) |

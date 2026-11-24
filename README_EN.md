@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](pyproject.toml)
 [![Repository](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/QIANCHANGKING/quantumchem-ai)
-[![Zenodo DOI](https://img.shields.io/badge/Zenodo-DOI-blue.svg)](https://doi.org/<ZENODO_DOI>)
+[![Zenodo DOI](https://img.shields.io/badge/Zenodo-DOI-blue.svg)](https://doi.org/10.5281/zenodo.24501860)
 
 **QuantumChem AI** is an open-source, constitutionally governed automation platform for all-element atomic cluster quantum chemistry. Coupling deterministic periodic-table rules with `pydantic-ai` LLM intent parsing and anti-hallucination verification, it automates the full computational workflow from natural-language research prompts to global structural search, permutation-invariant isomer deduplication, fault-tolerant remote HPC execution, wavefunction post-processing, and publication-grade visualization.
 
@@ -97,6 +97,6 @@ Released under the **MIT License** ([LICENSE](LICENSE)).
   title   = {QuantumChem AI: A Constitutionally Governed, Rule-Driven, and LLM-Assisted Automation Platform for All-Element Atomic Cluster Quantum Chemistry},
   year    = {2026},
   url     = {https://github.com/QIANCHANGKING/quantumchem-ai},
-  doi     = {<ZENODO_DOI>}
+  doi     = {10.5281/zenodo.24501860}
 }
 ```
