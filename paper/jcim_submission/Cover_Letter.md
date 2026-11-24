@@ -30,4 +30,4 @@ Sincerely,
 
 **Changtian Qian**  
 Department of Physics, Capital Normal University, Beijing 100048, China  
-Email: `<CORRESPONDING_EMAIL>` | ORCID: `<ORCID_ID>`
+Email: `qianchangdtw@gmail.com` | ORCID: `0009-0005-2464-3814`

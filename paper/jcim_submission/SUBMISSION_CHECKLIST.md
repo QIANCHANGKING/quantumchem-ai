@@ -32,19 +32,17 @@ Follow these steps before uploading the final submission package to ACS Paragon 
 
 ---
 
-## Phase 3: Replace Remaining Author Placeholders & Recompile Final PDFs
+## Phase 3: Author Metadata & PDF Recompilation (Completed)
 
-Both `https://github.com/QIANCHANGKING/quantumchem-ai` and `10.5281/zenodo.24501860` are populated. Replace only the three remaining author-specific placeholders across `paper/jcim_submission/manuscript.tex`, `paper/jcim_submission/build_jcim_docs.py`, `paper/jcim_submission/Cover_Letter.md`, and `paper/jcim_submission/Suggested_Reviewers.md`:
+All URLs, archival identifiers, and corresponding-author metadata have been populated with zero remaining placeholders across all deliverables:
 
-| Placeholder | Replace With | Locations |
-| :--- | :--- | :--- |
-| `<CORRESPONDING_EMAIL>` | Author institutional/contact email | `manuscript.tex`, `Cover_Letter.md`, `Suggested_Reviewers.md`, `build_jcim_docs.py` |
-| `<ORCID_ID>` | `0000-000X-XXXX-XXXX` | `manuscript.tex`, `Cover_Letter.md`, `build_jcim_docs.py` |
-| `<FUNDING_GRANT_NUMBER>` | Grant agency & number (or remove line if unfunded) | `manuscript.tex` (Acknowledgments) |
+- **GitHub Repository:** `https://github.com/QIANCHANGKING/quantumchem-ai`
+- **Zenodo Archival DOI:** `10.5281/zenodo.24501860` (concept DOI `10.5281/zenodo.24501859`)
+- **Corresponding Author Email:** `qianchangdtw@gmail.com`
+- **Author ORCID:** `0009-0005-2464-3814` (`https://orcid.org/0009-0005-2464-3814`)
+- **Funding Note:** Removed unused grant placeholder cleanly from `manuscript.tex` Acknowledgments.
 
-Then re-run compilation:
-1. Re-run `tectonic manuscript.tex` inside `paper/jcim_submission/` to update `manuscript.pdf`.
-2. Re-run `.venv\Scripts\python.exe paper\jcim_submission\build_jcim_docs.py` to update `Supporting_Information.pdf` and `Cover_Letter.pdf`.
+Compiled outputs refreshed across `paper/jcim_submission/` and `paper/jcim_upload_ready/`.
 
 ---
 

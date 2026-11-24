@@ -1,7 +1,7 @@
 # Suggested Reviewers — ACS *Journal of Chemical Information and Modeling* (JCIM)
 
 **Manuscript:** *QuantumChem AI: A Constitutionally Governed, Rule-Driven, and LLM-Assisted Automation Platform for All-Element Atomic Cluster Quantum Chemistry*  
-**Author:** Changtian Qian (`<CORRESPONDING_EMAIL>`, Department of Physics, Capital Normal University, Beijing 100048, China)
+**Author:** Changtian Qian (`qianchangdtw@gmail.com`, ORCID: `0009-0005-2464-3814`, Department of Physics, Capital Normal University, Beijing 100048, China)
 
 All five candidates below are independent international authorities without institutional, collaborative, or co-authorship conflicts of interest with the author, spanning the three core domains of this manuscript: (1) automated quantum-chemistry workflows, (2) chemistry LLM agents, and (3) relativistic cluster DFT and superatom electronic structure. Contact addresses and affiliations were verified directly from official academic pages.
 
