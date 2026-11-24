@@ -1,0 +1,202 @@
+# 50 English research instructions matching tests/llm_eval/instructions.yaml across all periodic-table regions, recipes, budgets, and ambiguous inputs.
+instructions:
+  - id: 1
+    text: "Study the structure and stability of the Na6 cluster at standard accuracy"
+    needs_clarification: false
+    expected: {composition: {Na: 6}, recipes: [stability], accuracy: standard}
+  - id: 2
+    text: "Compute the electronic structure of the Li8 cluster and check whether it is a magic-number cluster"
+    needs_clarification: false
+    expected: {composition: {Li: 8}, recipes: [electronic], accuracy: standard}
+  - id: 3
+    text: "Perform a fast assessment of the ground-state structure of the K4 cluster"
+    needs_clarification: false
+    expected: {composition: {K: 4}, recipes: [stability], accuracy: fast}
+  - id: 4
+    text: "Compute the stability and electronic structure of the Na8 cluster at high accuracy"
+    needs_clarification: false
+    expected: {composition: {Na: 8}, recipes: [stability, electronic], accuracy: high}
+  - id: 5
+    text: "Analyze the size evolution trend from Na4 to Na8 clusters with a 10-hour time budget"
+    needs_clarification: false
+    expected: {composition: {Na: [4, 8]}, recipes: [size_evolution], accuracy: standard, time_budget_hours: 10.0}
+  - id: 6
+    text: "Calculate the electronic structure and stability of the B12 cluster"
+    needs_clarification: false
+    expected: {composition: {B: 12}, recipes: [electronic, stability], accuracy: standard}
+  - id: 7
+    text: "Investigate the electronic structure and HOMO-LUMO gap of the Al13 anion (charge -1)"
+    needs_clarification: false
+    expected: {composition: {Al: 13}, charges: [-1], recipes: [electronic], accuracy: standard}
+  - id: 8
+    text: "Compute the structural stability of the Si10 cluster at high accuracy"
+    needs_clarification: false
+    expected: {composition: {Si: 10}, recipes: [stability], accuracy: high}
+  - id: 9
+    text: "Compare the photoelectron spectrum VDE and ADE of the Si6 cluster"
+    needs_clarification: false
+    expected: {composition: {Si: 6}, recipes: [pes], accuracy: standard}
+  - id: 10
+    text: "Compute the ionization energy and electron affinity of the Ge8 cluster"
+    needs_clarification: false
+    expected: {composition: {Ge: 8}, recipes: [ionization], accuracy: standard}
+  - id: 11
+    text: "Analyze the size evolution and structural stability of Al5 to Al13 clusters"
+    needs_clarification: false
+    expected: {composition: {Al: [5, 13]}, recipes: [size_evolution, stability], accuracy: standard}
+  - id: 12
+    text: "Calculate the magnetism and spin-state distribution of the Fe4 cluster"
+    needs_clarification: false
+    expected: {composition: {Fe: 4}, recipes: [magnetism], accuracy: standard}
+  - id: 13
+    text: "Study the structural stability and magnetic moment of the Co6 cluster at high accuracy"
+    needs_clarification: false
+    expected: {composition: {Co: 6}, recipes: [stability, magnetism], accuracy: high}
+  - id: 14
+    text: "Investigate the stability and magnetism of Ni-doped Al6 to Al13 (Al6-13Ni) clusters at standard accuracy with a 12-hour budget"
+    needs_clarification: false
+    expected: {composition: {Al: [6, 13], Ni: 1}, recipes: [stability, magnetism], accuracy: standard, time_budget_hours: 12.0}
+  - id: 15
+    text: "Compute the electronic structure and stability of Ti-doped Si12 (TiSi12)"
+    needs_clarification: false
+    expected: {composition: {Ti: 1, Si: 12}, recipes: [electronic, stability], accuracy: standard}
+  - id: 16
+    text: "Perform a fast screening of the magnetism of the Cr3 cluster"
+    needs_clarification: false
+    expected: {composition: {Cr: 3}, recipes: [magnetism], accuracy: fast}
+  - id: 17
+    text: "Calculate the spin multiplicity ladder of the Mn4 cluster with a 6-hour time budget"
+    needs_clarification: false
+    expected: {composition: {Mn: 4}, recipes: [magnetism], accuracy: standard, time_budget_hours: 6.0}
+  - id: 18
+    text: "Study the structural stability and photoelectron spectrum comparison of the Cu6 cluster"
+    needs_clarification: false
+    expected: {composition: {Cu: 6}, recipes: [stability, pes], accuracy: standard}
+  - id: 19
+    text: "Calculate the electronic structure and magnetism of the V2Al6 cluster"
+    needs_clarification: false
+    expected: {composition: {V: 2, Al: 6}, recipes: [electronic, magnetism], accuracy: standard}
+  - id: 20
+    text: "Investigate the structural stability of the Pd6 cluster"
+    needs_clarification: false
+    expected: {composition: {Pd: 6}, recipes: [stability], accuracy: standard}
+  - id: 21
+    text: "Calculate the stability and electronic structure of the Pt4 cluster at high accuracy"
+    needs_clarification: false
+    expected: {composition: {Pt: 4}, recipes: [stability, electronic], accuracy: high}
+  - id: 22
+    text: "Study the photoelectron spectrum and electronic structure of the Au8 cluster"
+    needs_clarification: false
+    expected: {composition: {Au: 8}, recipes: [pes, electronic], accuracy: standard}
+  - id: 23
+    text: "Compute the electronic structure and closed-shell superatom properties of the endohedral W@Au12 cluster"
+    needs_clarification: false
+    expected: {composition: {W: 1, Au: 12}, recipes: [electronic], accuracy: standard}
+  - id: 24
+    text: "Compute the magnetism and structural stability of the Rh5 cluster with a 15-hour budget"
+    needs_clarification: false
+    expected: {composition: {Rh: 5}, recipes: [magnetism, stability], accuracy: standard, time_budget_hours: 15.0}
+  - id: 25
+    text: "Investigate the electronic structure and ionization energy of the MoAu5 cluster"
+    needs_clarification: false
+    expected: {composition: {Mo: 1, Au: 5}, recipes: [electronic, ionization], accuracy: standard}
+  - id: 26
+    text: "Run a fast calculation of the stability of the Ag6 cluster"
+    needs_clarification: false
+    expected: {composition: {Ag: 6}, recipes: [stability], accuracy: fast}
+  - id: 27
+    text: "Study the stability and electronic structure of the bimetallic Cu3Ag3 alloy cluster"
+    needs_clarification: false
+    expected: {composition: {Cu: 3, Ag: 3}, recipes: [stability, electronic], accuracy: standard}
+  - id: 28
+    text: "Compute the mixing energy and structural stability of the bimetallic Au4Ag4 cluster at high accuracy"
+    needs_clarification: false
+    expected: {composition: {Au: 4, Ag: 4}, recipes: [stability], accuracy: high}
+  - id: 29
+    text: "Investigate the electronic structure and photoelectron spectrum of the Pt2Au4 alloy cluster"
+    needs_clarification: false
+    expected: {composition: {Pt: 2, Au: 4}, recipes: [electronic, pes], accuracy: standard}
+  - id: 30
+    text: "Analyze the magnetism and structural stability of the bimetallic Cu2Pd4 cluster"
+    needs_clarification: false
+    expected: {composition: {Cu: 2, Pd: 4}, recipes: [magnetism, stability], accuracy: standard}
+  - id: 31
+    text: "Investigate the magnetism of the Gd-doped Al12 (GdAl12) cluster"
+    needs_clarification: false
+    expected: {composition: {Gd: 1, Al: 12}, recipes: [magnetism], accuracy: standard}
+  - id: 32
+    text: "Perform a fast assessment of the stability and spin properties of Eu-doped Au6 (EuAu6)"
+    needs_clarification: false
+    expected: {composition: {Eu: 1, Au: 6}, recipes: [stability, magnetism], accuracy: fast}
+  - id: 33
+    text: "Calculate the electronic structure of the CeSi10 cluster with a 24-hour budget"
+    needs_clarification: false
+    expected: {composition: {Ce: 1, Si: 10}, recipes: [electronic], accuracy: standard, time_budget_hours: 24.0}
+  - id: 34
+    text: "Study the stability and ionization energy of the C10 cluster at standard accuracy"
+    needs_clarification: false
+    expected: {composition: {C: 10}, recipes: [stability, ionization], accuracy: standard}
+  - id: 35
+    text: "Compute the ionization energy and electron affinity of the Mg6 cluster at high accuracy"
+    needs_clarification: false
+    expected: {composition: {Mg: 6}, recipes: [ionization], accuracy: high}
+  - id: 36
+    text: "Analyze the size evolution properties of Au3 to Au8 clusters with an 18-hour time budget"
+    needs_clarification: false
+    expected: {composition: {Au: [3, 8]}, recipes: [size_evolution], accuracy: standard, time_budget_hours: 18.0}
+  - id: 37
+    text: "Investigate the magnetic moment and spin population of Fe-doped Au5 (FeAu5)"
+    needs_clarification: false
+    expected: {composition: {Fe: 1, Au: 5}, recipes: [magnetism], accuracy: standard}
+  - id: 38
+    text: "Compute the electronic structure and stability of the CoAl6 cation (charge +1)"
+    needs_clarification: false
+    expected: {composition: {Co: 1, Al: 6}, charges: [1], recipes: [electronic, stability], accuracy: standard}
+  - id: 39
+    text: "Study the photoelectron spectrum and magnetism of the Ni4 anion (charge -1)"
+    needs_clarification: false
+    expected: {composition: {Ni: 4}, charges: [-1], recipes: [pes, magnetism], accuracy: standard}
+  - id: 40
+    text: "Run a fast scan of the structural stability of the Ga8 cluster with a 4-hour budget"
+    needs_clarification: false
+    expected: {composition: {Ga: 8}, recipes: [stability], accuracy: fast, time_budget_hours: 4.0}
+  - id: 41
+    text: "Compute the magnetism, electronic structure, and stability of the bimetallic Ru3Cu3 cluster"
+    needs_clarification: false
+    expected: {composition: {Ru: 3, Cu: 3}, recipes: [magnetism, electronic, stability], accuracy: standard}
+  - id: 42
+    text: "Study the stability and electronic structure of the Zn8 cluster"
+    needs_clarification: false
+    expected: {composition: {Zn: 8}, recipes: [stability, electronic], accuracy: standard}
+  - id: 43
+    text: "Compute the stability of a metal cluster"
+    needs_clarification: true
+    expected: null
+  - id: 44
+    text: "Run a gold cluster calculation and check its magnetism"
+    needs_clarification: true
+    expected: null
+  - id: 45
+    text: "I want to study Al-Ni alloy clusters at high accuracy"
+    needs_clarification: true
+    expected: null
+  - id: 46
+    text: "Run a structural search and property analysis"
+    needs_clarification: true
+    expected: null
+  - id: 47
+    text: "Use DFT to compare the HOMO-LUMO gaps of a few small clusters"
+    needs_clarification: true
+    expected: null
+  - id: 48
+    text: "Check the photoelectron spectrum of Fe clusters"
+    needs_clarification: true
+    expected: null
+  - id: 49
+    text: "Study the size evolution of silicon clusters with an 8-hour budget"
+    needs_clarification: true
+    expected: null
+  - id: 50
+    text: "Recompute the previous result"
+    needs_clarification: true
+    expected: null

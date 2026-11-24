@@ -1,0 +1,13 @@
+{
+  "job_id": "fault_imag_freq",
+  "state": "done",
+  "phase": "finished",
+  "pid": 994377,
+  "attempts": 2,
+  "fixes": [
+    "errors=['imaginary_freq'] -> actions=[{'action': 'perturb_along_imag_mode', 'step_scale': 0.25}]"
+  ],
+  "needs_human": false,
+  "error": null,
+  "updated_at": "2026-11-18T10:36:02.685313+00:00"
+}

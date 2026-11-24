@@ -1,0 +1,11 @@
+{
+  "job_id": "w_au12",
+  "state": "done",
+  "phase": "finished",
+  "pid": 896772,
+  "attempts": 1,
+  "fixes": [],
+  "needs_human": false,
+  "error": null,
+  "updated_at": "2026-11-18T09:33:59.742177+00:00"
+}

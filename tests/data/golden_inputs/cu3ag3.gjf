@@ -1,0 +1,15 @@
+%nprocshared=8
+%mem=16GB
+%chk=cu3ag3.chk
+#p PBEPBE/def2SVP EmpiricalDispersion=GD3BJ opt freq nosymm
+
+Golden sample: bimetallic Cu3Ag3 (Cu=29, Ag=47 with ECP)
+
+0 1
+Cu   0.000000   0.000000   0.000000
+Cu   2.450000   0.000000   0.000000
+Cu   1.225000   2.121762   0.000000
+Ag  -1.250000   2.165064   0.000000
+Ag   3.700000   2.165064   0.000000
+Ag   1.225000  -2.165064   0.000000
+

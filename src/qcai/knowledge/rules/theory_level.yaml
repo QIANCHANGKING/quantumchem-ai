@@ -1,0 +1,89 @@
+# Theory level, basis set, dispersion, and SCF rules (Section 5.3)
+# Condition expressions only reference system/element-category attributes (Axiom A2).
+
+accuracy_tiers:
+  fast:
+    search_method: GFN-xTB
+    screening_functional: PBE
+    screening_basis: def2-SVP
+    screening_dispersion: GD3BJ
+    refinement_functional: null
+    refinement_basis: null
+    refinement_dispersion: null
+    refinement_tasks: []
+    default_k: 5
+    reason: "快速档位：GFN-xTB 搜索后采用 PBE-D3BJ/def2-SVP 单点/快速筛选，不做高阶精修"
+    refs:
+      - "Perdew, Burke, Ernzerhof, PRL 1996, 77, 3865"
+      - "Weigend, Ahlrichs, PCCP 2005, 7, 3297"
+  standard:
+    search_method: GFN-xTB
+    screening_functional: PBE
+    screening_basis: def2-SVP
+    screening_dispersion: GD3BJ
+    refinement_functional: PBE0
+    refinement_basis: def2-TZVP
+    refinement_dispersion: GD3BJ
+    refinement_tasks: [opt, freq]
+    default_k: 8
+    reason: "标准档位：GFN-xTB → PBE-D3BJ/def2-SVP 筛选 → PBE0-D3BJ/def2-TZVP opt+freq 精修"
+    refs:
+      - "Adamo, Barone, JCP 1999, 110, 6158"
+      - "Grimme, Ehrlich, Goerigk, JCC 2011, 32, 1456"
+  high:
+    search_method: GFN-xTB
+    screening_functional: PBE0
+    screening_basis: def2-SVP
+    screening_dispersion: GD3BJ
+    refinement_functional: TPSSh
+    refinement_basis: def2-TZVP
+    refinement_dispersion: GD3BJ
+    refinement_tasks: [opt, freq, stable]
+    default_k: 12
+    reason: "高精度档位：PBE0-D3BJ/def2-SVP 筛选 → TPSSh-D3BJ/def2-TZVP opt+freq+稳定性检查"
+    refs:
+      - "Staroverov et al., JCP 2003, 119, 12129"
+      - "Bauernschmitt, Ahlrichs, JCP 1996, 104, 9047"
+
+rules:
+  - id: rule.cluster.nosymm
+    when:
+      always: true
+    then:
+      nosymm: true
+    reason: "团簇优化默认关闭对称性约束 (nosymm)，防止 Jahn-Teller 畸变被对称性锁定"
+    refs:
+      - "Jensen, Introduction to Computational Chemistry, 3rd ed."
+
+  - id: rule.tm.robust_scf_and_stability
+    when:
+      has_transition_metal: true
+    then:
+      scf_strategy: robust
+      enable_stability_check: true
+      max_multiplicity_cap: 12
+    reason: "含 d 区过渡金属团簇存在近简并 d 轨道，启用 robust SCF (xqc,maxcycle=500)、波函数稳定性检查并放宽多重度扫描上限"
+    refs:
+      - "Cramer, Truhlar, PCCP 2009, 11, 10757"
+      - "Bauernschmitt, Ahlrichs, JCP 1996, 104, 9047"
+
+  - id: rule.f_block.experimental_warning
+    when:
+      has_f_block: true
+    then:
+      f_block_warning: true
+      scf_strategy: robust
+    reason: "含 f 区元素（镧系/锕系）存在强静态相关与自旋轨道耦合，标记为实验性支持并启用稳健 SCF"
+    refs:
+      - "Dolg, Cao, Chem. Rev. 2012, 112, 403"
+
+  - id: rule.size.basis_downgrade
+    when:
+      max_atoms_gt: 20
+      has_refinement: true
+    then:
+      refinement_basis: def2-SVP
+      candidate_k_cap: 5
+    reason: "体系原子数超过规模阈值 (>20)，精修级基组降为 def2-SVP 并限制候选数为 5 以控制耗时"
+    refs:
+      - "Weigend, Ahlrichs, PCCP 2005, 7, 3297"

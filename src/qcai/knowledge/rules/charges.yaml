@@ -1,0 +1,41 @@
+# Charge state derivation rules from research recipes (Section 5.4)
+
+recipe_charges:
+  stability:
+    charges: [0]
+    ionic_tasks: []
+    reason: "结构与稳定性默认研究中性态（或用户指定电荷）"
+  electronic:
+    charges: [0]
+    ionic_tasks: []
+    reason: "电子结构默认研究中性态（或用户指定电荷）"
+  magnetism:
+    charges: [0]
+    ionic_tasks: []
+    reason: "磁性与自旋默认研究中性态（或用户指定电荷）"
+  pes:
+    charges: [-1, 0]
+    ionic_tasks:
+      - "anion_opt"
+      - "neutral_sp_at_anion_geom (VDE)"
+      - "neutral_opt (ADE)"
+    reason: "光电子能谱对比需计算阴离子基态优化、阴离子构型下中性单点 (VDE) 与中性优化 (ADE)"
+    refs:
+      - "Wang et al., Chem. Soc. Rev. 2010, 39, 1300"
+  ionization:
+    charges: [1, 0, -1]
+    ionic_tasks:
+      - "cation_sp_and_opt (VIP/AIP)"
+      - "neutral_opt"
+      - "anion_sp_and_opt (VEA/AEA)"
+    reason: "电离能与电子亲和能需同时包含阳离子、中性与阴离子态"
+    refs:
+      - "Rienstra-Kiracofe et al., Chem. Rev. 2002, 102, 231"
+  size_evolution:
+    charges: [0]
+    ionic_tasks: []
+    reason: "尺寸演化沿 n 序列执行所选模板"
+  custom:
+    charges: [0]
+    ionic_tasks: []
+    reason: "自定义研究目标默认中性态，可按分析项补充"

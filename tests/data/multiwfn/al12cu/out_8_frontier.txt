@@ -1,0 +1,583 @@
+ Multiwfn -- A Multifunctional Wavefunction Analyzer
+ Version 3.8(dev), update date: 2025-Mar-10
+ Developer: Tian Lu (Beijing Kein Research Center for Natural Sciences)
+ Multiwfn official website: http://sobereva.com/multiwfn
+ Multiwfn English forum: http://sobereva.com/wfnbbs
+ Multiwfn Chinese forum: http://bbs.keinsci.com/wfn
+ Both following papers ***MUST BE CITED IN MAIN TEXT*** if Multiwfn is used:
+          Tian Lu, Feiwu Chen, J. Comput. Chem., 33, 580-592 (2012)
+          Tian Lu, J. Chem. Phys., 161, 082503 (2024)
+ See "How to cite Multiwfn.pdf" in Multiwfn binary package for more information
+
+ ( Number of parallel threads:   4  Current date: 2026-11-18  Time: 19:08:03 )
+ 
+ Please wait...
+ Loading various information of the wavefunction
+ The highest angular moment basis functions is F
+ Loading basis set definition...
+ Loading orbitals...
+ Converting basis function information to GTF information...
+ Back converting basis function information from Cartesian to spherical type...
+ Generating density matrix based on SCF orbitals...
+ Generating overlap matrix...
+ 
+ Total/Alpha/Beta electrons:    185.0000     93.0000     92.0000
+ Net charge:     0.00000      Expected multiplicity:    2
+ Atoms:     13,  Basis functions:    247,  GTFs:    525
+ Total energy:   -4546.981500541999 Hartree,   Virial ratio:  2.00298737
+ This is an unrestricted single-determinant wavefunction
+ Orbitals from      1 to   247 are alpha, from     1 to    93 are occupied
+ Orbitals from    248 to   494 are beta,  from   248 to   339 are occupied
+ Title line of this file: Golden sample: doped open-shell doublet Al12Cu (185 electrons, M=2)
+
+ Loaded test.fchk successfully!
+ 
+ Formula: Al12 Cu1      Total atoms:      13
+ Molecule weight:       387.32450 Da
+ Point group: C2h
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point       2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and calculation of atomic charges
+ 8 Orbital composition analysis           9 Bond order analysis
+ 10 Plot total DOS, PDOS, OPDOS, local DOS, COHP and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                       18 Electron excitation analysis
+ 19 Orbital localization analysis        20 Visual study of weak interaction
+ 21 Energy decomposition analysis        22 Conceptual DFT (CDFT) analysis
+ 23 ETS-NOCV analysis                    24 (Hyper)polarizability analysis
+ 25 Electron delocalization and aromaticity analyses
+ 26 Structure and geometry related analyses
+ 100 Other functions (Part 1)            200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+
+ If this module is used in your work, please cite the following paper together with Multiwfn original paper (J. Comput. Chem., 33, 580 (2012) and J. Chem. Phys., 161, 082503 (2024)), as the methods employed in this module are comprehensively described in this paper:
+ Tian Lu, Feiwu Chen, Acta Chimica Sinica, 69, 2393-2406 (2011) http://sioc-journal.cn/Jwk_hxxb/CN/abstract/abstract340458.shtml
+ 
+        ================ Orbital composition analysis ===============
+ -10 Return
+ -2 Define fragment 2 (for option 4,5)
+ -1 Define fragment 1 (for option 1~6)
+ 1 Orbital composition analysis with Mulliken partition
+ 2 Orbital composition analysis with Stout-Politzer partition
+ 3 Orbital composition analysis with Ros-Schuit (SCPA) partition
+ 4 Print frag. 1 & inter-fragment compositions in all orbitals (Mulliken)
+ 5 Print frag. 1 & inter-fragment compositions in all orbitals (Stout-Politzer)
+ 6 Print frag. 1 compositions in all orbitals (SCPA)
+ 7 Orbital composition analysis by natural atomic orbital (NAO) method
+ 8 Calculate atom and fragment contributions by Hirshfeld method
+ 9 Calculate atom and fragment contributions by Becke method
+ 10 Calculate atom and fragment contributions by Hirshfeld-I method
+ 11 Calculate atom and fragment contributions by AIM method
+ 100 Evaluate oxidation state by LOBA/mLOBA method
+ 
+ Input the orbital index to print composition, e.g. 4
+ Note: Positive index and negative index correspond to alpha orbital and beta orbital, respectively
+ Input "a" can print basic information of all orbitals, input 0 to return
+ You can also input for example: (quotation marks should not be inputted)
+ "ha" for HOMO(alpha), "hb" for HOMO(beta), "hb-5" for HOMO(beta)-5
+ "la" for LUMO(alpha), "lb" for LUMO(beta), "la+3" for LUMO(alpha)+3
+ Orbital:    93  Energy(a.u.):     -0.185436  Occ:  1.000000  Type: Alpha     
+ Printing threshold of absolute value:  >   0.50000 %
+ 
+  Basis Type    Atom    Shell      Local       Cross term        Total
+    12   X        1(Cu)    8      0.69888 %      0.32847 %      1.02735 %
+    13   Y        1(Cu)    8     11.07418 %      4.65486 %     15.72904 %
+    14   Z        1(Cu)    8      0.47168 %      0.18064 %      0.65232 %
+    35   S        2(Al)   15      0.54807 %      0.58558 %      1.13366 %
+    40   Y        2(Al)   17      0.43661 %      0.62224 %      1.05885 %
+    41   Z        2(Al)   17      1.09669 %      1.17656 %      2.27325 %
+    43   Y        2(Al)   18      0.96998 %      1.37127 %      2.34125 %
+    44   Z        2(Al)   18      0.71307 %      0.71136 %      1.42442 %
+    53   S        3(Al)   23      0.63543 %      0.08145 %      0.71689 %
+    59   Z        3(Al)   25      0.42596 %      0.41770 %      0.84366 %
+    61   Y        3(Al)   26      0.16697 %      0.44781 %      0.61478 %
+    71   S        4(Al)   31      0.63353 %      0.08232 %      0.71585 %
+    77   Z        4(Al)   33      0.42593 %      0.41771 %      0.84364 %
+    79   Y        4(Al)   34      0.16693 %      0.44775 %      0.61468 %
+    89   S        5(Al)   39      0.55151 %      0.58600 %      1.13751 %
+    94   Y        5(Al)   41      0.43705 %      0.62281 %      1.05986 %
+    95   Z        5(Al)   41      1.09708 %      1.17703 %      2.27411 %
+    97   Y        5(Al)   42      0.97014 %      1.37186 %      2.34201 %
+    98   Z        5(Al)   42      0.71275 %      0.71170 %      1.42445 %
+   106   S        6(Al)   46      0.53085 %      0.45526 %      0.98611 %
+   107   S        6(Al)   47      2.46973 %      1.21727 %      3.68700 %
+   111   X        6(Al)   49      0.92110 %      1.01381 %      1.93491 %
+   112   Y        6(Al)   49      1.59717 %      1.92041 %      3.51758 %
+   114   X        6(Al)   50      0.47862 %      0.80329 %      1.28191 %
+   115   Y        6(Al)   50      1.12706 %      2.29934 %      3.42639 %
+   125   S        7(Al)   55      0.58830 %      0.61716 %      1.20546 %
+   129   X        7(Al)   57      0.66913 %      0.64190 %      1.31103 %
+   130   Y        7(Al)   57      0.97831 %      1.25356 %      2.23187 %
+   133   Y        7(Al)   58      1.33847 %      1.79901 %      3.13748 %
+   143   S        8(Al)   63      0.59075 %      0.61715 %      1.20790 %
+   147   X        8(Al)   65      0.66939 %      0.64217 %      1.31156 %
+   148   Y        8(Al)   65      0.97800 %      1.25319 %      2.23119 %
+   151   Y        8(Al)   66      1.33748 %      1.79849 %      3.13598 %
+   160   S        9(Al)   70      0.53045 %      0.45505 %      0.98550 %
+   161   S        9(Al)   71      2.47099 %      1.21647 %      3.68746 %
+   165   X        9(Al)   73      0.92105 %      1.01367 %      1.93472 %
+   166   Y        9(Al)   73      1.59697 %      1.92006 %      3.51703 %
+   168   X        9(Al)   74      0.47858 %      0.80316 %      1.28174 %
+   169   Y        9(Al)   74      1.12704 %      2.29909 %      3.42613 %
+   179   S       10(Al)   79      0.57772 %      0.05668 %      0.63440 %
+   183   X       10(Al)   81      0.33205 %      0.38303 %      0.71507 %
+   186   X       10(Al)   82      0.19538 %      0.39035 %      0.58573 %
+   205   Y       11(Al)   90      0.32188 %      0.68983 %      1.01171 %
+   223   Y       12(Al)   98      0.32182 %      0.68995 %      1.01177 %
+   233   S       13(Al)  103      0.57946 %      0.05579 %      0.63526 %
+   237   X       13(Al)  105      0.33196 %      0.38293 %      0.71488 %
+   240   X       13(Al)  106      0.19518 %      0.39018 %      0.58536 %
+ Sum up those listed above:      46.48733 %     43.07337 %     89.56071 %
+ Sum up all basis functions:     57.61669 %     42.38331 %    100.00000 %
+ 
+ Composition of each shell
+ Shell     8 Type: P    in atom    1(Cu) :    17.40871 %
+ Shell    15 Type: S    in atom    2(Al) :     1.13366 %
+ Shell    17 Type: P    in atom    2(Al) :     3.50985 %
+ Shell    18 Type: P    in atom    2(Al) :     3.85677 %
+ Shell    23 Type: S    in atom    3(Al) :     0.71689 %
+ Shell    25 Type: P    in atom    3(Al) :     0.94147 %
+ Shell    26 Type: P    in atom    3(Al) :     0.98094 %
+ Shell    31 Type: S    in atom    4(Al) :     0.71585 %
+ Shell    33 Type: P    in atom    4(Al) :     0.94139 %
+ Shell    34 Type: P    in atom    4(Al) :     0.98096 %
+ Shell    39 Type: S    in atom    5(Al) :     1.13751 %
+ Shell    41 Type: P    in atom    5(Al) :     3.51145 %
+ Shell    42 Type: P    in atom    5(Al) :     3.85742 %
+ Shell    46 Type: S    in atom    6(Al) :     0.98611 %
+ Shell    47 Type: S    in atom    6(Al) :     3.68700 %
+ Shell    49 Type: P    in atom    6(Al) :     5.47106 %
+ Shell    50 Type: P    in atom    6(Al) :     4.70648 %
+ Shell    55 Type: S    in atom    7(Al) :     1.20546 %
+ Shell    57 Type: P    in atom    7(Al) :     3.70042 %
+ Shell    58 Type: P    in atom    7(Al) :     4.00791 %
+ Shell    63 Type: S    in atom    8(Al) :     1.20790 %
+ Shell    65 Type: P    in atom    8(Al) :     3.70034 %
+ Shell    66 Type: P    in atom    8(Al) :     4.00685 %
+ Shell    70 Type: S    in atom    9(Al) :     0.98550 %
+ Shell    71 Type: S    in atom    9(Al) :     3.68746 %
+ Shell    73 Type: P    in atom    9(Al) :     5.47042 %
+ Shell    74 Type: P    in atom    9(Al) :     4.70605 %
+ Shell    79 Type: S    in atom   10(Al) :     0.63440 %
+ Shell    81 Type: P    in atom   10(Al) :     0.81577 %
+ Shell    82 Type: P    in atom   10(Al) :     0.88972 %
+ Shell    90 Type: P    in atom   11(Al) :     1.20374 %
+ Shell    98 Type: P    in atom   12(Al) :     1.20375 %
+ Shell   103 Type: S    in atom   13(Al) :     0.63526 %
+ Shell   105 Type: P    in atom   13(Al) :     0.81559 %
+ Shell   106 Type: P    in atom   13(Al) :     0.88908 %
+ 
+ Composition of different types of shells (%):
+ s:  18.094  p:  78.535  d:   3.371  f:   0.000  g:   0.000  h:   0.000
+ 
+ Composition of each atom:
+ Atom     1(Cu) :    17.41482 %
+ Atom     2(Al) :     8.98962 %
+ Atom     3(Al) :     3.13583 %
+ Atom     4(Al) :     3.13482 %
+ Atom     5(Al) :     8.99600 %
+ Atom     6(Al) :    15.37419 %
+ Atom     7(Al) :     9.41778 %
+ Atom     8(Al) :     9.41905 %
+ Atom     9(Al) :    15.37298 %
+ Atom    10(Al) :     2.80828 %
+ Atom    11(Al) :     1.56429 %
+ Atom    12(Al) :     1.56409 %
+ Atom    13(Al) :     2.80825 %
+
+ Orbital delocalization index:   11.55
+ 
+ Input the orbital index to print composition, e.g. 4
+ Note: Positive index and negative index correspond to alpha orbital and beta orbital, respectively
+ Input "a" can print basic information of all orbitals, input 0 to return
+ You can also input for example: (quotation marks should not be inputted)
+ "ha" for HOMO(alpha), "hb" for HOMO(beta), "hb-5" for HOMO(beta)-5
+ "la" for LUMO(alpha), "lb" for LUMO(beta), "la+3" for LUMO(alpha)+3
+ Orbital:   339  Energy(a.u.):     -0.183255  Occ:  1.000000  Type: Beta      
+ Printing threshold of absolute value:  >   0.50000 %
+ 
+  Basis Type    Atom    Shell      Local       Cross term        Total
+    12   X        1(Cu)    8      7.93631 %      3.47177 %     11.40807 %
+    13   Y        1(Cu)    8      3.16780 %      1.44139 %      4.60919 %
+    14   Z        1(Cu)    8      1.15868 %      0.49400 %      1.65267 %
+    53   S        3(Al)   23      1.73183 %      0.11852 %      1.85035 %
+    59   Z        3(Al)   25      0.70350 %      0.80421 %      1.50772 %
+    62   Z        3(Al)   26      0.26999 %      0.67484 %      0.94483 %
+    71   S        4(Al)   31      1.72640 %      0.12129 %      1.84770 %
+    77   Z        4(Al)   33      0.70349 %      0.80430 %      1.50780 %
+    80   Z        4(Al)   34      0.27033 %      0.67515 %      0.94548 %
+   106   S        6(Al)   46      0.43159 %      0.38936 %      0.82095 %
+   107   S        6(Al)   47      2.46439 %      0.93335 %      3.39774 %
+   111   X        6(Al)   49      0.37894 %      0.49108 %      0.87003 %
+   112   Y        6(Al)   49      1.88103 %      2.10626 %      3.98728 %
+   114   X        6(Al)   50      0.36555 %      0.84434 %      1.20989 %
+   115   Y        6(Al)   50      1.02773 %      1.88078 %      2.90851 %
+   160   S        9(Al)   70      0.43153 %      0.38930 %      0.82083 %
+   161   S        9(Al)   71      2.47017 %      0.93136 %      3.40152 %
+   165   X        9(Al)   73      0.37902 %      0.49111 %      0.87013 %
+   166   Y        9(Al)   73      1.88122 %      2.10633 %      3.98755 %
+   168   X        9(Al)   74      0.36548 %      0.84426 %      1.20974 %
+   169   Y        9(Al)   74      1.02753 %      1.88077 %      2.90830 %
+   179   S       10(Al)   79      1.73117 %      0.10289 %      1.83406 %
+   183   X       10(Al)   81      0.57568 %      0.75628 %      1.33196 %
+   185   Z       10(Al)   81      0.28687 %      0.26271 %      0.54959 %
+   186   X       10(Al)   82      0.42980 %      1.13389 %      1.56369 %
+   197   S       11(Al)   87      0.18538 %      0.60920 %      0.79458 %
+   201   X       11(Al)   89      1.75453 %      2.08887 %      3.84340 %
+   203   Z       11(Al)   89      0.83068 %      0.93030 %      1.76097 %
+   204   X       11(Al)   90      2.30802 %      2.13362 %      4.44164 %
+   206   Z       11(Al)   90      0.93393 %      0.71779 %      1.65173 %
+   215   S       12(Al)   95      0.18369 %      0.60742 %      0.79111 %
+   219   X       12(Al)   97      1.75464 %      2.08922 %      3.84386 %
+   221   Z       12(Al)   97      0.83114 %      0.93085 %      1.76199 %
+   222   X       12(Al)   98      2.30895 %      2.13391 %      4.44286 %
+   224   Z       12(Al)   98      0.93479 %      0.71818 %      1.65297 %
+   233   S       13(Al)  103      1.73728 %      0.09989 %      1.83716 %
+   237   X       13(Al)  105      0.57571 %      0.75631 %      1.33203 %
+   239   Z       13(Al)  105      0.28673 %      0.26258 %      0.54931 %
+   240   X       13(Al)  106      0.42944 %      1.13363 %      1.56307 %
+ Sum up those listed above:      48.85095 %     39.36132 %     88.21227 %
+ Sum up all basis functions:     60.19086 %     39.80914 %    100.00000 %
+ 
+ Composition of each shell
+ Shell     8 Type: P    in atom    1(Cu) :    17.66993 %
+ Shell    18 Type: P    in atom    2(Al) :     0.72845 %
+ Shell    23 Type: S    in atom    3(Al) :     1.85035 %
+ Shell    25 Type: P    in atom    3(Al) :     1.92815 %
+ Shell    26 Type: P    in atom    3(Al) :     1.70266 %
+ Shell    31 Type: S    in atom    4(Al) :     1.84770 %
+ Shell    33 Type: P    in atom    4(Al) :     1.92810 %
+ Shell    34 Type: P    in atom    4(Al) :     1.70325 %
+ Shell    42 Type: P    in atom    5(Al) :     0.72834 %
+ Shell    46 Type: S    in atom    6(Al) :     0.82095 %
+ Shell    47 Type: S    in atom    6(Al) :     3.39774 %
+ Shell    49 Type: P    in atom    6(Al) :     4.89177 %
+ Shell    50 Type: P    in atom    6(Al) :     4.11654 %
+ Shell    58 Type: P    in atom    7(Al) :     0.73064 %
+ Shell    66 Type: P    in atom    8(Al) :     0.73013 %
+ Shell    70 Type: S    in atom    9(Al) :     0.82083 %
+ Shell    71 Type: S    in atom    9(Al) :     3.40152 %
+ Shell    73 Type: P    in atom    9(Al) :     4.89201 %
+ Shell    74 Type: P    in atom    9(Al) :     4.11621 %
+ Shell    79 Type: S    in atom   10(Al) :     1.83406 %
+ Shell    81 Type: P    in atom   10(Al) :     1.89046 %
+ Shell    82 Type: P    in atom   10(Al) :     1.67194 %
+ Shell    87 Type: S    in atom   11(Al) :     0.79458 %
+ Shell    89 Type: P    in atom   11(Al) :     5.69597 %
+ Shell    90 Type: P    in atom   11(Al) :     6.07424 %
+ Shell    95 Type: S    in atom   12(Al) :     0.79111 %
+ Shell    97 Type: P    in atom   12(Al) :     5.69730 %
+ Shell    98 Type: P    in atom   12(Al) :     6.07672 %
+ Shell   103 Type: S    in atom   13(Al) :     1.83716 %
+ Shell   105 Type: P    in atom   13(Al) :     1.89028 %
+ Shell   106 Type: P    in atom   13(Al) :     1.67109 %
+ 
+ Composition of different types of shells (%):
+ s:  19.448  p:  77.207  d:   3.345  f:   0.000  g:   0.000  h:   0.000
+ 
+ Composition of each atom:
+ Atom     1(Cu) :    17.67571 %
+ Atom     2(Al) :     0.99594 %
+ Atom     3(Al) :     6.27936 %
+ Atom     4(Al) :     6.27754 %
+ Atom     5(Al) :     0.99563 %
+ Atom     6(Al) :    13.72530 %
+ Atom     7(Al) :     0.99415 %
+ Atom     8(Al) :     0.99373 %
+ Atom     9(Al) :    13.72888 %
+ Atom    10(Al) :     6.19031 %
+ Atom    11(Al) :    12.97517 %
+ Atom    12(Al) :    12.97582 %
+ Atom    13(Al) :     6.19246 %
+
+ Orbital delocalization index:   11.85
+ 
+ Input the orbital index to print composition, e.g. 4
+ Note: Positive index and negative index correspond to alpha orbital and beta orbital, respectively
+ Input "a" can print basic information of all orbitals, input 0 to return
+ You can also input for example: (quotation marks should not be inputted)
+ "ha" for HOMO(alpha), "hb" for HOMO(beta), "hb-5" for HOMO(beta)-5
+ "la" for LUMO(alpha), "lb" for LUMO(beta), "la+3" for LUMO(alpha)+3
+ Orbital:    94  Energy(a.u.):     -0.171083  Occ:  0.000000  Type: Alpha     
+ Printing threshold of absolute value:  >   0.50000 %
+ 
+  Basis Type    Atom    Shell      Local       Cross term        Total
+    12   X        1(Cu)    8      8.38449 %      2.86859 %     11.25309 %
+    14   Z        1(Cu)    8      3.33781 %      1.13473 %      4.47255 %
+    35   S        2(Al)   15      0.61762 %     -1.22764 %     -0.61002 %
+    41   Z        2(Al)   17      0.35524 %      0.41235 %      0.76759 %
+    42   X        2(Al)   18      0.70379 %      0.71415 %      1.41793 %
+    44   Z        2(Al)   18      1.09748 %      0.23332 %      1.33080 %
+    53   S        3(Al)   23      1.18199 %     -1.94753 %     -0.76554 %
+    59   Z        3(Al)   25      0.25149 %      0.27360 %      0.52509 %
+    62   Z        3(Al)   26      0.91034 %      0.14817 %      1.05851 %
+    71   S        4(Al)   31      1.18978 %     -1.95796 %     -0.76818 %
+    77   Z        4(Al)   33      0.25164 %      0.27379 %      0.52543 %
+    80   Z        4(Al)   34      0.91181 %      0.14786 %      1.05968 %
+    89   S        5(Al)   39      0.62372 %     -1.23661 %     -0.61289 %
+    95   Z        5(Al)   41      0.35491 %      0.41199 %      0.76690 %
+    96   X        5(Al)   42      0.70293 %      0.71367 %      1.41660 %
+    98   Z        5(Al)   42      1.09792 %      0.23270 %      1.33062 %
+   107   S        6(Al)   47      0.87729 %     -1.52963 %     -0.65234 %
+   112   Y        6(Al)   49      0.47534 %      0.44136 %      0.91670 %
+   115   Y        6(Al)   50      0.74867 %     -0.04844 %      0.70023 %
+   125   S        7(Al)   55      0.60477 %     -1.21019 %     -0.60542 %
+   129   X        7(Al)   57      0.22276 %      0.32162 %      0.54438 %
+   130   Y        7(Al)   57      0.27929 %      0.25334 %      0.53264 %
+   132   X        7(Al)   58      1.30789 %      0.72083 %      2.02872 %
+   134   Z        7(Al)   58      0.31626 %      0.32914 %      0.64539 %
+   143   S        8(Al)   63      0.60988 %     -1.21811 %     -0.60823 %
+   147   X        8(Al)   65      0.22297 %      0.32188 %      0.54485 %
+   148   Y        8(Al)   65      0.27944 %      0.25349 %      0.53293 %
+   150   X        8(Al)   66      1.30916 %      0.72113 %      2.03028 %
+   152   Z        8(Al)   66      0.31653 %      0.32945 %      0.64597 %
+   161   S        9(Al)   71      0.87125 %     -1.52139 %     -0.65014 %
+   166   Y        9(Al)   73      0.47544 %      0.44143 %      0.91687 %
+   169   Y        9(Al)   74      0.74798 %     -0.04795 %      0.70002 %
+   179   S       10(Al)   79      1.19152 %     -1.96327 %     -0.77176 %
+   186   X       10(Al)   82      1.14176 %      0.39313 %      1.53489 %
+   196   S       11(Al)   86      1.82717 %      0.98436 %      2.81153 %
+   197   S       11(Al)   87     21.69008 %     -8.72621 %     12.96387 %
+   201   X       11(Al)   89      2.41253 %      3.01293 %      5.42546 %
+   203   Z       11(Al)   89      1.22009 %      1.52292 %      2.74301 %
+   204   X       11(Al)   90      0.37113 %      1.99080 %      2.36193 %
+   206   Z       11(Al)   90      0.26195 %      1.15883 %      1.42078 %
+   214   S       12(Al)   94      1.82901 %      0.98473 %      2.81375 %
+   215   S       12(Al)   95     21.66012 %     -8.70270 %     12.95742 %
+   219   X       12(Al)   97      2.41253 %      3.01329 %      5.42582 %
+   221   Z       12(Al)   97      1.22024 %      1.52318 %      2.74342 %
+   222   X       12(Al)   98      0.37156 %      1.99192 %      2.36348 %
+   224   Z       12(Al)   98      0.26219 %      1.15938 %      1.42157 %
+   233   S       13(Al)  103      1.18498 %     -1.95456 %     -0.76957 %
+   240   X       13(Al)  106      1.14102 %      0.39339 %      1.53442 %
+ Sum up those listed above:      91.83577 %     -3.46474 %     88.37103 %
+ Sum up all basis functions:    106.74522 %     -6.74522 %    100.00000 %
+ 
+ Composition of each shell
+ Shell     8 Type: P    in atom    1(Cu) :    15.73991 %
+ Shell    15 Type: S    in atom    2(Al) :    -0.61002 %
+ Shell    17 Type: P    in atom    2(Al) :     1.14142 %
+ Shell    18 Type: P    in atom    2(Al) :     2.89016 %
+ Shell    23 Type: S    in atom    3(Al) :    -0.76554 %
+ Shell    25 Type: P    in atom    3(Al) :     0.84436 %
+ Shell    26 Type: P    in atom    3(Al) :     1.45693 %
+ Shell    31 Type: S    in atom    4(Al) :    -0.76818 %
+ Shell    33 Type: P    in atom    4(Al) :     0.84442 %
+ Shell    34 Type: P    in atom    4(Al) :     1.45832 %
+ Shell    39 Type: S    in atom    5(Al) :    -0.61289 %
+ Shell    41 Type: P    in atom    5(Al) :     1.14031 %
+ Shell    42 Type: P    in atom    5(Al) :     2.88876 %
+ Shell    47 Type: S    in atom    6(Al) :    -0.65234 %
+ Shell    49 Type: P    in atom    6(Al) :     1.01272 %
+ Shell    50 Type: P    in atom    6(Al) :     1.18059 %
+ Shell    55 Type: S    in atom    7(Al) :    -0.60542 %
+ Shell    57 Type: P    in atom    7(Al) :     1.14964 %
+ Shell    58 Type: P    in atom    7(Al) :     2.90773 %
+ Shell    63 Type: S    in atom    8(Al) :    -0.60823 %
+ Shell    65 Type: P    in atom    8(Al) :     1.15058 %
+ Shell    66 Type: P    in atom    8(Al) :     2.91025 %
+ Shell    71 Type: S    in atom    9(Al) :    -0.65014 %
+ Shell    73 Type: P    in atom    9(Al) :     1.01279 %
+ Shell    74 Type: P    in atom    9(Al) :     1.18029 %
+ Shell    79 Type: S    in atom   10(Al) :    -0.77176 %
+ Shell    81 Type: P    in atom   10(Al) :     0.84781 %
+ Shell    82 Type: P    in atom   10(Al) :     1.47525 %
+ Shell    86 Type: S    in atom   11(Al) :     2.81153 %
+ Shell    87 Type: S    in atom   11(Al) :    12.96387 %
+ Shell    89 Type: P    in atom   11(Al) :     8.50737 %
+ Shell    90 Type: P    in atom   11(Al) :     4.15582 %
+ Shell    94 Type: S    in atom   12(Al) :     2.81375 %
+ Shell    95 Type: S    in atom   12(Al) :    12.95742 %
+ Shell    97 Type: P    in atom   12(Al) :     8.50803 %
+ Shell    98 Type: P    in atom   12(Al) :     4.15796 %
+ Shell   103 Type: S    in atom   13(Al) :    -0.76957 %
+ Shell   105 Type: P    in atom   13(Al) :     0.84774 %
+ Shell   106 Type: P    in atom   13(Al) :     1.47482 %
+ 
+ Composition of different types of shells (%):
+ s:  24.885  p:  71.470  d:   3.645  f:   0.000  g:   0.000  h:   0.000
+ 
+ Composition of each atom:
+ Atom     1(Cu) :    15.74514 %
+ Atom     2(Al) :     3.74768 %
+ Atom     3(Al) :     1.90562 %
+ Atom     4(Al) :     1.90440 %
+ Atom     5(Al) :     3.74225 %
+ Atom     6(Al) :     1.88336 %
+ Atom     7(Al) :     3.77683 %
+ Atom     8(Al) :     3.77738 %
+ Atom     9(Al) :     1.88527 %
+ Atom    10(Al) :     1.92110 %
+ Atom    11(Al) :    28.89480 %
+ Atom    12(Al) :    28.89348 %
+ Atom    13(Al) :     1.92271 %
+
+ Orbital delocalization index:   19.96
+ 
+ Input the orbital index to print composition, e.g. 4
+ Note: Positive index and negative index correspond to alpha orbital and beta orbital, respectively
+ Input "a" can print basic information of all orbitals, input 0 to return
+ You can also input for example: (quotation marks should not be inputted)
+ "ha" for HOMO(alpha), "hb" for HOMO(beta), "hb-5" for HOMO(beta)-5
+ "la" for LUMO(alpha), "lb" for LUMO(beta), "la+3" for LUMO(alpha)+3
+ Orbital:   340  Energy(a.u.):     -0.173082  Occ:  0.000000  Type: Beta      
+ Printing threshold of absolute value:  >   0.50000 %
+ 
+  Basis Type    Atom    Shell      Local       Cross term        Total
+    12   X        1(Cu)    8      2.94142 %      1.23598 %      4.17740 %
+    13   Y        1(Cu)    8      1.06114 %      0.44555 %      1.50669 %
+    14   Z        1(Cu)    8      7.75122 %      3.25661 %     11.00784 %
+    34   S        2(Al)   14      0.71111 %      0.31505 %      1.02616 %
+    35   S        2(Al)   15      6.91801 %     -2.77034 %      4.14767 %
+    40   Y        2(Al)   17      0.33509 %      0.32042 %      0.65551 %
+    41   Z        2(Al)   17      0.86366 %      1.15812 %      2.02178 %
+    44   Z        2(Al)   18      0.36839 %      1.39735 %      1.76574 %
+    58   Y        3(Al)   25      0.34929 %      0.36375 %      0.71303 %
+    59   Z        3(Al)   25      1.61566 %      1.84489 %      3.46055 %
+    61   Y        3(Al)   26      0.39761 %      0.24681 %      0.64442 %
+    62   Z        3(Al)   26      2.32435 %      2.04135 %      4.36570 %
+    76   Y        4(Al)   33      0.34921 %      0.36372 %      0.71293 %
+    77   Z        4(Al)   33      1.61580 %      1.84525 %      3.46105 %
+    79   Y        4(Al)   34      0.39742 %      0.24679 %      0.64422 %
+    80   Z        4(Al)   34      2.32402 %      2.04191 %      4.36593 %
+    88   S        5(Al)   38      0.71127 %      0.31508 %      1.02635 %
+    89   S        5(Al)   39      6.91306 %     -2.76661 %      4.14644 %
+    94   Y        5(Al)   41      0.33519 %      0.32054 %      0.65573 %
+    95   Z        5(Al)   41      0.86348 %      1.15795 %      2.02144 %
+    98   Z        5(Al)   42      0.36833 %      1.39725 %      1.76558 %
+   124   S        7(Al)   54      0.69498 %      0.30253 %      0.99751 %
+   125   S        7(Al)   55      6.74501 %     -2.74179 %      4.00322 %
+   129   X        7(Al)   57      0.47032 %      0.62435 %      1.09468 %
+   130   Y        7(Al)   57      0.69348 %      0.82394 %      1.51742 %
+   132   X        7(Al)   58      0.25735 %      0.79934 %      1.05669 %
+   142   S        8(Al)   62      0.69509 %      0.30252 %      0.99761 %
+   143   S        8(Al)   63      6.75099 %     -2.74603 %      4.00496 %
+   147   X        8(Al)   65      0.47041 %      0.62445 %      1.09486 %
+   148   Y        8(Al)   65      0.69340 %      0.82387 %      1.51727 %
+   150   X        8(Al)   66      0.25729 %      0.79932 %      1.05661 %
+   183   X       10(Al)   81      1.68947 %      1.83273 %      3.52220 %
+   185   Z       10(Al)   81      0.31333 %      0.39294 %      0.70626 %
+   186   X       10(Al)   82      1.93577 %      1.53142 %      3.46719 %
+   188   Z       10(Al)   82      0.72477 %      0.69164 %      1.41641 %
+   206   Z       11(Al)   90      0.45410 %      0.49705 %      0.95116 %
+   224   Z       12(Al)   98      0.45435 %      0.49743 %      0.95178 %
+   237   X       13(Al)  105      1.68946 %      1.83269 %      3.52215 %
+   239   Z       13(Al)  105      0.31340 %      0.39302 %      0.70641 %
+   240   X       13(Al)  106      1.93665 %      1.53123 %      3.46789 %
+   242   Z       13(Al)  106      0.72515 %      0.69180 %      1.41695 %
+ Sum up those listed above:      67.47949 %     24.28191 %     91.76141 %
+ Sum up all basis functions:     76.95545 %     23.04455 %    100.00000 %
+ 
+ Composition of each shell
+ Shell     8 Type: P    in atom    1(Cu) :    16.69193 %
+ Shell    14 Type: S    in atom    2(Al) :     1.02616 %
+ Shell    15 Type: S    in atom    2(Al) :     4.14767 %
+ Shell    17 Type: P    in atom    2(Al) :     2.78527 %
+ Shell    18 Type: P    in atom    2(Al) :     1.72617 %
+ Shell    25 Type: P    in atom    3(Al) :     4.20956 %
+ Shell    26 Type: P    in atom    3(Al) :     5.03673 %
+ Shell    33 Type: P    in atom    4(Al) :     4.21001 %
+ Shell    34 Type: P    in atom    4(Al) :     5.03672 %
+ Shell    38 Type: S    in atom    5(Al) :     1.02635 %
+ Shell    39 Type: S    in atom    5(Al) :     4.14644 %
+ Shell    41 Type: P    in atom    5(Al) :     2.78499 %
+ Shell    42 Type: P    in atom    5(Al) :     1.72615 %
+ Shell    54 Type: S    in atom    7(Al) :     0.99751 %
+ Shell    55 Type: S    in atom    7(Al) :     4.00322 %
+ Shell    57 Type: P    in atom    7(Al) :     2.65588 %
+ Shell    58 Type: P    in atom    7(Al) :     1.66751 %
+ Shell    62 Type: S    in atom    8(Al) :     0.99761 %
+ Shell    63 Type: S    in atom    8(Al) :     4.00496 %
+ Shell    65 Type: P    in atom    8(Al) :     2.65589 %
+ Shell    66 Type: P    in atom    8(Al) :     1.66719 %
+ Shell    81 Type: P    in atom   10(Al) :     4.26586 %
+ Shell    82 Type: P    in atom   10(Al) :     5.07596 %
+ Shell    90 Type: P    in atom   11(Al) :     1.43960 %
+ Shell    98 Type: P    in atom   12(Al) :     1.43998 %
+ Shell   105 Type: P    in atom   13(Al) :     4.26599 %
+ Shell   106 Type: P    in atom   13(Al) :     5.07725 %
+ 
+ Composition of different types of shells (%):
+ s:  20.577  p:  75.621  d:   3.802  f:   0.000  g:   0.000  h:   0.000
+ 
+ Composition of each atom:
+ Atom     1(Cu) :    16.69604 %
+ Atom     2(Al) :    10.04914 %
+ Atom     3(Al) :     9.71279 %
+ Atom     4(Al) :     9.71352 %
+ Atom     5(Al) :    10.04780 %
+ Atom     6(Al) :     0.53288 %
+ Atom     7(Al) :     9.68355 %
+ Atom     8(Al) :     9.68506 %
+ Atom     9(Al) :     0.53289 %
+ Atom    10(Al) :     9.85548 %
+ Atom    11(Al) :     1.81806 %
+ Atom    12(Al) :     1.81841 %
+ Atom    13(Al) :     9.85439 %
+
+ Orbital delocalization index:   10.58
+ 
+ Input the orbital index to print composition, e.g. 4
+ Note: Positive index and negative index correspond to alpha orbital and beta orbital, respectively
+ Input "a" can print basic information of all orbitals, input 0 to return
+ You can also input for example: (quotation marks should not be inputted)
+ "ha" for HOMO(alpha), "hb" for HOMO(beta), "hb-5" for HOMO(beta)-5
+ "la" for LUMO(alpha), "lb" for LUMO(beta), "la+3" for LUMO(alpha)+3
+
+ If this module is used in your work, please cite the following paper together with Multiwfn original paper (J. Comput. Chem., 33, 580 (2012) and J. Chem. Phys., 161, 082503 (2024)), as the methods employed in this module are comprehensively described in this paper:
+ Tian Lu, Feiwu Chen, Acta Chimica Sinica, 69, 2393-2406 (2011) http://sioc-journal.cn/Jwk_hxxb/CN/abstract/abstract340458.shtml
+ 
+        ================ Orbital composition analysis ===============
+ -10 Return
+ -2 Define fragment 2 (for option 4,5)
+ -1 Define fragment 1 (for option 1~6)
+ 1 Orbital composition analysis with Mulliken partition
+ 2 Orbital composition analysis with Stout-Politzer partition
+ 3 Orbital composition analysis with Ros-Schuit (SCPA) partition
+ 4 Print frag. 1 & inter-fragment compositions in all orbitals (Mulliken)
+ 5 Print frag. 1 & inter-fragment compositions in all orbitals (Stout-Politzer)
+ 6 Print frag. 1 compositions in all orbitals (SCPA)
+ 7 Orbital composition analysis by natural atomic orbital (NAO) method
+ 8 Calculate atom and fragment contributions by Hirshfeld method
+ 9 Calculate atom and fragment contributions by Becke method
+ 10 Calculate atom and fragment contributions by Hirshfeld-I method
+ 11 Calculate atom and fragment contributions by AIM method
+ 100 Evaluate oxidation state by LOBA/mLOBA method
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point       2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and calculation of atomic charges
+ 8 Orbital composition analysis           9 Bond order analysis
+ 10 Plot total DOS, PDOS, OPDOS, local DOS, COHP and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                       18 Electron excitation analysis
+ 19 Orbital localization analysis        20 Visual study of weak interaction
+ 21 Energy decomposition analysis        22 Conceptual DFT (CDFT) analysis
+ 23 ETS-NOCV analysis                    24 (Hyper)polarizability analysis
+ 25 Electron delocalization and aromaticity analyses
+ 26 Structure and geometry related analyses
+ 100 Other functions (Part 1)            200 Other functions (Part 2)
+ 300 Other functions (Part 3)

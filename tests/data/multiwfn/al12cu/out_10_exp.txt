@@ -1,0 +1,470 @@
+ Multiwfn -- A Multifunctional Wavefunction Analyzer
+ Version 3.8(dev), update date: 2025-Mar-10
+ Developer: Tian Lu (Beijing Kein Research Center for Natural Sciences)
+ Multiwfn official website: http://sobereva.com/multiwfn
+ Multiwfn English forum: http://sobereva.com/wfnbbs
+ Multiwfn Chinese forum: http://bbs.keinsci.com/wfn
+ Both following papers ***MUST BE CITED IN MAIN TEXT*** if Multiwfn is used:
+          Tian Lu, Feiwu Chen, J. Comput. Chem., 33, 580-592 (2012)
+          Tian Lu, J. Chem. Phys., 161, 082503 (2024)
+ See "How to cite Multiwfn.pdf" in Multiwfn binary package for more information
+
+ ( Number of parallel threads:   4  Current date: 2026-11-18  Time: 19:08:39 )
+ 
+ Please wait...
+ Loading various information of the wavefunction
+ The highest angular moment basis functions is F
+ Loading basis set definition...
+ Loading orbitals...
+ Converting basis function information to GTF information...
+ Back converting basis function information from Cartesian to spherical type...
+ Generating density matrix based on SCF orbitals...
+ Generating overlap matrix...
+ 
+ Total/Alpha/Beta electrons:    185.0000     93.0000     92.0000
+ Net charge:     0.00000      Expected multiplicity:    2
+ Atoms:     13,  Basis functions:    247,  GTFs:    525
+ Total energy:   -4546.981500541999 Hartree,   Virial ratio:  2.00298737
+ This is an unrestricted single-determinant wavefunction
+ Orbitals from      1 to   247 are alpha, from     1 to    93 are occupied
+ Orbitals from    248 to   494 are beta,  from   248 to   339 are occupied
+ Title line of this file: Golden sample: doped open-shell doublet Al12Cu (185 electrons, M=2)
+
+ Loaded test.fchk successfully!
+ 
+ Formula: Al12 Cu1      Total atoms:      13
+ Molecule weight:       387.32450 Da
+ Point group: C2h
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point       2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and calculation of atomic charges
+ 8 Orbital composition analysis           9 Bond order analysis
+ 10 Plot total DOS, PDOS, OPDOS, local DOS, COHP and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                       18 Electron excitation analysis
+ 19 Orbital localization analysis        20 Visual study of weak interaction
+ 21 Energy decomposition analysis        22 Conceptual DFT (CDFT) analysis
+ 23 ETS-NOCV analysis                    24 (Hyper)polarizability analysis
+ 25 Electron delocalization and aromaticity analyses
+ 26 Structure and geometry related analyses
+ 100 Other functions (Part 1)            200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ 
+ Hint: You can input "s" to save current plotting status to a file, or input "l" to load status from a file
+ 
+               ========== Plot density-of-states (DOS) ==========
+ -10 Return to main menu
+ -7 Change to COHP plotting mode
+ -6 Set shift of energy levels, current:    0.0000  a.u.
+ -5 Customize energy levels, occupations, strengths and FWHMs for specific MOs
+ -4 Show all orbital information
+ -3 Export energy levels, occupations, strengths and FWHMs to plain text file
+ -2 Define MO fragments for MO-PDOS
+ -1 Define fragments for PDOS/OPDOS
+ 0 Draw TDOS graph!
+ 00 Draw TDOS and OPDOS between nearest atoms!
+ 1 Select broadening function, current: Gaussian
+ 2 Set energy range and step, current:     -0.800 to      0.200 a.u., step:  0.100
+ 3 Set full width at half maximum (FWHM), current:   0.05000 a.u.
+ 4 Set scale ratio for DOS curve, current:   0.10000
+ 6 Choose orbital spin, current: Alpha
+ 7 Set the method for calculating PDOS, current: Mulliken
+ 8 Switch unit between a.u. and eV, current: a.u.
+ 9 Toggle using line height to show orbital degeneracy, current: No
+ 10 Draw local DOS for a point
+ 11 Draw local DOS along a line
+ 12 Enter interface for plotting photoelectron spectrum (PES)
+ 
+ Hint: You can input "s" to save current plotting status to a file, or input "l" to load status from a file
+ 
+               ========== Plot density-of-states (DOS) ==========
+ -10 Return to main menu
+ -7 Change to COHP plotting mode
+ -6 Set shift of energy levels, current:    0.0000  eV
+ -5 Customize energy levels, occupations, strengths and FWHMs for specific MOs
+ -4 Show all orbital information
+ -3 Export energy levels, occupations, strengths and FWHMs to plain text file
+ -2 Define MO fragments for MO-PDOS
+ -1 Define fragments for PDOS/OPDOS
+ 0 Draw TDOS graph!
+ 00 Draw TDOS and OPDOS between nearest atoms!
+ 1 Select broadening function, current: Gaussian
+ 2 Set energy range and step, current:    -21.769 to      5.442 eV, step:  2.721
+ 3 Set full width at half maximum (FWHM), current:   1.36057 eV  
+ 4 Set scale ratio for DOS curve, current:   2.72114
+ 6 Choose orbital spin, current: Alpha
+ 7 Set the method for calculating PDOS, current: Mulliken
+ 8 Switch unit between a.u. and eV, current: eV  
+ 9 Toggle using line height to show orbital degeneracy, current: No
+ 10 Draw local DOS for a point
+ 11 Draw local DOS along a line
+ 12 Enter interface for plotting photoelectron spectrum (PES)
+ 
+            ----------------- Define fragments -----------------
+ Note: Up to 10 fragments can be defined for plotting PDOS, but OPDOS will only be plotted for fragments 1 and 2 (they can have overlap, while local terms will not be calculated)
+ 
+ Fragment    1, has not been defined
+ Fragment    2, has not been defined
+ Fragment    3, has not been defined
+ Fragment    4, has not been defined
+ Fragment    5, has not been defined
+ Fragment    6, has not been defined
+ Fragment    7, has not been defined
+ Fragment    8, has not been defined
+ Fragment    9, has not been defined
+ Fragment   10, has not been defined
+ Input fragment index to define it, e.g. 2
+ Input a negative index will unset the fragment, e.g. -2
+ Input two indices can exchange the two fragments, e.g. 1,4
+ Input "e" can export current fragment setting to DOSfrag.txt in current folder
+ Input "i" can import fragment setting from DOSfrag.txt in current folder
+ To return to the last menu, input 0 or q
+ Commands and examples:
+ q: Save fragment and exit
+ clean: Clean current fragment
+ list: List basis functions in current fragment
+ all: List all basis functions of current system
+ addall: Add all basis functions to fragment
+ inv: Invert selection, viz. delete existing basis functions add all other ones
+ help: Print these help information again
+ cond: Add basis functions satisfying given conditions to fragment
+ a 2,5-8,12: Add all basis functions in atoms 2,5,6,7,8,12 to fragment
+ s 2,5-8,12: Add all basis functions in shells 2,5,6,7,8,12 to fragment
+ b 2,5-8,12: Add basis functions 2,5,6,7,8,12 to fragment
+ l s,d: Add basis functions of s and d angular moments to fragment
+ e Fe: Add all atoms of Fe element to fragment
+ da 5,7,11-13: Delete all basis functions in atoms 5,7,11,12,13 from fragment
+ db 5,7,11-13: Delete basis functions 5,7,11,12,13 from fragment
+ Done!    12 atoms have been added
+ Basis function index in current fragment:
+    32    33    34    35    36    37    38    39    40    41    42    43    44    45    46    47    48    49    50    51    52    53    54    55    56    57    58    59    60    61    62    63    64    65    66    67    68    69    70    71    72    73    74    75    76    77    78    79    80    81    82    83    84    85    86    87    88    89    90    91    92    93    94    95    96    97    98    99   100   101   102   103   104   105   106   107   108   109   110   111   112   113   114   115   116   117   118   119   120   121   122   123   124   125   126   127   128   129   130   131   132   133   134   135   136   137   138   139   140   141   142   143   144   145   146   147   148   149   150   151   152   153   154   155   156   157   158   159   160   161   162   163   164   165   166   167   168   169   170   171   172   173   174   175   176   177   178   179   180   181   182   183   184   185   186   187   188   189   190   191   192   193   194   195   196   197   198   199   200   201   202   203   204   205   206   207   208   209   210   211   212   213   214   215   216   217   218   219   220   221   222   223   224   225   226   227   228   229   230   231   232   233   234   235   236   237   238   239   240   241   242   243   244   245   246   247
+ Fragment is saved
+ 
+ 
+ Fragment    1, number of basis functions:   216
+ Fragment    2, has not been defined
+ Fragment    3, has not been defined
+ Fragment    4, has not been defined
+ Fragment    5, has not been defined
+ Fragment    6, has not been defined
+ Fragment    7, has not been defined
+ Fragment    8, has not been defined
+ Fragment    9, has not been defined
+ Fragment   10, has not been defined
+ Input fragment index to define it, e.g. 2
+ Input a negative index will unset the fragment, e.g. -2
+ Input two indices can exchange the two fragments, e.g. 1,4
+ Input "e" can export current fragment setting to DOSfrag.txt in current folder
+ Input "i" can import fragment setting from DOSfrag.txt in current folder
+ To return to the last menu, input 0 or q
+ Commands and examples:
+ q: Save fragment and exit
+ clean: Clean current fragment
+ list: List basis functions in current fragment
+ all: List all basis functions of current system
+ addall: Add all basis functions to fragment
+ inv: Invert selection, viz. delete existing basis functions add all other ones
+ help: Print these help information again
+ cond: Add basis functions satisfying given conditions to fragment
+ a 2,5-8,12: Add all basis functions in atoms 2,5,6,7,8,12 to fragment
+ s 2,5-8,12: Add all basis functions in shells 2,5,6,7,8,12 to fragment
+ b 2,5-8,12: Add basis functions 2,5,6,7,8,12 to fragment
+ l s,d: Add basis functions of s and d angular moments to fragment
+ e Fe: Add all atoms of Fe element to fragment
+ da 5,7,11-13: Delete all basis functions in atoms 5,7,11,12,13 from fragment
+ db 5,7,11-13: Delete basis functions 5,7,11,12,13 from fragment
+ Done!     1 atoms have been added
+ Basis function index in current fragment:
+     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23    24    25    26    27    28    29    30    31
+ Fragment is saved
+ 
+ 
+ Fragment    1, number of basis functions:   216
+ Fragment    2, number of basis functions:    31
+ Fragment    3, has not been defined
+ Fragment    4, has not been defined
+ Fragment    5, has not been defined
+ Fragment    6, has not been defined
+ Fragment    7, has not been defined
+ Fragment    8, has not been defined
+ Fragment    9, has not been defined
+ Fragment   10, has not been defined
+ Input fragment index to define it, e.g. 2
+ Input a negative index will unset the fragment, e.g. -2
+ Input two indices can exchange the two fragments, e.g. 1,4
+ Input "e" can export current fragment setting to DOSfrag.txt in current folder
+ Input "i" can import fragment setting from DOSfrag.txt in current folder
+ To return to the last menu, input 0 or q
+ Commands and examples:
+ q: Save fragment and exit
+ clean: Clean current fragment
+ list: List basis functions in current fragment
+ all: List all basis functions of current system
+ addall: Add all basis functions to fragment
+ inv: Invert selection, viz. delete existing basis functions add all other ones
+ help: Print these help information again
+ cond: Add basis functions satisfying given conditions to fragment
+ a 2,5-8,12: Add all basis functions in atoms 2,5,6,7,8,12 to fragment
+ s 2,5-8,12: Add all basis functions in shells 2,5,6,7,8,12 to fragment
+ b 2,5-8,12: Add basis functions 2,5,6,7,8,12 to fragment
+ l s,d: Add basis functions of s and d angular moments to fragment
+ e Fe: Add all atoms of Fe element to fragment
+ da 5,7,11-13: Delete all basis functions in atoms 5,7,11,12,13 from fragment
+ db 5,7,11-13: Delete basis functions 5,7,11,12,13 from fragment
+ Done!    53 new basis functions have been added to current fragment
+ Basis function index in current fragment:
+     1     2     3     4     5    32    33    34    35    50    51    52    53    68    69    70    71    86    87    88    89   104   105   106   107   122   123   124   125   140   141   142   143   158   159   160   161   176   177   178   179   194   195   196   197   212   213   214   215   230   231   232   233
+ Fragment is saved
+ 
+ 
+ Fragment    1, number of basis functions:   216
+ Fragment    2, number of basis functions:    31
+ Fragment    3, number of basis functions:    53
+ Fragment    4, has not been defined
+ Fragment    5, has not been defined
+ Fragment    6, has not been defined
+ Fragment    7, has not been defined
+ Fragment    8, has not been defined
+ Fragment    9, has not been defined
+ Fragment   10, has not been defined
+ Input fragment index to define it, e.g. 2
+ Input a negative index will unset the fragment, e.g. -2
+ Input two indices can exchange the two fragments, e.g. 1,4
+ Input "e" can export current fragment setting to DOSfrag.txt in current folder
+ Input "i" can import fragment setting from DOSfrag.txt in current folder
+ To return to the last menu, input 0 or q
+ Commands and examples:
+ q: Save fragment and exit
+ clean: Clean current fragment
+ list: List basis functions in current fragment
+ all: List all basis functions of current system
+ addall: Add all basis functions to fragment
+ inv: Invert selection, viz. delete existing basis functions add all other ones
+ help: Print these help information again
+ cond: Add basis functions satisfying given conditions to fragment
+ a 2,5-8,12: Add all basis functions in atoms 2,5,6,7,8,12 to fragment
+ s 2,5-8,12: Add all basis functions in shells 2,5,6,7,8,12 to fragment
+ b 2,5-8,12: Add basis functions 2,5,6,7,8,12 to fragment
+ l s,d: Add basis functions of s and d angular moments to fragment
+ e Fe: Add all atoms of Fe element to fragment
+ da 5,7,11-13: Delete all basis functions in atoms 5,7,11,12,13 from fragment
+ db 5,7,11-13: Delete basis functions 5,7,11,12,13 from fragment
+ Done!   117 new basis functions have been added to current fragment
+ Basis function index in current fragment:
+     6     7     8     9    10    11    12    13    14    36    37    38    39    40    41    42    43    44    54    55    56    57    58    59    60    61    62    72    73    74    75    76    77    78    79    80    90    91    92    93    94    95    96    97    98   108   109   110   111   112   113   114   115   116   126   127   128   129   130   131   132   133   134   144   145   146   147   148   149   150   151   152   162   163   164   165   166   167   168   169   170   180   181   182   183   184   185   186   187   188   198   199   200   201   202   203   204   205   206   216   217   218   219   220   221   222   223   224   234   235   236   237   238   239   240   241   242
+ Fragment is saved
+ 
+ 
+ Fragment    1, number of basis functions:   216
+ Fragment    2, number of basis functions:    31
+ Fragment    3, number of basis functions:    53
+ Fragment    4, number of basis functions:   117
+ Fragment    5, has not been defined
+ Fragment    6, has not been defined
+ Fragment    7, has not been defined
+ Fragment    8, has not been defined
+ Fragment    9, has not been defined
+ Fragment   10, has not been defined
+ Input fragment index to define it, e.g. 2
+ Input a negative index will unset the fragment, e.g. -2
+ Input two indices can exchange the two fragments, e.g. 1,4
+ Input "e" can export current fragment setting to DOSfrag.txt in current folder
+ Input "i" can import fragment setting from DOSfrag.txt in current folder
+ To return to the last menu, input 0 or q
+ Commands and examples:
+ q: Save fragment and exit
+ clean: Clean current fragment
+ list: List basis functions in current fragment
+ all: List all basis functions of current system
+ addall: Add all basis functions to fragment
+ inv: Invert selection, viz. delete existing basis functions add all other ones
+ help: Print these help information again
+ cond: Add basis functions satisfying given conditions to fragment
+ a 2,5-8,12: Add all basis functions in atoms 2,5,6,7,8,12 to fragment
+ s 2,5-8,12: Add all basis functions in shells 2,5,6,7,8,12 to fragment
+ b 2,5-8,12: Add basis functions 2,5,6,7,8,12 to fragment
+ l s,d: Add basis functions of s and d angular moments to fragment
+ e Fe: Add all atoms of Fe element to fragment
+ da 5,7,11-13: Delete all basis functions in atoms 5,7,11,12,13 from fragment
+ db 5,7,11-13: Delete basis functions 5,7,11,12,13 from fragment
+ Done!    70 new basis functions have been added to current fragment
+ Basis function index in current fragment:
+    15    16    17    18    19    20    21    22    23    24    45    46    47    48    49    63    64    65    66    67    81    82    83    84    85    99   100   101   102   103   117   118   119   120   121   135   136   137   138   139   153   154   155   156   157   171   172   173   174   175   189   190   191   192   193   207   208   209   210   211   225   226   227   228   229   243   244   245   246   247
+ Fragment is saved
+ 
+ 
+ Fragment    1, number of basis functions:   216
+ Fragment    2, number of basis functions:    31
+ Fragment    3, number of basis functions:    53
+ Fragment    4, number of basis functions:   117
+ Fragment    5, number of basis functions:    70
+ Fragment    6, has not been defined
+ Fragment    7, has not been defined
+ Fragment    8, has not been defined
+ Fragment    9, has not been defined
+ Fragment   10, has not been defined
+ Input fragment index to define it, e.g. 2
+ Input a negative index will unset the fragment, e.g. -2
+ Input two indices can exchange the two fragments, e.g. 1,4
+ Input "e" can export current fragment setting to DOSfrag.txt in current folder
+ Input "i" can import fragment setting from DOSfrag.txt in current folder
+ To return to the last menu, input 0 or q
+ 
+ Hint: You can input "s" to save current plotting status to a file, or input "l" to load status from a file
+ 
+               ========== Plot density-of-states (DOS) ==========
+ -10 Return to main menu
+ -7 Change to COHP plotting mode
+ -6 Set shift of energy levels, current:    0.0000  eV
+ -5 Customize energy levels, occupations, strengths and FWHMs for specific MOs
+ -4 Show all orbital information
+ -3 Export energy levels, occupations, strengths and FWHMs to plain text file
+ -2 Define MO fragments for MO-PDOS
+ -1 Define fragments for PDOS/OPDOS
+ 0 Draw TDOS+PDOS+OPDOS graph!    -0 Draw TDOS+PDOS!
+ 1 Select broadening function, current: Gaussian
+ 2 Set energy range and step, current:    -21.769 to      5.442 eV, step:  2.721
+ 3 Set full width at half maximum (FWHM), current:   1.36057 eV  
+ 4 Set scale ratio for DOS curve, current:   2.72114
+ 6 Choose orbital spin, current: Alpha
+ 7 Set the method for calculating PDOS, current: Mulliken
+ 8 Switch unit between a.u. and eV, current: eV  
+ 9 Toggle using line height to show orbital degeneracy, current: No
+ 10 Draw local DOS for a point
+ 11 Draw local DOS along a line
+ 12 Enter interface for plotting photoelectron spectrum (PES)
+ Calculating orbital composition, please wait...
+      96 orbitals will be calculated
+ Progress: [--------------------------------------------------]     1.0 %     - Progress: [#-------------------------------------------------]     2.1 %     \ Progress: [#-------------------------------------------------]     3.1 %     | Progress: [##------------------------------------------------]     4.2 %     / Progress: [##------------------------------------------------]     5.2 %     - Progress: [###-----------------------------------------------]     6.2 %     \ Progress: [###-----------------------------------------------]     7.3 %     | Progress: [####----------------------------------------------]     8.3 %     / Progress: [####----------------------------------------------]     9.4 %     - Progress: [#####---------------------------------------------]    10.4 %     \ Progress: [#####---------------------------------------------]    11.5 %     | Progress: [######--------------------------------------------]    12.5 %     / Progress: [######--------------------------------------------]    13.5 %     - Progress: [#######-------------------------------------------]    14.6 %     \ Progress: [#######-------------------------------------------]    15.6 %     | Progress: [########------------------------------------------]    16.7 %     / Progress: [########------------------------------------------]    17.7 %     - Progress: [#########-----------------------------------------]    18.8 %     \ Progress: [#########-----------------------------------------]    19.8 %     | Progress: [##########----------------------------------------]    20.8 %     / Progress: [##########----------------------------------------]    21.9 %     - Progress: [###########---------------------------------------]    22.9 %     \ Progress: [###########---------------------------------------]    24.0 %     | Progress: [############--------------------------------------]    25.0 %     / Progress: [#############-------------------------------------]    26.0 %     - Progress: [#############-------------------------------------]    27.1 %     \ Progress: [##############------------------------------------]    28.1 %     | Progress: [##############------------------------------------]    29.2 %     / Progress: [###############-----------------------------------]    30.2 %     - Progress: [###############-----------------------------------]    31.2 %     \ Progress: [################----------------------------------]    32.3 %     | Progress: [################----------------------------------]    33.3 %     / Progress: [#################---------------------------------]    34.4 %     - Progress: [#################---------------------------------]    35.4 %     \ Progress: [##################--------------------------------]    36.5 %     | Progress: [##################--------------------------------]    37.5 %     / Progress: [###################-------------------------------]    38.5 %     - Progress: [###################-------------------------------]    39.6 %     \ Progress: [####################------------------------------]    40.6 %     | Progress: [####################------------------------------]    41.7 %     / Progress: [#####################-----------------------------]    42.7 %     - Progress: [#####################-----------------------------]    43.8 %     \ Progress: [######################----------------------------]    44.8 %     | Progress: [######################----------------------------]    45.8 %     / Progress: [#######################---------------------------]    46.9 %     - Progress: [#######################---------------------------]    47.9 %     \ Progress: [########################--------------------------]    49.0 %     | Progress: [#########################-------------------------]    50.0 %     / Progress: [#########################-------------------------]    51.0 %     - Progress: [##########################------------------------]    52.1 %     \ Progress: [##########################------------------------]    53.1 %     | Progress: [###########################-----------------------]    54.2 %     / Progress: [###########################-----------------------]    55.2 %     - Progress: [############################----------------------]    56.2 %     \ Progress: [############################----------------------]    57.3 %     | Progress: [#############################---------------------]    58.3 %     / Progress: [#############################---------------------]    59.4 %     - Progress: [##############################--------------------]    60.4 %     \ Progress: [##############################--------------------]    61.5 %     | Progress: [###############################-------------------]    62.5 %     / Progress: [###############################-------------------]    63.5 %     - Progress: [################################------------------]    64.6 %     \ Progress: [################################------------------]    65.6 %     | Progress: [#################################-----------------]    66.7 %     / Progress: [#################################-----------------]    67.7 %     - Progress: [##################################----------------]    68.8 %     \ Progress: [##################################----------------]    69.8 %     | Progress: [###################################---------------]    70.8 %     / Progress: [###################################---------------]    71.9 %     - Progress: [####################################--------------]    72.9 %     \ Progress: [####################################--------------]    74.0 %     | Progress: [#####################################-------------]    75.0 %     / Progress: [######################################------------]    76.0 %     - Progress: [######################################------------]    77.1 %     \ Progress: [#######################################-----------]    78.1 %     | Progress: [#######################################-----------]    79.2 %     / Progress: [########################################----------]    80.2 %     - Progress: [########################################----------]    81.2 %     \ Progress: [#########################################---------]    82.3 %     | Progress: [#########################################---------]    83.3 %     / Progress: [##########################################--------]    84.4 %     - Progress: [##########################################--------]    85.4 %     \ Progress: [###########################################-------]    86.5 %     | Progress: [###########################################-------]    87.5 %     / Progress: [############################################------]    88.5 %     - Progress: [############################################------]    89.6 %     \ Progress: [#############################################-----]    90.6 %     | Progress: [#############################################-----]    91.7 %     / Progress: [##############################################----]    92.7 %     - Progress: [##############################################----]    93.8 %     \ Progress: [###############################################---]    94.8 %     | Progress: [###############################################---]    95.8 %     / Progress: [################################################--]    96.9 %     - Progress: [################################################--]    97.9 %     \ Progress: [#################################################-]    99.0 %     | Progress: [##################################################]   100.0 %     / 
+ Calculation of data took up wall clock time         0 s
+
+ Center of TDOS:   -2.083304 eV  
+ Center of PDOS  1:   -1.775390 eV  
+ Center of PDOS  2:   -3.015332 eV  
+ Center of PDOS  3:   -2.892807 eV  
+ Center of PDOS  4:   -1.369022 eV  
+ Center of PDOS  5:   -3.054419 eV  
+ 
+ Note: The vertical dash line corresponds to HOMO level at     -5.04596 eV  
+ 
+                     -------- Post-processing menu --------
+ -1 Set format of saved image file, current: pdf 
+ 0 Return
+ 1 Show graph again
+ 2 Save the graph to image file in current folder
+ 3 Export curve and line data to plain text file in current folder
+ 4 Set Y-axis range and step for TDOS+PDOS, current:   -0.46 to    0.92, step:  0.14
+ 5 Toggle showing TDOS curve, current: Yes
+ 6 Toggle showing TDOS discrete lines, current: Yes
+ 7 Toggle showing PDOS curves
+ 8 Toggle showing PDOS discrete lines
+ 9 Toggle showing OPDOS curve, current: Yes
+ 10 Toggle showing OPDOS lines, current: Yes
+ 11 Set color for PDOS curves and discrete lines
+ 12 Set position of legends, current: X=  400, Y=  160
+ 13 Toggle showing legends, current: Yes
+ 14 Set scale factor of Y-axis range for OPDOS, current:   0.50000
+ 15 Toggle showing a dashed line to highlight HOMO level, current: Yes
+ 16 Set the texts in the legends
+ 17 Set width of curves, current:  4
+ 18 Set width of discrete lines, current:  2
+ 19 Toggle showing labels and ticks on Y-axis, current: Yes
+ 20 Set number of decimal places for axes
+ 21 Set text sizes
+ 22 Toggle drawing discrete lines at bottom of curves, current: No
+ 23 Toggle drawing a vertical line at a specific X position, current: No
+ Curve data have been written to DOS_curve.txt in current folder
+ Discrete line data have been written to DOS_line.txt in current folder
+ Column 1: Energy ( eV)
+ Column 2: TDOS
+ Column 3: OPDOS
+ Column 4-13: PDOS of fragment 1-10
+ 
+                     -------- Post-processing menu --------
+ -1 Set format of saved image file, current: pdf 
+ 0 Return
+ 1 Show graph again
+ 2 Save the graph to image file in current folder
+ 3 Export curve and line data to plain text file in current folder
+ 4 Set Y-axis range and step for TDOS+PDOS, current:   -0.46 to    0.92, step:  0.14
+ 5 Toggle showing TDOS curve, current: Yes
+ 6 Toggle showing TDOS discrete lines, current: Yes
+ 7 Toggle showing PDOS curves
+ 8 Toggle showing PDOS discrete lines
+ 9 Toggle showing OPDOS curve, current: Yes
+ 10 Toggle showing OPDOS lines, current: Yes
+ 11 Set color for PDOS curves and discrete lines
+ 12 Set position of legends, current: X=  400, Y=  160
+ 13 Toggle showing legends, current: Yes
+ 14 Set scale factor of Y-axis range for OPDOS, current:   0.50000
+ 15 Toggle showing a dashed line to highlight HOMO level, current: Yes
+ 16 Set the texts in the legends
+ 17 Set width of curves, current:  4
+ 18 Set width of discrete lines, current:  2
+ 19 Toggle showing labels and ticks on Y-axis, current: Yes
+ 20 Set number of decimal places for axes
+ 21 Set text sizes
+ 22 Toggle drawing discrete lines at bottom of curves, current: No
+ 23 Toggle drawing a vertical line at a specific X position, current: No
+ 
+ Hint: You can input "s" to save current plotting status to a file, or input "l" to load status from a file
+ 
+               ========== Plot density-of-states (DOS) ==========
+ -10 Return to main menu
+ -7 Change to COHP plotting mode
+ -6 Set shift of energy levels, current:    0.0000  eV
+ -5 Customize energy levels, occupations, strengths and FWHMs for specific MOs
+ -4 Show all orbital information
+ -3 Export energy levels, occupations, strengths and FWHMs to plain text file
+ -2 Define MO fragments for MO-PDOS
+ -1 Define fragments for PDOS/OPDOS
+ 0 Draw TDOS+PDOS+OPDOS graph!    -0 Draw TDOS+PDOS!
+ 1 Select broadening function, current: Gaussian
+ 2 Set energy range and step, current:    -21.769 to      5.442 eV, step:  2.721
+ 3 Set full width at half maximum (FWHM), current:   1.36057 eV  
+ 4 Set scale ratio for DOS curve, current:   2.72114
+ 6 Choose orbital spin, current: Alpha
+ 7 Set the method for calculating PDOS, current: Mulliken
+ 8 Switch unit between a.u. and eV, current: eV  
+ 9 Toggle using line height to show orbital degeneracy, current: No
+ 10 Draw local DOS for a point
+ 11 Draw local DOS along a line
+ 12 Enter interface for plotting photoelectron spectrum (PES)
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point       2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and calculation of atomic charges
+ 8 Orbital composition analysis           9 Bond order analysis
+ 10 Plot total DOS, PDOS, OPDOS, local DOS, COHP and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                       18 Electron excitation analysis
+ 19 Orbital localization analysis        20 Visual study of weak interaction
+ 21 Energy decomposition analysis        22 Conceptual DFT (CDFT) analysis
+ 23 ETS-NOCV analysis                    24 (Hyper)polarizability analysis
+ 25 Electron delocalization and aromaticity analyses
+ 26 Structure and geometry related analyses
+ 100 Other functions (Part 1)            200 Other functions (Part 2)
+ 300 Other functions (Part 3)

@@ -1,0 +1,15 @@
+%nprocshared=8
+%mem=16GB
+%chk=na6.chk
+#p PBEPBE/def2SVP EmpiricalDispersion=GD3BJ opt freq nosymm
+
+Golden sample: s-block Na6 C5v pentagonal pyramid (closed-shell singlet)
+
+0 1
+Na   0.000000   0.000000   1.650000
+Na   3.000000   0.000000   0.000000
+Na   0.927051   2.853170   0.000000
+Na  -2.427051   1.763356   0.000000
+Na  -2.427051  -1.763356   0.000000
+Na   0.927051  -2.853170   0.000000
+

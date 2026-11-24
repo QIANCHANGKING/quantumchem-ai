@@ -1,0 +1,11 @@
+# Bilingual (ZH / EN) Computational Methods templates parameterized by actual calculation settings.
+
+zh_template: |
+  所有团簇的初始全局结构搜索采用 {search_desc}，随后通过距离矩阵特征值指纹与构型 RMSD 去重保留低能窗口内的前 {candidate_k} 个异构体。
+  量子化学计算全部使用 {program} 程序完成：筛选阶段在 {screening_level} 水平结合自适应自旋多重度扫描评估各异构体自旋态；精修阶段在 {refinement_level} 水平执行无对称性约束（nosymm）几何优化与谐振频率分析{ecp_clause_zh}{stability_clause_zh}。
+  {postprocess_clause_zh}所有计算流程、失败自愈与物理量归纳由 QuantumChem AI 结合 custodian 与 cclib 自动完成。
+
+en_template: |
+  Global structural exploration of the atomic clusters was carried out using {search_desc}, followed by distance-matrix eigenvalue fingerprinting and RMSD deduplication to retain the top {candidate_k} low-lying isomers.
+  All density functional theory (DFT) calculations were performed with {program}: initial screening and adaptive spin-multiplicity scanning were carried out at the {screening_level} level, followed by geometry optimization and harmonic vibrational frequency verification without symmetry constraints (nosymm) at the {refinement_level} level{ecp_clause_en}{stability_clause_en}.
+  {postprocess_clause_en}Automated error recovery, output parsing, and property induction were orchestrated via QuantumChem AI using custodian and cclib.

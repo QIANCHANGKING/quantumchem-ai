@@ -1,0 +1,22 @@
+[
+    {
+        "job": {
+            "@module": "custodian.gaussian.jobs",
+            "@class": "GaussianJob",
+            "@version": "2026.10.21",
+            "gaussian_cmd": "g16 < job.gjf",
+            "input_file": "job.gjf",
+            "output_file": "job.log",
+            "stderr_file": "job.err",
+            "suffix": "",
+            "backup": true
+        },
+        "corrections": [],
+        "handler": null,
+        "validator": null,
+        "max_errors": false,
+        "max_errors_per_job": false,
+        "max_errors_per_handler": false,
+        "nonzero_return_code": false
+    }
+]

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>{{ title }}</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 16mm 20mm 16mm;
+  }
+  body {
+    font-family: "Microsoft YaHei", "SimSun", "Noto Sans CJK SC", sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: #1e293b;
+  }
+  .cover {
+    page-break-after: always;
+    padding-top: 48mm;
+    text-align: center;
+  }
+  .cover h1 {
+    font-size: 24pt;
+    color: #0f2c59;
+    margin-bottom: 10mm;
+  }
+  .cover .meta {
+    font-size: 11.5pt;
+    color: #475569;
+    margin-top: 6mm;
+  }
+  h2 {
+    color: #0f2c59;
+    border-bottom: 2px solid #0f2c59;
+    padding-bottom: 3px;
+    margin-top: 18px;
+    page-break-after: avoid;
+  }
+  h3 {
+    color: #1e3a8a;
+    margin-top: 14px;
+    page-break-after: avoid;
+  }
+  .toc {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    padding: 12px 18px;
+    margin-bottom: 18px;
+  }
+  .toc ul { margin: 6px 0; padding-left: 18px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 16px 0;
+    font-size: 9pt;
+  }
+  th, td {
+    border: 1px solid #cbd5e1;
+    padding: 5px 8px;
+    text-align: left;
+  }
+  th { background: #e2e8f0; color: #0f172a; }
+  .figure-box {
+    margin: 14px 0;
+    text-align: center;
+    page-break-inside: avoid;
+  }
+  .figure-box svg {
+    max-width: 96%;
+    height: auto;
+  }
+  .figure-box img {
+    max-width: 92%;
+    max-height: 110mm;
+  }
+  .caption {
+    font-size: 9pt;
+    color: #475569;
+    margin-top: 4px;
+  }
+  .issue-warn {
+    background: #fffbeb;
+    border-left: 4px solid #d97706;
+    padding: 6px 10px;
+    margin: 6px 0;
+  }
+  .issue-err {
+    background: #fef2f2;
+    border-left: 4px solid #dc2626;
+    padding: 6px 10px;
+    margin: 6px 0;
+  }
+  pre {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 8px;
+    font-size: 8.5pt;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  .page-break { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>{{ title }}</h1>
+  <div class="meta">项目编号：<code>{{ project_id }}</code></div>
+  <div class="meta">生成时间：{{ generated_at }}</div>
+  <div class="meta">生成引擎：QuantumChem AI（数值全由程序解析，严禁大模型生成数值）</div>
+</div>
+
+<div class="toc">
+  <strong>目录</strong>
+  <ul>
+    <li><a href="#sec-summary">1. 结论摘要</a></li>
+    <li><a href="#sec-methods">2. 计算方法（中 / 英文）</a></li>
+    <li><a href="#sec-results">3. 计算结果与可视化</a></li>
+    <li><a href="#sec-issues">4. 问题与说明</a></li>
+    <li><a href="#sec-appendix">5. 附录（全部作业数据表与基态坐标）</a></li>
+    <li><a href="#sec-refs">6. 参考文献</a></li>
+  </ul>
+</div>
+
+<h2 id="sec-summary">1. 结论摘要</h2>
+<p>{{ summary_text }}</p>
+{% if ai_interpretation %}
+<div class="toc">
+  <strong>AI 辅助解读（已通过数值校验）：</strong>
+  <p>{{ ai_interpretation }}</p>
+</div>
+{% endif %}
+
+<h2 id="sec-methods">2. 计算方法</h2>
+<h3>2.1 中文方法学</h3>
+<p>{{ methods_zh }}</p>
+<h3>2.2 Computational Methods (English)</h3>
+<p>{{ methods_en }}</p>
+
+<h2 id="sec-results">3. 计算结果与可视化</h2>
+{% for cs in cluster_list %}
+<h3>3.{{ loop.index }} 体系：{{ cs.cluster_label }}（q={{ cs.charge }}, 基态 M={{ cs.ground_state_multiplicity }}）</h3>
+<table>
+  <tr>
+    <th>基态作业</th>
+    <th>基态总能量 (Ha)</th>
+    <th>平均结合能 Eb (eV/atom)</th>
+    <th>HOMO–LUMO 能隙 (eV)</th>
+    <th>价电子数（幻数）</th>
+    <th>总磁矩 (μB)</th>
+  </tr>
+  <tr>
+    <td><code>{{ cs.ground_state_job_id }}</code></td>
+    <td>{{ "%.6f"|format(cs.ground_state_energy_hartree) }}</td>
+    <td>{{ "%.3f"|format(cs.binding_energy_ev_per_atom) if cs.binding_energy_ev_per_atom is not none else "—" }}</td>
+    <td>{{ "%.3f"|format(cs.homo_lumo_gap_ev) if cs.homo_lumo_gap_ev is not none else "—" }}</td>
+    <td>{{ cs.valence_electrons }}（{{ "闭壳层幻数" if cs.jellium_magic else "非幻数" }}）</td>
+    <td>{{ "%.2f"|format(cs.magnetic_moment_mu_b) }}</td>
+  </tr>
+</table>
+{% endfor %}
+
+{% for fig in figures %}
+<div class="figure-box">
+  {% if fig.inline_svg %}
+    {{ fig.inline_svg | safe }}
+  {% elif fig.img_uri %}
+    <img src="{{ fig.img_uri }}" alt="{{ fig.caption }}" />
+  {% endif %}
+  <div class="caption">图 {{ loop.index }}：{{ fig.caption }}</div>
+</div>
+{% endfor %}
+
+<h2 id="sec-issues">4. 问题与说明</h2>
+{% if fixes %}
+<h3>4.1 自动自愈修复记录（custodian）</h3>
+<ul>
+  {% for fix in fixes %}
+  <li><code>{{ fix.job_id }}</code>：{{ fix.detail }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>本次计算未触发失败修复重启。</p>
+{% endif %}
+
+{% if issues %}
+<h3>4.2 异常与物理校验标记</h3>
+{% for iss in issues %}
+<div class="{{ 'issue-err' if iss.severity == 'error' else 'issue-warn' }}">
+  <strong>[{{ iss.code }}]</strong> <code>{{ iss.job_id }}</code> — {{ iss.message }}
+</div>
+{% endfor %}
+{% else %}
+<p>全部作业均正常结束，无未处理虚频、波函数不稳定或严重自旋污染。</p>
+{% endif %}
+
+<p><strong>搜索范围局限说明：</strong>结构搜索覆盖的能量窗口内候选异构体受计算预算与候选数 K 限制；对于多组分与大尺寸团簇，仍可能存在未采样到的亚稳态构型。</p>
+
+<h2 id="sec-appendix" class="page-break">5. 附录</h2>
+<h3>5.1 全部计算作业汇总表</h3>
+<table>
+  <tr>
+    <th>作业 ID</th>
+    <th>正常结束</th>
+    <th>电荷 / 多重度</th>
+    <th>总能量 (Ha)</th>
+    <th>ZPE (Ha)</th>
+    <th>&lt;S²&gt; (前/后)</th>
+    <th>虚频数</th>
+  </tr>
+  {% for r in results %}
+  <tr>
+    <td><code>{{ r.job_id }}</code></td>
+    <td>{{ "✅" if r.normal_termination else "❌ " + (r.error_code or "") }}</td>
+    <td>{{ r.state.charge }} / {{ r.state.multiplicity }}</td>
+    <td>{{ "%.6f"|format(r.energy_hartree) if r.energy_hartree is not none else "—" }}</td>
+    <td>{{ "%.6f"|format(r.zpe_hartree) if r.zpe_hartree is not none else "—" }}</td>
+    <td>{{ "%.4f"|format(r.s2_before) if r.s2_before is not none else "—" }} / {{ "%.4f"|format(r.s2_after) if r.s2_after is not none else "—" }}</td>
+    <td>{{ r.imag_freqs|length }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% for cs in cluster_list %}
+{% if cs.ground_state_geometry %}
+<h3>5.2 {{ cs.cluster_label }} 基态笛卡尔坐标 (Å)</h3>
+<pre>{{ cs.ground_state_geometry.symbols|length }}
+{{ cs.cluster_label }} (q={{ cs.charge }}, M={{ cs.ground_state_multiplicity }}, E={{ "%.8f"|format(cs.ground_state_energy_hartree) }} Ha)
+{% for sym, pos in cs.ground_state_geometry.symbols|zip_lists(cs.ground_state_geometry.positions) %}{{ "%-4s %12.6f %12.6f %12.6f"|format(sym, pos[0], pos[1], pos[2]) }}
+{% endfor %}</pre>
+{% endif %}
+{% endfor %}
+
+<h2 id="sec-refs">6. 参考文献</h2>
+<ol>
+  {% for ref in references %}
+  <li>{{ ref }}</li>
+  {% endfor %}
+</ol>
+
+</body>
+</html>

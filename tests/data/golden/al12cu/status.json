@@ -1,0 +1,11 @@
+{
+  "job_id": "al12cu",
+  "state": "done",
+  "phase": "finished",
+  "pid": 901791,
+  "attempts": 1,
+  "fixes": [],
+  "needs_human": false,
+  "error": null,
+  "updated_at": "2026-11-18T10:02:52.223285+00:00"
+}

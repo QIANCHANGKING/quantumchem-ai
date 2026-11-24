@@ -1,0 +1,17 @@
+%nprocshared=4
+%mem=8GB
+%chk=link1_stable_opt.chk
+#p UPBE1PBE/def2SVP stable=opt nosymm
+
+Golden sample Link1 step 1: Ni2 stability check and re-optimization
+
+0 3
+Ni   0.000000   0.000000  -1.100000
+Ni   0.000000   0.000000   1.100000
+
+--Link1--
+%nprocshared=4
+%mem=8GB
+%chk=link1_stable_opt.chk
+#p UPBE1PBE/def2SVP geom=allcheck guess=read freq nosymm
+

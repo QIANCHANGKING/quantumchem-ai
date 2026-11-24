@@ -1,0 +1,16 @@
+# Spin multiplicity scan rules (Section 5.2)
+
+defaults:
+  min_states: 2
+  main_group_cap: 6
+  transition_metal_cap: 12
+  early_stop_ev: 0.50
+  consecutive_high_states: 2
+  expand_at_boundary: true
+
+rules:
+  - id: rule.mult.parity_and_atomic_sum
+    reason: "多重度序列由电子数奇偶性决定（N偶⇔M奇，N奇⇔M偶），上限受各原子基态未成对电子数之和与类别上限约束，连续两态高于最低态 0.5 eV 提前终止"
+    refs:
+      - "Szabo, Ostlund, Modern Quantum Chemistry"
+      - "ASE atomic ground_state_magnetic_moments"

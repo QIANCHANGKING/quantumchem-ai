@@ -1,0 +1,11 @@
+{
+  "job_id": "link1_stable_opt",
+  "state": "done",
+  "phase": "finished",
+  "pid": 990771,
+  "attempts": 1,
+  "fixes": [],
+  "needs_human": false,
+  "error": null,
+  "updated_at": "2026-11-18T10:22:34.827212+00:00"
+}

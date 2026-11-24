@@ -1,0 +1,8 @@
+﻿project_id,title,job_id,stage,cluster_label,multiplicity,fixes
+proj_19154707,Tb@Au₅ 电子结构刚性研究,proj_19154707__s3__TbAu5_q0_i3_m7,S3_screen,TbAu5_9,7,"[""errors=['scf_convergence'] -> actions=[{'scf_strategy': 'scf=(yqc,maxcycle=512,vshift=500)'}]""]"
+proj_19154707,Tb@Au₅ 电子结构刚性研究,proj_19154707__s4__TbAu5_q0_i0_m9,S4_refine,TbAu5_19,9,"[""errors=['imaginary_freq'] -> actions=[{'action': 'perturb_along_imag_mode', 'step_scale': 0.25}]""]"
+proj_7a0ee451,Dy@Au₅ 电子结构刚性研究,proj_7a0ee451__s3__DyAu5_q0_i1_m10,S3_screen,DyAu5_1,10,"[""errors=['scf_convergence'] -> actions=[{'scf_strategy': 'scf=(yqc,maxcycle=512,vshift=500)'}]""]"
+proj_7a0ee451,Dy@Au₅ 电子结构刚性研究,proj_7a0ee451__s3__DyAu5_q0_i2_m2,S3_screen,DyAu5_2,2,"[""errors=['scf_convergence'] -> actions=[{'scf_strategy': 'scf=(yqc,maxcycle=512,vshift=500)'}]""]"
+proj_7a0ee451,Dy@Au₅ 电子结构刚性研究,proj_7a0ee451__s4__DyAu5_q0_i4_m6,S4_refine,DyAu5_4,6,"[""errors=['opt_steps'] -> actions=[{'structure': 'from_final_structure'}, {'opt_max_cycles': 100}]""]"
+proj_fa892f93,Er@Au₅ 电子结构刚性研究,proj_fa892f93__s3__ErAu5_q0_i1_m8,S3_screen,ErAu5_1,8,"[""errors=['scf_convergence'] -> actions=[{'scf_strategy': 'scf=(yqc,maxcycle=512,vshift=500)'}]""]"
+proj_fa892f93,Er@Au₅ 电子结构刚性研究,proj_fa892f93__s3__ErAu5_q0_i7_m8,S3_screen,ErAu5_7,8,"[""errors=['scf_convergence'] -> actions=[{'scf_strategy': 'scf=(yqc,maxcycle=512,vshift=500)'}]""]"

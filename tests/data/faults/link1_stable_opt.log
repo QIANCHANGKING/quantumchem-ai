@@ -1,0 +1,38 @@
+ Entering Gaussian System, Link 0=g16
+ Entering Link 1 = /opt/g16/l1.exe PID=   12348.
+ #p UPBE1PBE/def2SVP stable=opt nosymm
+
+ Step 1 stability check
+
+ 0 3
+                         Standard orientation:
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1         28           0        0.000000    0.000000   -1.100000
+      2         28           0        0.000000    0.000000    1.100000
+ ---------------------------------------------------------------------
+ Charge =  0 Multiplicity = 3
+ SCF Done:  E(UPBE1PBE) =  -3015.50000000     A.U. after   12 cycles
+ S**2 before annihilation     2.1800,   after     2.0120
+ The wavefunction has an RHF -> UHF instability.
+ SCF Done:  E(UPBE1PBE) =  -3015.51234567     A.U. after   18 cycles
+ S**2 before annihilation     2.0600,   after     2.0015
+ The wavefunction is stable.
+ Normal termination of Gaussian 16 at Wed Nov 18 12:03:00 2026.
+ Entering Link 1 = /opt/g16/l1.exe PID=   12349.
+ #p UPBE1PBE/def2SVP geom=allcheck guess=read freq nosymm
+
+                         Standard orientation:
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1         28           0        0.000000    0.000000   -1.100000
+      2         28           0        0.000000    0.000000    1.100000
+ ---------------------------------------------------------------------
+ Charge =  0 Multiplicity = 3
+ SCF Done:  E(UPBE1PBE) =  -3015.51234567     A.U. after    4 cycles
+ S**2 before annihilation     2.0600,   after     2.0015
+ Normal termination of Gaussian 16 at Wed Nov 18 12:04:00 2026.

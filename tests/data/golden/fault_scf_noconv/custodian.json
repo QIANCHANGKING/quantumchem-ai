@@ -1,0 +1,75 @@
+[
+    {
+        "job": {
+            "@module": "custodian.gaussian.jobs",
+            "@class": "GaussianJob",
+            "@version": "2026.10.21",
+            "gaussian_cmd": "g16 < job.gjf",
+            "input_file": "job.gjf",
+            "output_file": "job.log",
+            "stderr_file": "job.err",
+            "suffix": "",
+            "backup": true
+        },
+        "corrections": [
+            {
+                "errors": [
+                    "scf_convergence"
+                ],
+                "actions": [
+                    {
+                        "scf_max_cycles": 100
+                    }
+                ],
+                "handler": {
+                    "@module": "__main__",
+                    "@class": "_SafeGaussianErrorHandler",
+                    "@version": null,
+                    "input_file": "job.gjf",
+                    "output_file": "job.log",
+                    "stderr_file": "job.err",
+                    "cart_coords": true,
+                    "scf_max_cycles": 100,
+                    "opt_max_cycles": 100,
+                    "job_type": "normal",
+                    "lower_functional": null,
+                    "lower_basis_set": null,
+                    "prefix": "error",
+                    "check_convergence": true
+                }
+            },
+            {
+                "errors": [
+                    "scf_convergence"
+                ],
+                "actions": [
+                    {
+                        "scf_algorithm": "xqc"
+                    }
+                ],
+                "handler": {
+                    "@module": "__main__",
+                    "@class": "_SafeGaussianErrorHandler",
+                    "@version": null,
+                    "input_file": "job.gjf",
+                    "output_file": "job.log",
+                    "stderr_file": "job.err",
+                    "cart_coords": true,
+                    "scf_max_cycles": 100,
+                    "opt_max_cycles": 100,
+                    "job_type": "normal",
+                    "lower_functional": null,
+                    "lower_basis_set": null,
+                    "prefix": "error",
+                    "check_convergence": true
+                }
+            }
+        ],
+        "handler": null,
+        "validator": null,
+        "max_errors": false,
+        "max_errors_per_job": true,
+        "max_errors_per_handler": false,
+        "nonzero_return_code": false
+    }
+]

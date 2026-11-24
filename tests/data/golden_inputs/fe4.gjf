@@ -1,0 +1,13 @@
+%nprocshared=8
+%mem=16GB
+%chk=fe4.chk
+#p UPBEPBE/def2SVP EmpiricalDispersion=GD3BJ opt freq nosymm scf=(xqc,maxcycle=500)
+
+Golden sample: 3d transition-metal Fe4 open-shell high-spin (M=13)
+
+0 13
+Fe   0.000000   0.000000   1.400000
+Fe   1.320000   0.000000  -0.466667
+Fe  -0.660000   1.143154  -0.466667
+Fe  -0.660000  -1.143154  -0.466667
+

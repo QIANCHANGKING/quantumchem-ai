@@ -1,0 +1,55 @@
+samples:
+  - file: na6.gjf
+    category: s-block
+    charge: 0
+    multiplicity: 1
+    expected_normal: true
+  - file: al13_anion.gjf
+    category: p-block
+    charge: -1
+    multiplicity: 1
+    expected_normal: true
+  - file: fe4.gjf
+    category: 3d-high-spin
+    charge: 0
+    multiplicity: 13
+    expected_normal: true
+  - file: w_au12.gjf
+    category: 5d-ecp-endohedral
+    charge: 0
+    multiplicity: 1
+    expected_normal: true
+  - file: cu3ag3.gjf
+    category: bimetallic-ecp
+    charge: 0
+    multiplicity: 1
+    expected_normal: true
+  - file: al12cu.gjf
+    category: doped-open-shell
+    charge: 0
+    multiplicity: 2
+    expected_normal: true
+  - file: fault_scf_noconv.gjf
+    category: fault-scf
+    charge: 0
+    multiplicity: 5
+    expected_normal: false
+    expected_error_code: L502
+  - file: fault_opt_maxsteps.gjf
+    category: fault-maxsteps
+    charge: 0
+    multiplicity: 2
+    expected_normal: false
+    expected_error_code: L9999
+  - file: fault_imag_freq.gjf
+    category: fault-imag-freq
+    charge: 0
+    multiplicity: 1
+    expected_normal: true
+    expected_imag_freq: true
+  - file: link1_stable_opt.gjf
+    category: link1-stable-opt
+    charge: 0
+    multiplicity: 3
+    expected_normal: true
+    expected_link1_sections: 2

@@ -1,0 +1,13 @@
+%nprocshared=4
+%mem=8GB
+%chk=fault_scf_noconv.chk
+#p UPBE1PBE/def2SVP scf=(maxcycle=2,novaracc) nosymm
+
+Fault golden sample: intentional SCF non-convergence (L502)
+
+0 5
+Fe   0.000000   0.000000   1.400000
+Fe   1.320000   0.000000  -0.466667
+Fe  -0.660000   1.143154  -0.466667
+Fe  -0.660000  -1.143154  -0.466667
+

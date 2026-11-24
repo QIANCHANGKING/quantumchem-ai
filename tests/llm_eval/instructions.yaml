@@ -1,0 +1,202 @@
+# 50 Chinese research instructions covering all periodic-table regions, recipes, budgets, and ambiguous inputs.
+instructions:
+  - id: 1
+    text: "研究 Na6 团簇的结构与稳定性，标准精度"
+    needs_clarification: false
+    expected: {composition: {Na: 6}, recipes: [stability], accuracy: standard}
+  - id: 2
+    text: "计算 Li8 团簇的电子结构，看看它是不是幻数团簇"
+    needs_clarification: false
+    expected: {composition: {Li: 8}, recipes: [electronic], accuracy: standard}
+  - id: 3
+    text: "快速评估 K4 团簇的基态结构"
+    needs_clarification: false
+    expected: {composition: {K: 4}, recipes: [stability], accuracy: fast}
+  - id: 4
+    text: "高精度计算 Na8 团簇的稳定性和电子结构"
+    needs_clarification: false
+    expected: {composition: {Na: 8}, recipes: [stability, electronic], accuracy: high}
+  - id: 5
+    text: "分析 Na4 到 Na8 团簇的尺寸演化规律，预算 10 小时"
+    needs_clarification: false
+    expected: {composition: {Na: [4, 8]}, recipes: [size_evolution], accuracy: standard, time_budget_hours: 10.0}
+  - id: 6
+    text: "计算 B12 团簇的电子结构和稳定性"
+    needs_clarification: false
+    expected: {composition: {B: 12}, recipes: [electronic, stability], accuracy: standard}
+  - id: 7
+    text: "研究 Al13 阴离子（电荷 -1）的电子结构与能隙"
+    needs_clarification: false
+    expected: {composition: {Al: 13}, charges: [-1], recipes: [electronic], accuracy: standard}
+  - id: 8
+    text: "计算 Si10 团簇的结构稳定性，高精度"
+    needs_clarification: false
+    expected: {composition: {Si: 10}, recipes: [stability], accuracy: high}
+  - id: 9
+    text: "对比 Si6 的光电子能谱 VDE 和 ADE"
+    needs_clarification: false
+    expected: {composition: {Si: 6}, recipes: [pes], accuracy: standard}
+  - id: 10
+    text: "计算 Ge8 团簇的电离能和电子亲和能"
+    needs_clarification: false
+    expected: {composition: {Ge: 8}, recipes: [ionization], accuracy: standard}
+  - id: 11
+    text: "分析 Al5 到 Al13 团簇的尺寸演化与稳定性"
+    needs_clarification: false
+    expected: {composition: {Al: [5, 13]}, recipes: [size_evolution, stability], accuracy: standard}
+  - id: 12
+    text: "计算 Fe4 团簇的磁性与自旋态分布"
+    needs_clarification: false
+    expected: {composition: {Fe: 4}, recipes: [magnetism], accuracy: standard}
+  - id: 13
+    text: "研究 Co6 团簇的结构稳定性与磁矩，高精度"
+    needs_clarification: false
+    expected: {composition: {Co: 6}, recipes: [stability, magnetism], accuracy: high}
+  - id: 14
+    text: "研究 Ni 掺杂 Al6 到 Al13（Al6-13Ni）的稳定性和磁性，标准精度，预算 12 小时"
+    needs_clarification: false
+    expected: {composition: {Al: [6, 13], Ni: 1}, recipes: [stability, magnetism], accuracy: standard, time_budget_hours: 12.0}
+  - id: 15
+    text: "计算 Ti 掺杂 Si12（TiSi12）的电子结构和稳定性"
+    needs_clarification: false
+    expected: {composition: {Ti: 1, Si: 12}, recipes: [electronic, stability], accuracy: standard}
+  - id: 16
+    text: "快速筛选 Cr3 团簇的磁性"
+    needs_clarification: false
+    expected: {composition: {Cr: 3}, recipes: [magnetism], accuracy: fast}
+  - id: 17
+    text: "计算 Mn4 团簇的自旋多重度阶梯，预算 6 小时"
+    needs_clarification: false
+    expected: {composition: {Mn: 4}, recipes: [magnetism], accuracy: standard, time_budget_hours: 6.0}
+  - id: 18
+    text: "研究 Cu6 团簇的结构与光电子能谱对比"
+    needs_clarification: false
+    expected: {composition: {Cu: 6}, recipes: [stability, pes], accuracy: standard}
+  - id: 19
+    text: "计算 V2Al6 团簇的电子结构与磁性"
+    needs_clarification: false
+    expected: {composition: {V: 2, Al: 6}, recipes: [electronic, magnetism], accuracy: standard}
+  - id: 20
+    text: "研究 Pd6 团簇的结构稳定性"
+    needs_clarification: false
+    expected: {composition: {Pd: 6}, recipes: [stability], accuracy: standard}
+  - id: 21
+    text: "高精度计算 Pt4 团簇的稳定性与电子结构"
+    needs_clarification: false
+    expected: {composition: {Pt: 4}, recipes: [stability, electronic], accuracy: high}
+  - id: 22
+    text: "研究 Au8 团簇的光电子能谱与电子结构"
+    needs_clarification: false
+    expected: {composition: {Au: 8}, recipes: [pes, electronic], accuracy: standard}
+  - id: 23
+    text: "计算 W@Au12 内嵌团簇的电子结构和超原子闭壳层性质"
+    needs_clarification: false
+    expected: {composition: {W: 1, Au: 12}, recipes: [electronic], accuracy: standard}
+  - id: 24
+    text: "计算 Rh5 团簇的磁性与结构稳定性，预算 15 小时"
+    needs_clarification: false
+    expected: {composition: {Rh: 5}, recipes: [magnetism, stability], accuracy: standard, time_budget_hours: 15.0}
+  - id: 25
+    text: "研究 MoAu5 团簇的电子结构与电离能"
+    needs_clarification: false
+    expected: {composition: {Mo: 1, Au: 5}, recipes: [electronic, ionization], accuracy: standard}
+  - id: 26
+    text: "快速计算 Ag6 团簇的稳定性"
+    needs_clarification: false
+    expected: {composition: {Ag: 6}, recipes: [stability], accuracy: fast}
+  - id: 27
+    text: "研究 Cu3Ag3 双金属合金团簇的稳定性和电子结构"
+    needs_clarification: false
+    expected: {composition: {Cu: 3, Ag: 3}, recipes: [stability, electronic], accuracy: standard}
+  - id: 28
+    text: "计算 Au4Ag4 双金属团簇的混合能与稳定性，高精度"
+    needs_clarification: false
+    expected: {composition: {Au: 4, Ag: 4}, recipes: [stability], accuracy: high}
+  - id: 29
+    text: "研究 Pt2Au4 合金团簇的电子结构与光电子能谱对比"
+    needs_clarification: false
+    expected: {composition: {Pt: 2, Au: 4}, recipes: [electronic, pes], accuracy: standard}
+  - id: 30
+    text: "分析 Cu2Pd4 双金属团簇的磁性与稳定性"
+    needs_clarification: false
+    expected: {composition: {Cu: 2, Pd: 4}, recipes: [magnetism, stability], accuracy: standard}
+  - id: 31
+    text: "研究 Gd 掺杂 Al12（GdAl12）团簇的磁性"
+    needs_clarification: false
+    expected: {composition: {Gd: 1, Al: 12}, recipes: [magnetism], accuracy: standard}
+  - id: 32
+    text: "快速评估 Eu 掺杂 Au6（EuAu6）的稳定性与自旋性质"
+    needs_clarification: false
+    expected: {composition: {Eu: 1, Au: 6}, recipes: [stability, magnetism], accuracy: fast}
+  - id: 33
+    text: "计算 CeSi10 团簇的电子结构，预算 24 小时"
+    needs_clarification: false
+    expected: {composition: {Ce: 1, Si: 10}, recipes: [electronic], accuracy: standard, time_budget_hours: 24.0}
+  - id: 34
+    text: "研究 C10 团簇的稳定性与电离能，标准精度"
+    needs_clarification: false
+    expected: {composition: {C: 10}, recipes: [stability, ionization], accuracy: standard}
+  - id: 35
+    text: "计算 Mg6 团簇的电离能和电子亲和能，高精度"
+    needs_clarification: false
+    expected: {composition: {Mg: 6}, recipes: [ionization], accuracy: high}
+  - id: 36
+    text: "分析 Au3 到 Au8 的尺寸演化性质，预算 18 小时"
+    needs_clarification: false
+    expected: {composition: {Au: [3, 8]}, recipes: [size_evolution], accuracy: standard, time_budget_hours: 18.0}
+  - id: 37
+    text: "研究 Fe 掺杂 Au5（FeAu5）的磁矩与自旋布居"
+    needs_clarification: false
+    expected: {composition: {Fe: 1, Au: 5}, recipes: [magnetism], accuracy: standard}
+  - id: 38
+    text: "计算 CoAl6 阳离子（电荷 +1）的电子结构与稳定性"
+    needs_clarification: false
+    expected: {composition: {Co: 1, Al: 6}, charges: [1], recipes: [electronic, stability], accuracy: standard}
+  - id: 39
+    text: "研究 Ni4 阴离子（电荷 -1）的光电子能谱与磁性"
+    needs_clarification: false
+    expected: {composition: {Ni: 4}, charges: [-1], recipes: [pes, magnetism], accuracy: standard}
+  - id: 40
+    text: "快速扫描 Ga8 团簇的结构稳定性，预算 4 小时"
+    needs_clarification: false
+    expected: {composition: {Ga: 8}, recipes: [stability], accuracy: fast, time_budget_hours: 4.0}
+  - id: 41
+    text: "计算 Ru3Cu3 双金属团簇的磁性、电子结构与稳定性"
+    needs_clarification: false
+    expected: {composition: {Ru: 3, Cu: 3}, recipes: [magnetism, electronic, stability], accuracy: standard}
+  - id: 42
+    text: "研究 Zn8 团簇的稳定性与电子结构"
+    needs_clarification: false
+    expected: {composition: {Zn: 8}, recipes: [stability, electronic], accuracy: standard}
+  - id: 43
+    text: "帮我算一个金属团簇的稳定性"
+    needs_clarification: true
+    expected: null
+  - id: 44
+    text: "算一下金团簇，看看磁性怎么样"
+    needs_clarification: true
+    expected: null
+  - id: 45
+    text: "我想研究铝镍合金团簇，高精度"
+    needs_clarification: true
+    expected: null
+  - id: 46
+    text: "跑一下结构搜索和性质分析"
+    needs_clarification: true
+    expected: null
+  - id: 47
+    text: "用 DFT 算几个小团簇对比一下能隙"
+    needs_clarification: true
+    expected: null
+  - id: 48
+    text: "帮我看看 Fe 团簇的光电子能谱"
+    needs_clarification: true
+    expected: null
+  - id: 49
+    text: "做一下硅团簇尺寸演化，大概 8 小时"
+    needs_clarification: true
+    expected: null
+  - id: 50
+    text: "把上次那个结果重新算一下"
+    needs_clarification: true
+    expected: null

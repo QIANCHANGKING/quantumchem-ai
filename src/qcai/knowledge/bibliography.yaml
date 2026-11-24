@@ -1,0 +1,39 @@
+# Literature citations automatically included based on actual programs and methods used (Section 6.8).
+
+entries:
+  gaussian16:
+    key: "Gaussian16"
+    citation: "Frisch, M. J.; Trucks, G. W.; Schlegel, H. B.; Scuseria, G. E.; Robb, M. A.; Cheeseman, J. R.; Scalmani, G.; Barone, V.; Petersson, G. A.; Nakatsuji, H.; et al. Gaussian 16, Revision C.02; Gaussian, Inc.: Wallingford, CT, 2019."
+  pbe:
+    key: "PBE"
+    citation: "Perdew, J. P.; Burke, K.; Ernzerhof, M. Generalized Gradient Approximation Made Simple. Phys. Rev. Lett. 1996, 77, 3865–3868. DOI: 10.1103/PhysRevLett.77.3865."
+  pbe0:
+    key: "PBE0"
+    citation: "Adamo, C.; Barone, V. Toward reliable density functional methods without adjustable parameters: The PBE0 model. J. Chem. Phys. 1999, 110, 6158–6170. DOI: 10.1063/1.478522."
+  tpssh:
+    key: "TPSSh"
+    citation: "Staroverov, V. N.; Scuseria, G. E.; Tao, J.; Perdew, J. P. Comparative assessment of a new nonempirical density functional: Molecules and hydrogen-bonded complexes. J. Chem. Phys. 2003, 119, 12129–12137. DOI: 10.1063/1.1626543."
+  d3bj:
+    key: "D3BJ"
+    citation: "Grimme, S.; Ehrlich, S.; Goerigk, L. Effect of the damping function in dispersion corrected density functional theory. J. Comput. Chem. 2011, 32, 1456–1465. DOI: 10.1002/jcc.21759."
+  def2:
+    key: "def2-ECP"
+    citation: "Weigend, F.; Ahlrichs, R. Balanced basis sets of split valence, triple zeta valence and quadruple zeta valence quality for H to Rn: Design and assessment of accuracy. Phys. Chem. Chem. Phys. 2005, 7, 3297–3305. DOI: 10.1039/B508541A."
+  abcluster:
+    key: "ABCluster"
+    citation: "Zhang, J.; Dolg, M. ABCluster: the artificial bee colony algorithm for cluster global optimization. Phys. Chem. Chem. Phys. 2015, 17, 24173–24181. DOI: 10.1039/C5CP04060D."
+  xtb:
+    key: "GFN2-xTB"
+    citation: "Bannwarth, C.; Ehlert, S.; Grimme, S. GFN2-xTB—An Accurate and Broadly Parametrized Self-Consistent Tight-Binding Quantum Chemical Method with Multipole Electrostatics and Density-Dependent Dispersion Contributions. J. Chem. Theory Comput. 2019, 15, 1652–1671. DOI: 10.1021/acs.jctc.8b01176."
+  multiwfn:
+    key: "Multiwfn"
+    citation: "Lu, T.; Chen, F. Multiwfn: A multifunctional wavefunction analyzer. J. Comput. Chem. 2012, 33, 580–592. DOI: 10.1002/jcc.22885."
+  vmd:
+    key: "VMD"
+    citation: "Humphrey, W.; Dalke, A.; Schulten, K. VMD: Visual molecular dynamics. J. Mol. Graphics 1996, 14, 33–38. DOI: 10.1016/0263-7855(96)00018-5."
+  cclib:
+    key: "cclib"
+    citation: "O'Boyle, N. M.; Tenderholt, A. L.; Langner, K. M. cclib: A library for package-independent computational chemistry algorithms. J. Comput. Chem. 2008, 29, 839–845. DOI: 10.1002/jcc.20823."
+  custodian:
+    key: "custodian"
+    citation: "Ong, S. P.; Richards, W. D.; Jain, A.; Hautier, G.; Kocher, M.; Cholia, S.; Gunter, D.; Chevrier, V. L.; Persson, K. A.; Ceder, G. Python Materials Genomics (pymatgen): A robust, open-source python library for materials analysis. Comput. Mater. Sci. 2013, 68, 314–319. DOI: 10.1016/j.commatsci.2012.10.028."

@@ -1,0 +1,11 @@
+{
+  "job_id": "cu3ag3",
+  "state": "done",
+  "phase": "finished",
+  "pid": 900516,
+  "attempts": 1,
+  "fixes": [],
+  "needs_human": false,
+  "error": null,
+  "updated_at": "2026-11-18T09:35:27.389415+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "job_id": "na6",
+  "state": "done",
+  "phase": "finished",
+  "pid": 892665,
+  "attempts": 1,
+  "fixes": [],
+  "needs_human": false,
+  "error": null,
+  "updated_at": "2026-11-18T09:25:11.862387+00:00"
+}

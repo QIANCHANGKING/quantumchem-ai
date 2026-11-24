@@ -1,0 +1,31 @@
+ Entering Gaussian System, Link 0=g16
+ Entering Link 1 = /opt/g16/l1.exe PID=   12347.
+ #p PBE1PBE/def2SVP freq nosymm
+
+ Planar Au4 saddle point with imaginary frequency
+
+ 0 1
+                         Standard orientation:
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1         79           0       -1.350000    0.000000    0.000000
+      2         79           0        1.350000    0.000000    0.000000
+      3         79           0        0.000000    1.350000    0.000000
+      4         79           0        0.000000   -1.350000    0.000000
+ ---------------------------------------------------------------------
+ Charge =  0 Multiplicity = 1
+ SCF Done:  E(RPBE1PBE) =  -542.11122233     A.U. after   11 cycles
+ Harmonic frequencies (cm**-1), IR intensities (KM/Mole), Raman scattering
+ activities (A**4/AMU), depolarization ratios for plane and unpolarized
+ incident light, reduced masses (AMU), force constants (mDyne/A),
+ and normal coordinates:
+                      1                      2                      3
+                      A                      A                      A
+ Frequencies --    -84.2150                45.1200                92.3400
+ Red. masses --    196.9665               196.9665               196.9665
+ Frc consts  --      0.8221                 0.2361                 0.9892
+ IR Inten    --      0.0000                 0.0000                 0.0000
+ Zero-point correction=                           0.001250 (Hartree/Particle)
+ Normal termination of Gaussian 16 at Wed Nov 18 12:02:00 2026.

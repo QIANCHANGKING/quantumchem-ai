@@ -1,0 +1,13 @@
+%nprocshared=4
+%mem=8GB
+%chk=fault_imag_freq.chk
+#p PBEPBE/def2SVP freq nosymm
+
+Fault golden sample: D4h square Au4 saddle point with imaginary frequency
+
+0 1
+Au  -1.350000   0.000000   0.000000
+Au   1.350000   0.000000   0.000000
+Au   0.000000   1.350000   0.000000
+Au   0.000000  -1.350000   0.000000
+

@@ -1,0 +1,24 @@
+ Entering Gaussian System, Link 0=g16
+ Entering Link 1 = /opt/g16/l1.exe PID=   12346.
+ #p PBEPBE/def2SVP opt=(maxcycles=2) nosymm
+
+ Cu3Ag3 maxsteps test
+
+ 0 1
+                         Standard orientation:
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1         29           0        0.000000    0.000000    0.000000
+      2         29           0        2.500000    0.000000    0.000000
+      3         29           0        1.250000    2.165064    0.000000
+      4         47           0        1.250000    0.721688    2.100000
+      5         47           0       -1.250000    0.721688    2.100000
+      6         47           0        3.750000    0.721688    2.100000
+ ---------------------------------------------------------------------
+ Charge =  0 Multiplicity = 1
+ SCF Done:  E(RPBEPBE) =  -5361.98765432     A.U. after   14 cycles
+ Optimization stopped.
+    -- Number of steps exceeded,  NStep=   2
+ Error termination via Lnk1e in /opt/g16/l9999.exe at Wed Nov 18 12:01:00 2026.

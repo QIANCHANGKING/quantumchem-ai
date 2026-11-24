@@ -1,0 +1,27 @@
+ Entering Gaussian System, Link 0=g16
+ Entering Link 1 = /opt/g16/l1.exe PID=   12345.
+ #p UPBE1PBE/def2SVP scf=(maxcycle=2) nosymm
+
+ Fe4 SCF test
+
+ 0 5
+ Fe                 0.000000    0.000000    1.400000
+ Fe                 1.320000    0.000000   -0.466667
+ Fe                -0.660000    1.143154   -0.466667
+ Fe                -0.660000   -1.143154   -0.466667
+
+                         Standard orientation:
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1         26           0        0.000000    0.000000    1.400000
+      2         26           0        1.320000    0.000000   -0.466667
+      3         26           0       -0.660000    1.143154   -0.466667
+      4         26           0       -0.660000   -1.143154   -0.466667
+ ---------------------------------------------------------------------
+ Charge =  0 Multiplicity = 5
+ >>>>>>>>>> Convergence criterion not met.
+ SCF Done:  E(UPBE1PBE) =  -5054.12345678     A.U. after    2 cycles
+ Convergence failure -- run terminated.
+ Error termination via Lnk1e in /opt/g16/l502.exe at Wed Nov 18 12:00:00 2026.

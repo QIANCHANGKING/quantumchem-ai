@@ -1,0 +1,14 @@
+{
+  "job_id": "fault_scf_noconv",
+  "state": "failed",
+  "phase": "g16",
+  "pid": 954487,
+  "attempts": 3,
+  "fixes": [
+    "errors=['scf_convergence'] -> actions=[{'scf_max_cycles': 100}]",
+    "errors=['scf_convergence'] -> actions=[{'scf_algorithm': 'xqc'}]"
+  ],
+  "needs_human": true,
+  "error": "MaxCorrectionsPerJobError: Max errors per job reached: 2.",
+  "updated_at": "2026-11-18T10:08:24.898270+00:00"
+}

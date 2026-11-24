@@ -1,0 +1,13 @@
+{
+  "job_id": "fault_opt_maxsteps",
+  "state": "done",
+  "phase": "finished",
+  "pid": 956278,
+  "attempts": 2,
+  "fixes": [
+    "errors=['opt_steps'] -> actions=[{'structure': 'from_final_structure'}, {'opt_max_cycles': 100}]"
+  ],
+  "needs_human": false,
+  "error": null,
+  "updated_at": "2026-11-18T10:10:33.906640+00:00"
+}

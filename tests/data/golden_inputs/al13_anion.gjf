@@ -1,0 +1,22 @@
+%nprocshared=8
+%mem=16GB
+%chk=al13_anion.chk
+#p PBEPBE/def2SVP EmpiricalDispersion=GD3BJ opt freq nosymm
+
+Golden sample: p-block Al13- icosahedral superatom (40 valence electrons, closed-shell)
+
+-1 1
+Al   0.000000   0.000000   0.000000
+Al   0.000000   1.392461   2.253050
+Al   0.000000  -1.392461   2.253050
+Al   0.000000   1.392461  -2.253050
+Al   0.000000  -1.392461  -2.253050
+Al   1.392461   2.253050   0.000000
+Al  -1.392461   2.253050   0.000000
+Al   1.392461  -2.253050   0.000000
+Al  -1.392461  -2.253050   0.000000
+Al   2.253050   0.000000   1.392461
+Al  -2.253050   0.000000   1.392461
+Al   2.253050   0.000000  -1.392461
+Al  -2.253050   0.000000  -1.392461
+

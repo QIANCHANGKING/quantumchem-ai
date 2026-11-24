@@ -1,0 +1,38 @@
+# Research recipe declarations (Section 5.5)
+
+recipes:
+  stability:
+    title: "结构与稳定性"
+    stages: [S0_reference, S1_search, S2_dedup, S3_screen, S4_refine, S7_summary]
+    analyses: [ground_state, isomer_ranking, binding_energy, delta2_e, fragmentation_energy, doping_energetics]
+    figures: [isomer_ranking]
+  electronic:
+    title: "电子结构"
+    stages: [S0_reference, S1_search, S2_dedup, S3_screen, S4_refine, S6_postprocess, S7_summary]
+    analyses: [mo_levels, homo_lumo_gap, tdos_pdos, orbital_composition, jellium_electron_count, charge_transfer]
+    figures: [levels, dos, orbital_composition]
+  magnetism:
+    title: "磁性与自旋"
+    stages: [S0_reference, S1_search, S2_dedup, S3_screen, S4_refine, S6_postprocess, S7_summary]
+    analyses: [spin_ladder, magnetic_moment, atomic_spin_population, spin_localization, s2_contamination]
+    figures: [spin_ladder, spin, s2]
+  pes:
+    title: "光电子能谱对比"
+    stages: [S0_reference, S1_search, S2_dedup, S3_screen, S4_refine, S5_ionic, S7_summary]
+    analyses: [vde, ade, experimental_comparison]
+    figures: [vde_ade_comparison]
+  ionization:
+    title: "电离能 / 电子亲和能"
+    stages: [S0_reference, S1_search, S2_dedup, S3_screen, S4_refine, S5_ionic, S7_summary]
+    analyses: [vip, vea, aip, aea]
+    figures: [ionization_energetics]
+  size_evolution:
+    title: "尺寸演化"
+    stages: [S0_reference, S1_search, S2_dedup, S3_screen, S4_refine, S7_summary]
+    analyses: [size_trends, delta2_e, fragmentation_energy]
+    figures: [size_evolution_multipanel]
+  custom:
+    title: "自定义"
+    stages: [S0_reference, S1_search, S2_dedup, S3_screen, S4_refine, S6_postprocess, S7_summary]
+    analyses: [ground_state, mo_levels]
+    figures: [levels]

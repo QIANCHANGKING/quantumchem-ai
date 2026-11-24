@@ -1,0 +1,20 @@
+# Copy to config/settings.toml and fill in real values (config/settings.toml is gitignored).
+
+[ssh]
+host = "your-server.example.com"
+port = 22
+username = "your-username"
+key_path = "~/.ssh/id_ed25519"
+work_root = "/home/your-username/qcai_work"
+
+[origin]
+executable = "C:/Program Files/OriginLab/Origin2024b/Origin64.exe"
+
+[vmd]
+executable = "C:/Program Files/University of Illinois/VMD/vmd.exe"
+
+[deepseek]
+# Optional here; prefer storing via `keyring` or Web settings page.
+api_key = ""
+model = "deepseek-chat"
+base_url = ""

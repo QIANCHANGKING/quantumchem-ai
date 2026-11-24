@@ -1,0 +1,1 @@
+"""Web multipage application package."""

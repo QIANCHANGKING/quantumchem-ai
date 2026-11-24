@@ -1,0 +1,41 @@
+# Secrets & local config
+config/settings.toml
+*.pem
+id_rsa*
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Project runtime data
+projects/
+runs/
+*.sqlite
+*.sqlite3
+
+# Spike outputs (keep scripts, ignore generated artifacts)
+docs/spikes/out/
+
+# Large computational files (keep small golden samples under tests/data explicitly)
+*.chk
+*.rwf
+*.cube
+!tests/data/**/*.cube
+
+# Installers / binaries
+*.exe
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local upload-ready convenience copy
+paper/jcim_upload_ready/

@@ -1,0 +1,12 @@
+%nprocshared=4
+%mem=8GB
+%chk=fault_opt_maxsteps.chk
+#p PBEPBE/def2SVP opt=(maxcycles=2) scf=(xqc,maxcycle=500) nosymm
+
+Fault golden sample: intentional optimization step limit (L9999)
+
+0 2
+Cu   0.000000   0.000000   0.000000
+Cu   3.200000   0.000000   0.000000
+Ag   1.600000   2.900000   0.800000
+

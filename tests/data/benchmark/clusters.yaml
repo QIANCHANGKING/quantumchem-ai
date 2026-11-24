@@ -1,0 +1,66 @@
+# Literature benchmark small clusters for P4 automated ground-state recovery validation.
+# All DOIs verified against peer-reviewed publications.
+
+benchmarks:
+  - id: na6
+    category: s-block
+    composition: {Na: 6}
+    charge: 0
+    expected_multiplicity: 1
+    expected_point_group: C5v
+    motif: "pentagonal pyramid (competes closely with D3h planar)"
+    doi: "10.1021/jp506121f"
+
+  - id: al13_anion
+    category: p-block-superatom
+    composition: {Al: 13}
+    charge: -1
+    expected_multiplicity: 1
+    expected_point_group: Ih
+    motif: "icosahedral 40-valence-electron superatom"
+    doi: "10.1126/science.1093902"
+
+  - id: si6
+    category: p-block-covalent
+    composition: {Si: 6}
+    charge: 0
+    expected_multiplicity: 1
+    expected_point_group: D4h
+    motif: "tetragonal bipyramid / edge-capped trigonal bipyramid"
+    doi: "10.1063/1.450953"
+
+  - id: fe4
+    category: 3d-transition-metal
+    composition: {Fe: 4}
+    charge: 0
+    expected_multiplicity: 15
+    expected_point_group: D2d
+    motif: "Jahn-Teller distorted high-spin tetrahedron"
+    doi: "10.1016/j.ssc.2007.01.035"
+
+  - id: au6
+    category: 5d-ecp
+    composition: {Au: 6}
+    charge: 0
+    expected_multiplicity: 1
+    expected_point_group: D3h
+    motif: "planar triangle"
+    doi: "10.1063/1.1507582"
+
+  - id: ag3au3
+    category: bimetallic-ecp
+    composition: {Ag: 3, Au: 3}
+    charge: 0
+    expected_multiplicity: 1
+    expected_point_group: C2v
+    motif: "planar triangle with peripheral Au atoms"
+    doi: "10.1063/1.1492800"
+
+  - id: w_au12
+    category: 5d-endohedral-superatom
+    composition: {W: 1, Au: 12}
+    charge: 0
+    expected_multiplicity: 1
+    expected_point_group: Ih
+    motif: "endohedral icosahedral 18-electron superatom"
+    doi: "10.1002/1521-3773(20020617)41:12<2174::aid-anie2174>3.0.co;2-8"

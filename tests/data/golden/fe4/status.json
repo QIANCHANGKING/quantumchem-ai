@@ -1,0 +1,11 @@
+{
+  "job_id": "fe4",
+  "state": "done",
+  "phase": "finished",
+  "pid": 895531,
+  "attempts": 1,
+  "fixes": [],
+  "needs_human": false,
+  "error": null,
+  "updated_at": "2026-11-18T09:27:58.402690+00:00"
+}

@@ -1,0 +1,43 @@
+[
+    {
+        "job": {
+            "@module": "custodian.gaussian.jobs",
+            "@class": "GaussianJob",
+            "@version": "2026.10.21",
+            "gaussian_cmd": "g16 < job.gjf",
+            "input_file": "job.gjf",
+            "output_file": "job.log",
+            "stderr_file": "job.err",
+            "suffix": "",
+            "backup": true
+        },
+        "corrections": [
+            {
+                "errors": [
+                    "imaginary_freq"
+                ],
+                "actions": [
+                    {
+                        "action": "perturb_along_imag_mode",
+                        "step_scale": 0.25
+                    }
+                ],
+                "handler": {
+                    "@module": "qcai_remote.handlers",
+                    "@class": "ImaginaryFreqHandler",
+                    "@version": "0.1.0",
+                    "input_file": "job.gjf",
+                    "output_file": "job.log",
+                    "threshold_cm1": -15.0,
+                    "step_scale": 0.25
+                }
+            }
+        ],
+        "handler": null,
+        "validator": null,
+        "max_errors": false,
+        "max_errors_per_job": false,
+        "max_errors_per_handler": false,
+        "nonzero_return_code": false
+    }
+]
