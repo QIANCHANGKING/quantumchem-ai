@@ -23,7 +23,7 @@
 
 ## Verified Benchmarks & Production Validation
 
-- **10 Real Gaussian 16 Golden Benchmarks (`tests/data/golden/`)**: Spanning s-block (`Na6`), p-block superatom (`Al13-`), 3d high-spin (`Fe4`), 5d endohedral BSE `GenECP` (`W@Au12`), bimetallic (`Cu3Ag3`), open-shell doped (`Al12Cu`), 2-section `Link1` stability (`link1_stable_opt`), and automated fault recovery (`L9999`, imaginary frequency, and `L502` graceful human flagging).
+- **10 Reference Gaussian 16 Benchmarks (`tests/data/golden/`)**: Spanning s-block (`Na6`), p-block superatom (`Al13-`), 3d high-spin (`Fe4`), 5d endohedral BSE `GenECP` (`W@Au12`), bimetallic (`Cu3Ag3`), open-shell doped (`Al12Cu`), 2-section `Link1` stability (`link1_stable_opt`), and automated fault recovery (`L9999`, imaginary frequency, and `L502` human escalation).
 - **Multiwfn 3.8(dev) Wavefunction Case Study (`tests/data/multiwfn/al12cu/`)**: Full Hirshfeld/ADCH charge, atomic spin population ($f_D(\mathrm{Cu}) = 3.91\%$), 3,000-point TDOS/PDOS, and frontier MO s/p/d decomposition of `Al12Cu`.
 - **Heavy Lanthanide `Ln@Au5` (`Gd–Lu`) Autonomous Production Campaign (`paper/data/ln_au5_summary.json`)**: 9 projects, 230 pipeline jobs (221 Gaussian 16 runs totaling 1,399.78 CPU core-hours, 100% convergence with 7 automated 4f repairs and elastic NUMA core scaling), establishing the trivalent $8\mathrm{e}^-$ superatom HOMO–LUMO gap rigidity plateau ($2.524\text{–}2.812\text{ eV}$), $4f$ localized spin decoupling, and divalent $\mathrm{Yb}^{2+}$ spin delocalization.
 - **Bilingual 50+50 Scientific Instruction Evaluation (`tests/llm_eval/`)**: **50/50 (100.0%)** on Chinese prompts (`instructions.yaml`) and **50/50 (100.0%)** on matched English prompts (`instructions_en.yaml`) using `deepseek-v4.1-flash`, passing the $\ge 90\%$ `pytest -m llm` gate.
@@ -94,7 +94,7 @@ Released under the **MIT License** ([LICENSE](LICENSE)).
 ```bibtex
 @software{qian2026quantumchemai,
   author  = {Qian, Changtian},
-  title   = {QuantumChem AI: A Constitutionally Governed, Rule-Driven, and LLM-Assisted Automation Platform for All-Element Atomic Cluster Quantum Chemistry},
+  title   = {QuantumChem AI: A Rule-Governed Automation Platform with Grounded LLM Assistance for All-Element Atomic Cluster Quantum Chemistry},
   year    = {2026},
   url     = {https://github.com/QIANCHANGKING/quantumchem-ai},
   doi     = {10.5281/zenodo.24501860}

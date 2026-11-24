@@ -81,8 +81,8 @@ def build_fig1_architecture() -> list[Path]:
             "User Interface & Desktop Layer",
             "[C5, C6]",
             "6-Page Streamlit Workbench",
-            "Typer CLI · Windowless App",
-            "OS Keyring · Sanitized ZIP",
+            "CLI &amp; Desktop Launcher",
+            "OS Keyring · Credential Isolation",
             42,
         ),
         (
@@ -100,7 +100,7 @@ def build_fig1_architecture() -> list[Path]:
             "[C7]",
             "SQLite State (Pause/Resume)",
             "Sym. Dopant · 3-Axis Kabsch",
-            "S0-S7 Orchestration · Audits",
+            "S0–S7 Orchestration · Audits",
             170,
         ),
         (
@@ -109,7 +109,7 @@ def build_fig1_architecture() -> list[Path]:
             "[C7, C8]",
             "ShellIO / setsid · Allowlist",
             "NUMA Probe · Load Throttle",
-            "3-Part Link1 · 4f/Tail Repair",
+            "3-Step Link1 · 4f/Tail Repair",
             234,
         ),
         (
@@ -208,24 +208,24 @@ def build_fig1_architecture() -> list[Path]:
   <rect x="670" y="8" width="360" height="350" rx="1.5" fill="#ffffff" stroke="#334155" stroke-width="1"/>
   <rect x="670" y="8" width="360" height="24" rx="1" fill="#f1f5f9"/>
   <line x1="670" y1="32" x2="1030" y2="32" stroke="#0f2557" stroke-width="1.2"/>
-  <text x="678" y="24" fill="#0f2557" font-size="11.2" font-weight="bold">(b) Design-Constitution LLM Closed-Loop Control (C1-C3, C6)</text>
+  <text x="678" y="24" fill="#0f2557" font-size="11.2" font-weight="bold">(b) Design-Constitution LLM Closed-Loop Control (C1–C3, C6)</text>
 
   <rect x="682" y="42" width="256" height="46" rx="1.5" fill="#f8fafc" stroke="#334155" stroke-width="1"/>
   <text x="810" y="57" text-anchor="middle" fill="#0f172a" font-size="10.0" font-weight="bold">Intent Planning Agent (DeepSeek)</text>
   <text x="810" y="70" text-anchor="middle" fill="#1e3a8a" font-family="Consolas, 'Courier New', monospace" font-size="8.4">parse_natural_language_intent(history)</text>
-  <text x="810" y="82" text-anchor="middle" fill="#475569" font-size="8.3">One-Shot · Multi-Turn · Batch ProposedPlan</text>
+  <text x="810" y="82" text-anchor="middle" fill="#475569" font-size="8.3">Single-Turn · Multi-Turn · Batch Proposals</text>
 
   <line x1="810" y1="88" x2="810" y2="103" stroke="#1e293b" stroke-width="1.15" marker-end="url(#arr)"/>
 
   <rect x="682" y="105" width="256" height="50" rx="1.5" fill="#fff1f2" stroke="#881337" stroke-width="1.2"/>
   <text x="810" y="120" text-anchor="middle" fill="#881337" font-size="9.5" font-weight="bold">C2/C3 Plan Guard (@output_validator)</text>
-  <text x="690" y="135" fill="#334155" font-size="8.4">• _validate_composition blocks Ln/TM wildcards</text>
-  <text x="690" y="148" fill="#334155" font-size="8.4">• build_plan() dry-run checks request &amp; proposals</text>
+  <text x="690" y="135" fill="#334155" font-size="8.4">• Composition check rejects Ln/TM wildcards</text>
+  <text x="690" y="148" fill="#334155" font-size="8.4">• build_plan() dry-run validates request &amp; proposals</text>
 
   <path d="M 938 130 L 954 130 L 954 65 L 940 65" fill="none" stroke="#881337" stroke-width="1.15" stroke-dasharray="3.5,2.5" marker-end="url(#arr-crimson)"/>
   <text x="959" y="92" fill="#881337" font-size="8.2" font-weight="bold">Invalid plan:</text>
   <text x="959" y="104" fill="#881337" font-family="Consolas, 'Courier New', monospace" font-size="8.1">ModelRetry</text>
-  <text x="959" y="116" fill="#881337" font-size="8.0">(&lt;= 2 retries)</text>
+  <text x="959" y="116" fill="#881337" font-size="8.0">(≤ 2 retries)</text>
 
   <line x1="680" y1="168" x2="1020" y2="168" stroke="#cbd5e1" stroke-width="0.9" stroke-dasharray="3,2"/>
   <text x="810" y="182" text-anchor="middle" fill="#475569" font-size="8.2">↑ Pass → Valid Request to L2  |  ↓ Summary-Only [C6]</text>
@@ -239,13 +239,13 @@ def build_fig1_architecture() -> list[Path]:
 
   <rect x="682" y="257" width="256" height="54" rx="1.5" fill="#fff1f2" stroke="#881337" stroke-width="1.2"/>
   <text x="810" y="272" text-anchor="middle" fill="#881337" font-size="9.5" font-weight="bold">C1 Anti-Hallucination Guard (@output_validator)</text>
-  <text x="690" y="287" fill="#334155" font-size="8.3">• Fact set U unit conversions (Ha↔eV/kcal/kJ/%)</text>
+  <text x="690" y="287" fill="#334155" font-size="7.9">• Fact set ∪ units (Ha ↔ eV, kcal/mol, kJ/mol, %)</text>
   <text x="690" y="301" fill="#334155" font-size="8.3">• Rejects &amp; retries on any ungrounded number</text>
 
   <path d="M 938 284 L 954 284 L 954 216 L 940 216" fill="none" stroke="#881337" stroke-width="1.15" stroke-dasharray="3.5,2.5" marker-end="url(#arr-crimson)"/>
   <text x="959" y="244" fill="#881337" font-size="8.2" font-weight="bold">Ungrounded:</text>
   <text x="959" y="256" fill="#881337" font-family="Consolas, 'Courier New', monospace" font-size="8.1">ModelRetry</text>
-  <text x="959" y="268" fill="#881337" font-size="8.0">(&lt;= 2 retries)</text>
+  <text x="959" y="268" fill="#881337" font-size="8.0">(≤ 2 retries)</text>
 
   <line x1="810" y1="311" x2="810" y2="324" stroke="#1e293b" stroke-width="1.15" marker-end="url(#arr)"/>
   <rect x="682" y="326" width="256" height="22" rx="1" fill="#f1f5f9" stroke="#64748b" stroke-width="0.8"/>
@@ -261,7 +261,7 @@ def build_fig1_architecture() -> list[Path]:
   <rect x="10" y="370" width="1020" height="194" rx="1.5" fill="#ffffff" stroke="#334155" stroke-width="1"/>
   <rect x="10" y="370" width="1020" height="24" rx="1" fill="#f1f5f9"/>
   <line x1="10" y1="394" x2="1030" y2="394" stroke="#0f2557" stroke-width="1.2"/>
-  <text x="18" y="386" fill="#0f2557" font-size="11.2" font-weight="bold">(c) S0-S7 Multi-Fidelity Funnel Pipeline, Registry[T] Plugins &amp; Constitutional Gates</text>
+  <text x="18" y="386" fill="#0f2557" font-size="11.2" font-weight="bold">(c) S0–S7 Multi-Fidelity Funnel Pipeline, Registry[T] Plugins &amp; Constitutional Gates</text>
 
 {chr(10).join(stage_svg_parts)}
 
@@ -287,7 +287,7 @@ def build_fig1_architecture() -> list[Path]:
   <rect x="724" y="499" width="294" height="55" rx="1.5" fill="#fff1f2" stroke="#881337" stroke-width="1"/>
   <text x="871" y="514" text-anchor="middle" fill="#881337" font-size="9.0" font-weight="bold">Automated Constitutional Gates (CI / Runtime)</text>
   <text x="732" y="530" fill="#334155" font-size="8.2">• AST 0-Element Check [C2]    • Theory Parity [C4]</text>
-  <text x="732" y="544" fill="#334155" font-size="8.2">• Keyring Zero-Echo [C6]      • Plan/Num Guards [C1-C3]</text>
+  <text x="732" y="544" fill="#334155" font-size="8.2">• Keyring Zero-Echo [C6]      • Plan/Num Guards [C1–C3]</text>
 </svg>
 """
     _assert_no_cjk(svg, "fig1_architecture.svg")
@@ -381,7 +381,7 @@ def build_fig3_golden_gaps() -> list[Path]:
         x,
         closed_y,
         width=0.62,
-        color="#1d4ed8",
+        color="#1e40af",
         edgecolor="#0f172a",
         linewidth=0.8,
         label="Closed-shell ($M = 1$)",
@@ -391,7 +391,7 @@ def build_fig3_golden_gaps() -> list[Path]:
         x,
         open_y,
         width=0.62,
-        color="#dc2626",
+        color="#b91c1c",
         edgecolor="#0f172a",
         linewidth=0.8,
         label=r"Open-shell ($M \geq 2$)",
@@ -407,8 +407,8 @@ def build_fig3_golden_gaps() -> list[Path]:
     ax.set_ylim(0.0, 3.95)
     ax.set_yticks(np.arange(0.0, 4.0, 0.5))
     ax.tick_params(axis="y", labelsize=8.8)
-    ax.set_xlabel("Converged Golden Cluster", fontsize=9.8, labelpad=5)
-    ax.set_ylabel("HOMO-LUMO Gap $E_{\\mathrm{g}}$ (eV)", fontsize=9.8, labelpad=5)
+    ax.set_xlabel("Reference Benchmark Cluster", fontsize=9.8, labelpad=5)
+    ax.set_ylabel("HOMO–LUMO Gap $E_{\\mathrm{g}}$ (eV)", fontsize=9.8, labelpad=5)
     ax.grid(axis="y", linestyle=":", linewidth=0.6, color="#cbd5e1", zorder=0)
     ax.legend(loc="upper right", frameon=True, edgecolor="#cbd5e1", facecolor="white", fontsize=8.5)
     fig.tight_layout()
@@ -474,7 +474,7 @@ def build_fig4_al12cu_electronic() -> list[Path]:
         color="#0f2557",
     )
     ax1.annotate(
-        "LUMO -4.66",
+        "LUMO −4.66",
         xy=(0.48, -4.655),
         xytext=(0.34, -4.05),
         ha="center",
@@ -483,9 +483,23 @@ def build_fig4_al12cu_electronic() -> list[Path]:
         color="#c2410c",
         arrowprops={"arrowstyle": "->", "lw": 0.65, "color": "#c2410c"},
     )
-    ax1.text(0.34, -5.21, "HOMO -5.05", ha="center", va="center", fontsize=7.5, color="#1e3a8a")
     ax1.annotate(
-        "LUMO -4.71",
+        "HOMO −5.05",
+        xy=(0.195, -5.046),
+        xytext=(0.34, -6.26),
+        ha="center",
+        va="top",
+        fontsize=7.5,
+        color="#1e3a8a",
+        arrowprops={
+            "arrowstyle": "->",
+            "lw": 0.65,
+            "color": "#1e3a8a",
+            "connectionstyle": "arc3,rad=-0.26",
+        },
+    )
+    ax1.annotate(
+        "LUMO −4.71",
         xy=(0.925, -4.710),
         xytext=(0.78, -4.05),
         ha="center",
@@ -494,7 +508,21 @@ def build_fig4_al12cu_electronic() -> list[Path]:
         color="#c2410c",
         arrowprops={"arrowstyle": "->", "lw": 0.65, "color": "#c2410c"},
     )
-    ax1.text(0.78, -5.12, "HOMO -4.99", ha="center", va="center", fontsize=7.5, color="#1e3a8a")
+    ax1.annotate(
+        "HOMO −4.99",
+        xy=(0.925, -4.987),
+        xytext=(0.78, -6.26),
+        ha="center",
+        va="top",
+        fontsize=7.5,
+        color="#1e3a8a",
+        arrowprops={
+            "arrowstyle": "->",
+            "lw": 0.65,
+            "color": "#1e3a8a",
+            "connectionstyle": "arc3,rad=0.26",
+        },
+    )
     ax1.legend(
         loc="lower right", frameon=True, edgecolor="#cbd5e1", facecolor="white", fontsize=7.6
     )
@@ -514,13 +542,16 @@ def build_fig4_al12cu_electronic() -> list[Path]:
     series = [
         ("TDOS", np.asarray(pdos.tdos_alpha)[mask], "#0f172a", 1.5, "-"),
         ("Al", np.asarray(pdos.pdos_series["Al"])[mask], "#2563eb", 1.15, "-"),
-        ("Cu", np.asarray(pdos.pdos_series["Cu"])[mask], "#dc2626", 1.15, "-"),
+        ("Cu", np.asarray(pdos.pdos_series["Cu"])[mask], "#b91c1c", 1.15, "-"),
         ("p", np.asarray(pdos.pdos_series["p"])[mask], "#16a34a", 1.15, "-"),
         ("d", np.asarray(pdos.pdos_series["d"])[mask], "#9333ea", 1.15, "-"),
     ]
+    ax2.axhline(0.0, color="#94a3b8", linewidth=0.65, zorder=1)
     for lbl, vals, col, lw, ls in series:
-        ax2.plot(es, vals, color=col, linewidth=lw, linestyle=ls, label=lbl)
-    ax2.axvline(-5.046, color="#475569", linewidth=1.0, linestyle="--", label="HOMO (-5.05 eV)")
+        ax2.plot(es, vals, color=col, linewidth=lw, linestyle=ls, label=lbl, zorder=2)
+    ax2.axvline(
+        -5.046, color="#475569", linewidth=1.0, linestyle="--", label="HOMO (−5.05 eV)", zorder=3
+    )
     ax2.set_xlim(-15.5, 3.8)
     ax2.set_ylim(-0.04, 0.92)
     ax2.tick_params(labelsize=8.5)
@@ -568,7 +599,7 @@ def build_fig5_al12cu_spin_orb() -> list[Path]:
         xs,
         cu_vals,
         width=0.68,
-        color="#dc2626",
+        color="#b91c1c",
         edgecolor="#0f172a",
         linewidth=0.7,
         label="Cu dopant",
@@ -578,10 +609,10 @@ def build_fig5_al12cu_spin_orb() -> list[Path]:
         xs,
         pos_al,
         width=0.68,
-        color="#1d4ed8",
+        color="#1e40af",
         edgecolor="#0f172a",
         linewidth=0.7,
-        label="Al (+)",
+        label=r"Al ($+$)",
         zorder=3,
     )
     ax1.bar(
@@ -591,7 +622,7 @@ def build_fig5_al12cu_spin_orb() -> list[Path]:
         color="#0f766e",
         edgecolor="#0f172a",
         linewidth=0.7,
-        label="Al (-)",
+        label=r"Al ($-$)",
         zorder=3,
     )
     ax1.axhline(0.0, color="#0f172a", linewidth=0.9, zorder=2)
@@ -600,11 +631,11 @@ def build_fig5_al12cu_spin_orb() -> list[Path]:
     ax1.set_ylim(-0.35, 0.39)
     ax1.tick_params(axis="y", labelsize=8.5)
     ax1.set_xlabel(r"Atomic Site ($\mathrm{Al_{12}Cu}$)", fontsize=9.5, labelpad=4)
-    ax1.set_ylabel("Hirshfeld Spin Population (e)", fontsize=9.5, labelpad=4)
+    ax1.set_ylabel(r"Hirshfeld Spin Population ($e$)", fontsize=9.5, labelpad=4)
     ax1.text(
         0.5,
         0.93,
-        r"$f_D(\mathrm{Cu})$ = 3.91%  |  Net Spin = +1.000 $e$",
+        r"$f_D(\mathrm{Cu}) = 3.91\%$  |  $\sum s_i = +1.000\,e$",
         transform=ax1.transAxes,
         ha="center",
         va="top",
@@ -711,17 +742,17 @@ def build_fig6_ln_au5_rigidity() -> list[Path]:
         x,
         gap_tri,
         width=0.64,
-        color="#1d4ed8",
+        color="#1e40af",
         edgecolor="#0f172a",
         linewidth=0.75,
-        label=r"Trivalent $\mathrm{8e^-}$ (2.52-2.81 eV)",
+        label=r"Trivalent $\mathrm{8e^-}$ (2.52–2.81 eV)",
         zorder=3,
     )
     ax1.bar(
         x,
         gap_anom,
         width=0.64,
-        color="#dc2626",
+        color="#b91c1c",
         edgecolor="#0f172a",
         linewidth=0.75,
         label=r"Gd ($\mathrm{4f^7 5d^1}$) / $\mathrm{Yb^{2+}}$ ($\mathrm{7e^-}$)",
@@ -738,7 +769,7 @@ def build_fig6_ln_au5_rigidity() -> list[Path]:
     ax1.set_yticks(np.arange(0.0, 3.6, 0.5))
     ax1.tick_params(axis="y", labelsize=8.5)
     ax1.set_xlabel(r"Lanthanide Dopant in $\mathrm{Ln@Au_5}$", fontsize=9.5, labelpad=4)
-    ax1.set_ylabel(r"HOMO-LUMO Gap $E_{\mathrm{g}}$ (eV)", fontsize=9.5, labelpad=4)
+    ax1.set_ylabel(r"HOMO–LUMO Gap $E_{\mathrm{g}}$ (eV)", fontsize=9.5, labelpad=4)
     ax1.legend(
         loc="upper right", frameon=True, edgecolor="#cbd5e1", facecolor="white", fontsize=7.5
     )
@@ -765,11 +796,11 @@ def build_fig6_ln_au5_rigidity() -> list[Path]:
     ax2.plot(
         x,
         spin_ln,
-        color="#dc2626",
+        color="#b91c1c",
         linewidth=1.25,
         marker="o",
         markersize=5.2,
-        label="Localized spin(Ln) (e)",
+        label=r"Localized spin(Ln) ($e$)",
         zorder=4,
     )
     ax2.annotate(
@@ -779,7 +810,7 @@ def build_fig6_ln_au5_rigidity() -> list[Path]:
         fontsize=7.8,
         color="#991b1b",
         fontweight="bold",
-        arrowprops={"arrowstyle": "->", "lw": 0.9, "color": "#dc2626"},
+        arrowprops={"arrowstyle": "->", "lw": 0.9, "color": "#b91c1c"},
     )
     ax2.set_xticks(x)
     ax2.set_xticklabels(elems, fontsize=8.8)
@@ -820,21 +851,49 @@ def _al12cu_mo_plot_b64() -> str:
                     [cx - 0.13, cx + 0.13], [ev, ev], color="#ea580c", linewidth=1.1, linestyle="--"
                 )
     ax.set_xlim(0.08, 1.02)
-    ax.set_ylim(-6.2, -1.7)
+    ax.set_ylim(-6.75, -1.7)
     ax.set_xticks([0.35, 0.75])
-    ax.set_xticklabels(["alpha", "beta"], fontsize=8.2)
+    ax.set_xticklabels([r"$\alpha$", r"$\beta$"], fontsize=8.5)
     ax.tick_params(axis="y", labelsize=8.0)
     ax.set_title(
-        "al12cu_gs MO Energy Levels (M=2, q=0, Eg=0.277 eV)",
-        fontsize=8.4,
+        r"$\mathrm{Al_{12}Cu}$ MO Energy Levels ($M = 2$, $q = 0$, $E_{\mathrm{g}} = 0.277$ eV)",
+        fontsize=8.2,
         fontweight="bold",
         color="#0f2557",
     )
     ax.set_ylabel("Energy (eV)", fontsize=8.5)
-    ax.text(0.35, -4.18, "LUMO -4.66", ha="center", va="bottom", fontsize=7.0, color="#c2410c")
-    ax.text(0.35, -5.21, "HOMO -5.05", ha="center", va="center", fontsize=6.8, color="#1e3a8a")
-    ax.text(0.75, -4.18, "LUMO -4.71", ha="center", va="bottom", fontsize=7.0, color="#c2410c")
-    ax.text(0.75, -5.12, "HOMO -4.99", ha="center", va="center", fontsize=6.8, color="#1e3a8a")
+    ax.text(0.35, -4.18, "LUMO −4.66", ha="center", va="bottom", fontsize=7.0, color="#c2410c")
+    ax.annotate(
+        "HOMO −5.05",
+        xy=(0.215, -5.046),
+        xytext=(0.35, -6.12),
+        ha="center",
+        va="top",
+        fontsize=6.8,
+        color="#1e3a8a",
+        arrowprops={
+            "arrowstyle": "->",
+            "lw": 0.6,
+            "color": "#1e3a8a",
+            "connectionstyle": "arc3,rad=-0.26",
+        },
+    )
+    ax.text(0.75, -4.18, "LUMO −4.71", ha="center", va="bottom", fontsize=7.0, color="#c2410c")
+    ax.annotate(
+        "HOMO −4.99",
+        xy=(0.885, -4.987),
+        xytext=(0.75, -6.12),
+        ha="center",
+        va="top",
+        fontsize=6.8,
+        color="#1e3a8a",
+        arrowprops={
+            "arrowstyle": "->",
+            "lw": 0.6,
+            "color": "#1e3a8a",
+            "connectionstyle": "arc3,rad=0.26",
+        },
+    )
     fig.tight_layout()
     buf = io.BytesIO()
     fig.savefig(buf, format="png", dpi=220, facecolor="white")
@@ -956,10 +1015,10 @@ def build_fig7_web_workbench() -> list[Path]:
   .pill-info {{ background: #dbeafe; color: #1e40af; }}
   .main {{ padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }}
   .hero {{
-    background: linear-gradient(135deg, #0f2557 0%, #1e40af 60%, #0284c7 100%);
+    background: #0f2557;
     color: #ffffff;
     padding: 10px 14px;
-    border-radius: 10px;
+    border-radius: 6px;
   }}
   .hero h3 {{ margin: 0 0 3px 0; font-size: 14px; }}
   .hero p {{ margin: 0; font-size: 8.8px; color: #dbeafe; line-height: 1.35; }}
@@ -1012,7 +1071,7 @@ def build_fig7_web_workbench() -> list[Path]:
   }}
   .btn-row {{ display: grid; grid-template-columns: 185px 1fr; gap: 10px; align-items: center; }}
   .btn-primary {{
-    background: #1d4ed8;
+    background: #1e40af;
     color: #ffffff;
     border-radius: 7px;
     padding: 7px 10px;
@@ -1082,7 +1141,7 @@ def build_fig7_web_workbench() -> list[Path]:
       <div class="main">
         <div class="hero">
           <h3>1. New Cluster Study</h3>
-          <p>Describe your target system in natural language for one-shot automated planning, or switch to the manual periodic-table tab for fine-grained control.</p>
+          <p>Describe a target cluster system in natural language or configure calculation parameters manually via the periodic-table interface.</p>
         </div>
         <div class="stepper">
           <div class="step active">1. New Study</div>
@@ -1091,28 +1150,28 @@ def build_fig7_web_workbench() -> list[Path]:
           <div class="step">4. Results &amp; Report</div>
         </div>
         <div class="tabs">
-          <div class="tab-on">AI One-Shot Auto-Planning (Recommended)</div>
-          <div class="tab-off">Manual Configuration (Periodic Table / Structure)</div>
+          <div class="tab-on">Natural-Language Input</div>
+          <div class="tab-off">Periodic-Table &amp; Structure Input</div>
         </div>
         <div class="card">
-          <div class="card-title">Natural-Language-to-Plan Automation (DeepSeek AI + Rule Engine)</div>
-          <div class="card-sub">Specify target elements, stoichiometry, and scientific goals in plain English or Chinese. Broad element families trigger 1-2 focused questions alongside clickable ProposedPlan proposals.</div>
+          <div class="card-title">Natural-Language-to-Plan Translation (LLM + Rule Engine)</div>
+          <div class="card-sub">Specify target elements, stoichiometry, charge, and scientific objectives. Broad element families trigger focused clarification prompts alongside candidate ProposedPlan options.</div>
           <div class="ex-grid">
-            <div class="ex-btn">Al6-13Ni Doping</div>
-            <div class="ex-btn">W@Au12 Superatom</div>
-            <div class="ex-btn">Fe4 Spin Ladder</div>
-            <div class="ex-btn">Heavy Ln@Au5 Rigidity</div>
+            <div class="ex-btn">Al<sub>6–13</sub>Ni Doping</div>
+            <div class="ex-btn">W@Au<sub>12</sub> Superatom</div>
+            <div class="ex-btn">Fe<sub>4</sub> Spin Ladder</div>
+            <div class="ex-btn">Ln@Au<sub>5</sub> Rigidity</div>
           </div>
-          <div class="prompt-label">Describe your atomic cluster research request</div>
-          <div class="textarea">Example: Investigate the stability and magnetism of Ni-doped Al6-13Ni clusters at standard accuracy (12 h budget); or: Heavy lanthanide endohedral Au5 superatom electronic rigidity.</div>
+          <div class="prompt-label">Specify cluster stoichiometry and calculation goal</div>
+          <div class="textarea">Example: Evaluate the stability and magnetism of Al<sub>6–13</sub>Ni clusters at standard accuracy (12 h budget); or: Examine electronic structural rigidity in heavy lanthanide Ln@Au<sub>5</sub> superatoms.</div>
           <div class="btn-row">
-            <div class="btn-primary">Auto-Plan &amp; Generate Proposal</div>
-            <div class="hint">LLM handles semantic extraction only; all DFT levels, BSE GenECP blocks, spin multiplicities, and physical equations are strictly governed by deterministic rules.</div>
+            <div class="btn-primary">Generate Calculation Plan</div>
+            <div class="hint">The LLM extracts structured intent only; DFT functionals, BSE GenECP blocks, spin multiplicities, and equations remain governed by deterministic rules.</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="fig-cap">(a) New Cluster Study (One-Shot NL Auto-Planning &amp; Dual-Tab Layout)</div>
+    <div class="fig-cap">(a) Study Setup Interface (Natural-Language &amp; Periodic-Table Input)</div>
   </div>
 
   <div class="panel-wrap">
@@ -1120,8 +1179,8 @@ def build_fig7_web_workbench() -> list[Path]:
       {_sidebar_html(4)}
       <div class="main">
         <div class="hero">
-          <h3>4. Results &amp; Publication Export</h3>
-          <p>Inspect ground-state summaries, 2D MO/PDOS spectra, 3D geometries, Origin/VMD renders, anti-hallucination AI interpretation, and A4 PDF reports.</p>
+          <h3>4. Results &amp; Report Export</h3>
+          <p>Inspect ground-state observables, 2D MO/PDOS spectra, 3D geometries, Origin/VMD renders, grounded AI summaries, and A4 PDF reports.</p>
         </div>
         <div class="stepper">
           <div class="step done">&#10003; New Study</div>
@@ -1129,9 +1188,9 @@ def build_fig7_web_workbench() -> list[Path]:
           <div class="step done">&#10003; Job Dashboard</div>
           <div class="step active">4. Results &amp; Report</div>
         </div>
-        <div class="select-box"><span>Project: <b>Al12Cu_Cluster_Study (proj_al12cu)</b></span><span>&#9662;</span></div>
+        <div class="select-box"><span>Project: <b>Al<sub>12</sub>Cu Cluster Study (al12cu)</b></span><span>&#9662;</span></div>
         <div class="kpi-row">
-          <div class="kpi"><div class="kpi-lbl">Ground State (q=0)</div><div class="kpi-val">Al12Cu</div></div>
+          <div class="kpi"><div class="kpi-lbl">Ground State (q=0)</div><div class="kpi-val">Al<sub>12</sub>Cu</div></div>
           <div class="kpi"><div class="kpi-lbl">SCF Energy</div><div class="kpi-val">-4546.9815 Ha</div></div>
           <div class="kpi"><div class="kpi-lbl">Spin &amp; Moment</div><div class="kpi-val">M=2 / 1.0 &mu;B</div></div>
           <div class="kpi"><div class="kpi-lbl">HOMO-LUMO Gap</div><div class="kpi-val">0.277 eV</div></div>
@@ -1140,7 +1199,7 @@ def build_fig7_web_workbench() -> list[Path]:
         <div class="act-bar">
           <div class="btn-sec">Export Data (CSV)</div>
           <div class="btn-primary">Generate PDF / HTML Report</div>
-          <div class="hint" style="text-align:center;">One-click A4 PDF compilation</div>
+          <div class="hint" style="text-align:center;">Playwright A4 PDF / HTML</div>
         </div>
         <div class="tabs">
           <div class="tab-off">Summary Table</div>
@@ -1157,7 +1216,7 @@ def build_fig7_web_workbench() -> list[Path]:
         </div>
       </div>
     </div>
-    <div class="fig-cap">(b) Results Workbench (Ground-State KPIs + 2D/3D/AI Tabs)</div>
+    <div class="fig-cap">(b) Results Interface (Ground-State Observables, 2D/3D Plots &amp; Export)</div>
   </div>
 </div>
 </body>
@@ -1191,84 +1250,81 @@ def build_toc_graphic() -> list[Path]:
     elems = [str(r["element"]) for r in rows]
     gaps = [float(r["gap_ev"]) for r in rows]
     trivalent = {"Tb", "Dy", "Ho", "Er", "Tm", "Lu"}
-    bar_cols = ["#1d4ed8" if el in trivalent else "#dc2626" for el in elems]
+    bar_cols = ["#1e40af" if el in trivalent else "#b91c1c" for el in elems]
 
     fig = plt.figure(figsize=(3.25, 1.75), dpi=600)
-    # Full-canvas axes for borderless schematic boxes
     ax_bg = fig.add_axes([0.0, 0.0, 1.0, 1.0])
     ax_bg.set_xlim(0.0, 3.25)
     ax_bg.set_ylim(0.0, 1.75)
     ax_bg.axis("off")
 
     def _box(
-        x: float, y: float, w: float, h: float, fc: str, ec: str, hdr: str, lines: list[str]
+        x: float, y: float, w: float, h: float, hdr_col: str, hdr: str, lines: list[str]
     ) -> None:
         patch = FancyBboxPatch(
             (x, y),
             w,
             h,
-            boxstyle="round,pad=0.02,rounding_size=0.04",
-            facecolor=fc,
-            edgecolor=ec,
-            linewidth=0.8,
+            boxstyle="round,pad=0.015,rounding_size=0.03",
+            facecolor="#ffffff",
+            edgecolor="#334155",
+            linewidth=0.75,
         )
         ax_bg.add_patch(patch)
         ax_bg.text(
             x + w / 2,
-            y + h - 0.10,
+            y + h - 0.075,
             hdr,
             ha="center",
             va="top",
-            fontsize=6.8,
+            fontsize=6.7,
             fontweight="bold",
-            color=ec,
+            color=hdr_col,
         )
         for idx, line in enumerate(lines):
             ax_bg.text(
                 x + w / 2,
-                y + h - 0.22 - idx * 0.12,
+                y + h - 0.20 - idx * 0.12,
                 line,
                 ha="center",
                 va="top",
-                fontsize=6.0,
+                fontsize=5.9,
                 color="#1e293b",
             )
 
     _box(
-        0.06,
+        0.05,
         1.27,
-        1.28,
+        1.27,
         0.41,
-        "#eff6ff",
-        "#1e40af",
+        "#0f2557",
         "1. Natural Language",
-        ['"Ln@Au5 rigidity" (50+50 eval)'],
+        [r"$\mathrm{Ln@Au_5}$ prompt · 50+50 eval"],
     )
     _box(
-        0.06,
+        0.05,
         0.67,
-        1.28,
+        1.27,
         0.46,
-        "#fff1f2",
         "#9f1239",
-        "2. Constitution (C1-C8)",
-        ["AST 0-Branch YAML Rules", "Anti-Hallucination Guard"],
+        "2. Constitution (C1–C8)",
+        ["AST 0-Branch YAML Rules", "Numerical Grounding Guard"],
     )
     _box(
-        0.06,
+        0.05,
         0.07,
-        1.28,
+        1.27,
         0.46,
-        "#f0fdf4",
         "#166534",
-        "3. S0-S7 HPC Funnel",
+        "3. S0–S7 HPC Funnel",
         ["230 Jobs · 1,399.78 core·h", "100% Conv. (7 4f Repairs)"],
     )
 
-    arrow_kw = {"arrowstyle": "-|>", "lw": 0.9, "color": "#334155", "mutation_scale": 8}
-    ax_bg.annotate("", xy=(0.70, 1.15), xytext=(0.70, 1.25), arrowprops=arrow_kw)
-    ax_bg.annotate("", xy=(0.70, 0.55), xytext=(0.70, 0.65), arrowprops=arrow_kw)
-    ax_bg.annotate("", xy=(1.50, 0.88), xytext=(1.36, 0.88), arrowprops=arrow_kw)
+    arrow_kw = {"arrowstyle": "-|>", "lw": 0.85, "color": "#334155", "mutation_scale": 7.5}
+    ax_bg.annotate("", xy=(0.685, 1.15), xytext=(0.685, 1.25), arrowprops=arrow_kw)
+    ax_bg.annotate("", xy=(0.685, 0.55), xytext=(0.685, 0.65), arrowprops=arrow_kw)
+    ax_bg.plot([1.34, 1.43, 1.43], [0.30, 0.30, 0.88], color="#334155", lw=0.85)
+    ax_bg.annotate("", xy=(1.53, 0.88), xytext=(1.425, 0.88), arrowprops=arrow_kw)
 
     # Embedded right-side Ln@Au5 discovery mini-plot
     ax_in = fig.add_axes([0.535, 0.16, 0.44, 0.67])
@@ -1282,8 +1338,8 @@ def build_toc_graphic() -> list[Path]:
     ax_in.tick_params(axis="both", top=False, right=False, labelsize=6.0, length=2.2, pad=1.5)
     ax_in.set_ylabel(r"$E_{\mathrm{g}}$ (eV)", fontsize=6.4, labelpad=1.5)
     ax_in.set_title(
-        r"4. $\mathrm{Ln@Au_5}$ Superatom Discovery",
-        fontsize=6.9,
+        r"4. $\mathrm{Ln@Au_5}$ Electronic Rigidity",
+        fontsize=6.8,
         fontweight="bold",
         color="#0f2557",
         pad=3.5,
@@ -1291,7 +1347,7 @@ def build_toc_graphic() -> list[Path]:
     ax_in.text(
         3.2,
         3.02,
-        r"$\mathrm{8e^-}$ Plateau (2.52-2.81 eV)",
+        r"$\mathrm{8e^-}$ Plateau (2.52–2.81 eV)",
         ha="center",
         va="bottom",
         fontsize=5.8,
@@ -1299,8 +1355,18 @@ def build_toc_graphic() -> list[Path]:
         color="#1e40af",
     )
     ax_in.text(
+        0.0,
+        1.78,
+        r"$\mathrm{Gd}$",
+        ha="center",
+        va="bottom",
+        fontsize=5.8,
+        fontweight="bold",
+        color="#991b1b",
+    )
+    ax_in.text(
         6.0,
-        1.62,
+        1.60,
         r"$\mathrm{Yb^{2+}}$",
         ha="center",
         va="bottom",

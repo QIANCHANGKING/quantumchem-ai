@@ -359,9 +359,9 @@ def _english_rule_tables() -> str:
 
 def _golden_and_ln_tables() -> str:
     lines = [
-        "### S3.1 Ten Real Gaussian 16 Golden Benchmarks (`tests/data/golden/`)",
+        "### S3.1 Ten Reference Gaussian 16 Benchmarks (`tests/data/golden/`)",
         "",
-        "*Table S3.1: Parsed quantum-chemical metrics and server-side `custodian` self-healing outcomes across all 10 golden benchmark runs.*",
+        "*Table S3.1: Parsed quantum-chemical metrics and server-side `custodian` recovery outcomes across all 10 reference Gaussian 16 benchmark runs.*",
         "",
         "| Benchmark ID | Species ($N$) | $q / M$ | Status | SCF Energy (Ha) | Gap $E_{\\mathrm{g}}$ (eV) | $\\langle S^2 \\rangle$ | $n_{\\text{imag}}$ | Link1 / Stable | Custodian Recovery Log |",
         "| :--- | :--- | :---: | :---: | ---: | ---: | :---: | :---: | :---: | :--- |",
@@ -386,7 +386,7 @@ def _golden_and_ln_tables() -> str:
         "cu3ag3": "Bimetallic mixed basis/ECP; normal convergence.",
         "al12cu": "ImaginaryFreqHandler perturbed Jahn-Teller saddle to true minimum.",
         "fault_imag_freq": "ImaginaryFreqHandler displaced along normal mode (step_scale=0.25).",
-        "fault_opt_maxsteps": "SafeGaussianErrorHandler resumed geometry & raised opt_max_cycles=100.",
+        "fault_opt_maxsteps": "Step-limit handler resumed geometry & raised opt_max_cycles=100.",
         "fault_scf_noconv": "Escalated maxcycle=100 -> xqc; cleanly marked failed & needs_human=True.",
         "link1_stable_opt": "2-section Link1 parsed cleanly; wavefunction confirmed stable=True.",
     }
@@ -464,7 +464,7 @@ def _golden_and_ln_tables() -> str:
             "",
             "### S3.4 Optimized Cartesian Coordinates (Angstrom)",
             "",
-            "#### S3.4.1 Six Converged Golden Benchmark Clusters",
+            "#### S3.4.1 Six Converged Reference Benchmark Clusters",
             "",
         ]
     )
@@ -569,7 +569,7 @@ def build_supporting_information() -> tuple[Path, Path]:
     md_parts = [
         "# Supporting Information",
         "",
-        "**QuantumChem AI: A Constitutionally Governed, Rule-Driven, and LLM-Assisted Automation Platform for All-Element Atomic Cluster Quantum Chemistry**",
+        "**QuantumChem AI: A Rule-Governed Automation Platform with Grounded LLM Assistance for All-Element Atomic Cluster Quantum Chemistry**",
         "",
         "Changtian Qian",
         "",
@@ -592,7 +592,7 @@ def build_supporting_information() -> tuple[Path, Path]:
         "uv run mypy src",
         "uv run pytest",
         "```",
-        "   - The default `pytest` marker configuration (`-m 'not (remote or origin or vmd or llm)'`) executes all 115 offline unit, AST constitutional-gate, golden-log regression, Multiwfn output parsing, renderer, launcher, and headless Chromium Playwright E2E tests.",
+        "   - The default `pytest` marker configuration (`-m 'not (remote or origin or vmd or llm)'`) executes all 115 offline unit, AST constitutional-gate, reference-log regression, Multiwfn output parsing, renderer, launcher, and headless Chromium Playwright E2E tests.",
         "3. **Live Bilingual 50+50 LLM Benchmark Reproduction (Optional):**",
         "   - Store an OpenAI-compatible DeepSeek API key in the OS keyring (`python -c \"from qcai.config import save_deepseek_key; save_deepseek_key('...')\"`) or `DEEPSEEK_API_KEY`, then run `uv run pytest -m llm tests/integration/test_deepseek_llm.py`.",
         "",
@@ -604,7 +604,7 @@ def build_supporting_information() -> tuple[Path, Path]:
         "",
         "---",
         "",
-        "## Section S3: Golden Benchmarks, Heavy Lanthanide Dataset, Self-Healing Trace, and Coordinates",
+        "## Section S3: Reference Benchmarks, Heavy Lanthanide Dataset, Recovery Trace, and Coordinates",
         "",
         _golden_and_ln_tables(),
         "",
@@ -681,19 +681,19 @@ American Chemical Society
 
 Dear Prof. Merz,
 
-Please find enclosed our Article manuscript entitled **"QuantumChem AI: A Constitutionally Governed, Rule-Driven, and LLM-Assisted Automation Platform for All-Element Atomic Cluster Quantum Chemistry"** for consideration for publication in the *Journal of Chemical Information and Modeling*.
+Please find enclosed my Article manuscript entitled **"QuantumChem AI: A Rule-Governed Automation Platform with Grounded LLM Assistance for All-Element Atomic Cluster Quantum Chemistry"** for consideration for publication in the *Journal of Chemical Information and Modeling*.
 
-Atomic cluster quantum chemistry across the periodic table requires tightly coupled orchestration of global structural search, permutation-invariant isomer deduplication, mixed basis/ECP assignment, open-shell spin-multiplicity scanning, fault-tolerant HPC execution, wavefunction analysis, and publication-grade visualization. Existing workflows either hardcode specific elements or expose large language model (LLM) agents to silent physical errors and numerical hallucinations.
+Atomic cluster quantum chemistry across the periodic table requires tightly coupled orchestration of global structural search, permutation-invariant isomer deduplication, mixed basis/ECP assignment, open-shell spin-multiplicity scanning, fault-tolerant HPC execution, wavefunction analysis, and publication-grade visualization. Existing workflows either hardcode specific element families or expose large language model (LLM) agents to silent physical errors and numerical hallucinations.
 
-In this work, we introduce **QuantumChem AI**, an open-source (MIT-licensed) automation platform built around an eight-article **Design Constitution (C1–C8)** enforced at runtime and in continuous integration. Key innovations of direct relevance to the JCIM readership include:
+In this work, I present QuantumChem AI, an open-source (MIT-licensed) automation platform built around an eight-article Design Constitution (C1–C8) enforced at runtime and in continuous integration. Key contributions of direct relevance to the JCIM readership include:
 
-1. **Zero-Hardcoding Periodic-Table Rule Engine:** All functional, dispersion, Basis Set Exchange (`GenECP`), electron-parity, and adaptive spin-multiplicity rules reside in traceable YAML specifications, verified by Python AST static analysis to contain zero element-symbol branches across the entire source tree.
+1. **Zero-Hardcoding Periodic-Table Rule Engine:** All functional, dispersion, Basis Set Exchange (`GenECP`), electron-parity, and adaptive spin-multiplicity rules reside in traceable YAML specifications, verified by Python AST static analysis to contain zero element-symbol branches across the source tree.
 2. **Tri-Axial Inertia Kabsch Deduplication & Symmetry Enumeration:** A three-stage fingerprint, tri-axial principal-inertia Hungarian/Kabsch alignment, and fallback permutation matcher resolves arbitrary 3D rotations and atom-index permutations to $10^{{-15}}$ Angstrom precision in under 8 ms, paired with `PointGroupAnalyzer` dopant enumeration.
 3. **Resilient Shared-HPC Orchestration:** NUMA-aware load throttling with elastic core scaling (`4` to `10–16` cores), SSH auto-reconnect with exit-poll race protection, three-section `--Link1--` (`opt` -> `stable=opt` -> `freq`), and lossless 4f SCF escalation/tail-preserving recovery.
-4. **End-to-End Experimental Validation & Scientific Discovery:** Verified against 10 real Gaussian 16 golden benchmarks, real Multiwfn 3.8(dev) wavefunction analysis of `Al12Cu`, and an autonomous 9-project, 230-job (221 Gaussian 16 runs, 1,399.78 CPU core-hours, 100% convergence with 7 automated 4f repairs) production study of heavy lanthanide $\\mathrm{{Ln@Au_5}}$ ($\\mathrm{{Ln}} = \\mathrm{{Gd}}$–$\\mathrm{{Lu}}$), revealing a trivalent $8\\mathrm{{e}}^-$ superatom HOMO–LUMO gap rigidity plateau ($2.524$–$2.812$ eV), localized $4f$ spin decoupling, and divalent $\\mathrm{{Yb^{{2+}}}}$ spin delocalization.
-5. **Anti-Hallucination LLM Collaboration:** A `pydantic-ai` planning/interpretation layer protected by deterministic `build_plan()` dry-run validation and unit-conversion-aware numerical grounding, achieving **{zh_acc}** (Chinese) and **{en_acc}** (English) accuracy across a live 50+50 bilingual scientific instruction benchmark.
+4. **Computational Benchmark Validation and Lanthanide Superatom Study:** Validated across 10 reference Gaussian 16 cluster benchmarks, Multiwfn 3.8(dev) wavefunction analysis of `Al12Cu`, and an autonomous 9-project, 230-job (221 Gaussian 16 runs, 1,399.78 CPU core-hours, 100% convergence with 7 automated 4f repairs) study of heavy lanthanide $\\mathrm{{Ln@Au_5}}$ ($\\mathrm{{Ln}} = \\mathrm{{Gd}}$–$\\mathrm{{Lu}}$), revealing a trivalent $8\\mathrm{{e}}^-$ superatom HOMO–LUMO gap rigidity plateau ($2.524$–$2.812$ eV), localized $4f$ spin decoupling, and divalent $\\mathrm{{Yb^{{2+}}}}$ spin delocalization.
+5. **Grounded LLM Collaboration:** A `pydantic-ai` planning/interpretation layer protected by deterministic `build_plan()` dry-run validation and unit-conversion-aware numerical grounding, achieving {zh_acc} (Chinese) and {en_acc} (English) accuracy across a live 50+50 bilingual scientific instruction benchmark.
 
-We confirm that this manuscript is original, has not been published previously, and is not under consideration elsewhere. The author declares no competing financial interests. All source code, 115+ offline tests, golden datasets, Multiwfn logs, `Ln@Au5` production summaries, and bilingual LLM evaluation suites are openly available under the MIT license at `https://github.com/QIANCHANGKING/quantumchem-ai` and archived at `10.5281/zenodo.24501860`.
+I confirm that this manuscript is original, has not been published previously, and is not under consideration elsewhere, and I declare no competing financial interests. All source code, 115 offline tests, reference DFT datasets, Multiwfn logs, `Ln@Au5` production summaries, and bilingual LLM evaluation suites are openly available under the MIT license at `https://github.com/QIANCHANGKING/quantumchem-ai` and archived at `10.5281/zenodo.24501860`.
 
 Thank you for your time and consideration.
 

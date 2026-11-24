@@ -26,9 +26,9 @@
   <rect x="60" y="62" width="186" height="19" rx="1" fill="#f8fafc" stroke="#cbd5e1" stroke-width="0.75"/>
   <text x="153" y="75" text-anchor="middle" fill="#334155" font-size="8.6">6-Page Streamlit Workbench</text>
   <rect x="252" y="62" width="190" height="19" rx="1" fill="#f8fafc" stroke="#cbd5e1" stroke-width="0.75"/>
-  <text x="347" y="75" text-anchor="middle" fill="#334155" font-size="8.6">Typer CLI · Windowless App</text>
+  <text x="347" y="75" text-anchor="middle" fill="#334155" font-size="8.6">CLI &amp; Desktop Launcher</text>
   <rect x="448" y="62" width="190" height="19" rx="1" fill="#f8fafc" stroke="#cbd5e1" stroke-width="0.75"/>
-  <text x="543" y="75" text-anchor="middle" fill="#334155" font-size="8.6">OS Keyring · Sanitized ZIP</text>
+  <text x="543" y="75" text-anchor="middle" fill="#334155" font-size="8.6">OS Keyring · Credential Isolation</text>
   <rect x="20" y="106" width="626" height="44" rx="1.5" fill="#ffffff" stroke="#334155" stroke-width="1"/>
   <rect x="20" y="106" width="32" height="44" rx="1" fill="#0f2557"/>
   <text x="36" y="132" text-anchor="middle" fill="#ffffff" font-size="11.5" font-weight="bold">L2</text>
@@ -50,7 +50,7 @@
   <rect x="252" y="190" width="190" height="19" rx="1" fill="#f8fafc" stroke="#cbd5e1" stroke-width="0.75"/>
   <text x="347" y="203" text-anchor="middle" fill="#334155" font-size="8.6">Sym. Dopant · 3-Axis Kabsch</text>
   <rect x="448" y="190" width="190" height="19" rx="1" fill="#f8fafc" stroke="#cbd5e1" stroke-width="0.75"/>
-  <text x="543" y="203" text-anchor="middle" fill="#334155" font-size="8.6">S0-S7 Orchestration · Audits</text>
+  <text x="543" y="203" text-anchor="middle" fill="#334155" font-size="8.6">S0–S7 Orchestration · Audits</text>
   <rect x="20" y="234" width="626" height="44" rx="1.5" fill="#ffffff" stroke="#334155" stroke-width="1"/>
   <rect x="20" y="234" width="32" height="44" rx="1" fill="#0f2557"/>
   <text x="36" y="260" text-anchor="middle" fill="#ffffff" font-size="11.5" font-weight="bold">L4</text>
@@ -61,7 +61,7 @@
   <rect x="252" y="254" width="190" height="19" rx="1" fill="#f8fafc" stroke="#cbd5e1" stroke-width="0.75"/>
   <text x="347" y="267" text-anchor="middle" fill="#334155" font-size="8.6">NUMA Probe · Load Throttle</text>
   <rect x="448" y="254" width="190" height="19" rx="1" fill="#f8fafc" stroke="#cbd5e1" stroke-width="0.75"/>
-  <text x="543" y="267" text-anchor="middle" fill="#334155" font-size="8.6">3-Part Link1 · 4f/Tail Repair</text>
+  <text x="543" y="267" text-anchor="middle" fill="#334155" font-size="8.6">3-Step Link1 · 4f/Tail Repair</text>
   <rect x="20" y="298" width="626" height="44" rx="1.5" fill="#ffffff" stroke="#334155" stroke-width="1"/>
   <rect x="20" y="298" width="32" height="44" rx="1" fill="#0f2557"/>
   <text x="36" y="324" text-anchor="middle" fill="#ffffff" font-size="11.5" font-weight="bold">L5</text>
@@ -90,24 +90,24 @@
   <rect x="670" y="8" width="360" height="350" rx="1.5" fill="#ffffff" stroke="#334155" stroke-width="1"/>
   <rect x="670" y="8" width="360" height="24" rx="1" fill="#f1f5f9"/>
   <line x1="670" y1="32" x2="1030" y2="32" stroke="#0f2557" stroke-width="1.2"/>
-  <text x="678" y="24" fill="#0f2557" font-size="11.2" font-weight="bold">(b) Design-Constitution LLM Closed-Loop Control (C1-C3, C6)</text>
+  <text x="678" y="24" fill="#0f2557" font-size="11.2" font-weight="bold">(b) Design-Constitution LLM Closed-Loop Control (C1–C3, C6)</text>
 
   <rect x="682" y="42" width="256" height="46" rx="1.5" fill="#f8fafc" stroke="#334155" stroke-width="1"/>
   <text x="810" y="57" text-anchor="middle" fill="#0f172a" font-size="10.0" font-weight="bold">Intent Planning Agent (DeepSeek)</text>
   <text x="810" y="70" text-anchor="middle" fill="#1e3a8a" font-family="Consolas, 'Courier New', monospace" font-size="8.4">parse_natural_language_intent(history)</text>
-  <text x="810" y="82" text-anchor="middle" fill="#475569" font-size="8.3">One-Shot · Multi-Turn · Batch ProposedPlan</text>
+  <text x="810" y="82" text-anchor="middle" fill="#475569" font-size="8.3">Single-Turn · Multi-Turn · Batch Proposals</text>
 
   <line x1="810" y1="88" x2="810" y2="103" stroke="#1e293b" stroke-width="1.15" marker-end="url(#arr)"/>
 
   <rect x="682" y="105" width="256" height="50" rx="1.5" fill="#fff1f2" stroke="#881337" stroke-width="1.2"/>
   <text x="810" y="120" text-anchor="middle" fill="#881337" font-size="9.5" font-weight="bold">C2/C3 Plan Guard (@output_validator)</text>
-  <text x="690" y="135" fill="#334155" font-size="8.4">• _validate_composition blocks Ln/TM wildcards</text>
-  <text x="690" y="148" fill="#334155" font-size="8.4">• build_plan() dry-run checks request &amp; proposals</text>
+  <text x="690" y="135" fill="#334155" font-size="8.4">• Composition check rejects Ln/TM wildcards</text>
+  <text x="690" y="148" fill="#334155" font-size="8.4">• build_plan() dry-run validates request &amp; proposals</text>
 
   <path d="M 938 130 L 954 130 L 954 65 L 940 65" fill="none" stroke="#881337" stroke-width="1.15" stroke-dasharray="3.5,2.5" marker-end="url(#arr-crimson)"/>
   <text x="959" y="92" fill="#881337" font-size="8.2" font-weight="bold">Invalid plan:</text>
   <text x="959" y="104" fill="#881337" font-family="Consolas, 'Courier New', monospace" font-size="8.1">ModelRetry</text>
-  <text x="959" y="116" fill="#881337" font-size="8.0">(&lt;= 2 retries)</text>
+  <text x="959" y="116" fill="#881337" font-size="8.0">(≤ 2 retries)</text>
 
   <line x1="680" y1="168" x2="1020" y2="168" stroke="#cbd5e1" stroke-width="0.9" stroke-dasharray="3,2"/>
   <text x="810" y="182" text-anchor="middle" fill="#475569" font-size="8.2">↑ Pass → Valid Request to L2  |  ↓ Summary-Only [C6]</text>
@@ -121,13 +121,13 @@
 
   <rect x="682" y="257" width="256" height="54" rx="1.5" fill="#fff1f2" stroke="#881337" stroke-width="1.2"/>
   <text x="810" y="272" text-anchor="middle" fill="#881337" font-size="9.5" font-weight="bold">C1 Anti-Hallucination Guard (@output_validator)</text>
-  <text x="690" y="287" fill="#334155" font-size="8.3">• Fact set U unit conversions (Ha↔eV/kcal/kJ/%)</text>
+  <text x="690" y="287" fill="#334155" font-size="7.9">• Fact set ∪ units (Ha ↔ eV, kcal/mol, kJ/mol, %)</text>
   <text x="690" y="301" fill="#334155" font-size="8.3">• Rejects &amp; retries on any ungrounded number</text>
 
   <path d="M 938 284 L 954 284 L 954 216 L 940 216" fill="none" stroke="#881337" stroke-width="1.15" stroke-dasharray="3.5,2.5" marker-end="url(#arr-crimson)"/>
   <text x="959" y="244" fill="#881337" font-size="8.2" font-weight="bold">Ungrounded:</text>
   <text x="959" y="256" fill="#881337" font-family="Consolas, 'Courier New', monospace" font-size="8.1">ModelRetry</text>
-  <text x="959" y="268" fill="#881337" font-size="8.0">(&lt;= 2 retries)</text>
+  <text x="959" y="268" fill="#881337" font-size="8.0">(≤ 2 retries)</text>
 
   <line x1="810" y1="311" x2="810" y2="324" stroke="#1e293b" stroke-width="1.15" marker-end="url(#arr)"/>
   <rect x="682" y="326" width="256" height="22" rx="1" fill="#f1f5f9" stroke="#64748b" stroke-width="0.8"/>
@@ -143,7 +143,7 @@
   <rect x="10" y="370" width="1020" height="194" rx="1.5" fill="#ffffff" stroke="#334155" stroke-width="1"/>
   <rect x="10" y="370" width="1020" height="24" rx="1" fill="#f1f5f9"/>
   <line x1="10" y1="394" x2="1030" y2="394" stroke="#0f2557" stroke-width="1.2"/>
-  <text x="18" y="386" fill="#0f2557" font-size="11.2" font-weight="bold">(c) S0-S7 Multi-Fidelity Funnel Pipeline, Registry[T] Plugins &amp; Constitutional Gates</text>
+  <text x="18" y="386" fill="#0f2557" font-size="11.2" font-weight="bold">(c) S0–S7 Multi-Fidelity Funnel Pipeline, Registry[T] Plugins &amp; Constitutional Gates</text>
 
   <rect x="22" y="405" width="76" height="68" rx="1.5" fill="#ffffff" stroke="#64748b" stroke-width="1"/>
   <rect x="22" y="405" width="76" height="19" rx="1" fill="#e2e8f0"/>
@@ -223,5 +223,5 @@
   <rect x="724" y="499" width="294" height="55" rx="1.5" fill="#fff1f2" stroke="#881337" stroke-width="1"/>
   <text x="871" y="514" text-anchor="middle" fill="#881337" font-size="9.0" font-weight="bold">Automated Constitutional Gates (CI / Runtime)</text>
   <text x="732" y="530" fill="#334155" font-size="8.2">• AST 0-Element Check [C2]    • Theory Parity [C4]</text>
-  <text x="732" y="544" fill="#334155" font-size="8.2">• Keyring Zero-Echo [C6]      • Plan/Num Guards [C1-C3]</text>
+  <text x="732" y="544" fill="#334155" font-size="8.2">• Keyring Zero-Echo [C6]      • Plan/Num Guards [C1–C3]</text>
 </svg>

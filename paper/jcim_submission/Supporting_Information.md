@@ -1,6 +1,6 @@
 # Supporting Information
 
-**QuantumChem AI: A Constitutionally Governed, Rule-Driven, and LLM-Assisted Automation Platform for All-Element Atomic Cluster Quantum Chemistry**
+**QuantumChem AI: A Rule-Governed Automation Platform with Grounded LLM Assistance for All-Element Atomic Cluster Quantum Chemistry**
 
 Changtian Qian
 
@@ -23,7 +23,7 @@ uv run ruff format --check .
 uv run mypy src
 uv run pytest
 ```
-   - The default `pytest` marker configuration (`-m 'not (remote or origin or vmd or llm)'`) executes all 115 offline unit, AST constitutional-gate, golden-log regression, Multiwfn output parsing, renderer, launcher, and headless Chromium Playwright E2E tests.
+   - The default `pytest` marker configuration (`-m 'not (remote or origin or vmd or llm)'`) executes all 115 offline unit, AST constitutional-gate, reference-log regression, Multiwfn output parsing, renderer, launcher, and headless Chromium Playwright E2E tests.
 3. **Live Bilingual 50+50 LLM Benchmark Reproduction (Optional):**
    - Store an OpenAI-compatible DeepSeek API key in the OS keyring (`python -c "from qcai.config import save_deepseek_key; save_deepseek_key('...')"`) or `DEEPSEEK_API_KEY`, then run `uv run pytest -m llm tests/integration/test_deepseek_llm.py`.
 
@@ -69,11 +69,11 @@ uv run pytest
 
 ---
 
-## Section S3: Golden Benchmarks, Heavy Lanthanide Dataset, Self-Healing Trace, and Coordinates
+## Section S3: Reference Benchmarks, Heavy Lanthanide Dataset, Recovery Trace, and Coordinates
 
-### S3.1 Ten Real Gaussian 16 Golden Benchmarks (`tests/data/golden/`)
+### S3.1 Ten Reference Gaussian 16 Benchmarks (`tests/data/golden/`)
 
-*Table S3.1: Parsed quantum-chemical metrics and server-side `custodian` self-healing outcomes across all 10 golden benchmark runs.*
+*Table S3.1: Parsed quantum-chemical metrics and server-side `custodian` recovery outcomes across all 10 reference Gaussian 16 benchmark runs.*
 
 | Benchmark ID | Species ($N$) | $q / M$ | Status | SCF Energy (Ha) | Gap $E_{\mathrm{g}}$ (eV) | $\langle S^2 \rangle$ | $n_{\text{imag}}$ | Link1 / Stable | Custodian Recovery Log |
 | :--- | :--- | :---: | :---: | ---: | ---: | :---: | :---: | :---: | :--- |
@@ -84,7 +84,7 @@ uv run pytest
 | `cu3ag3` | Cu3Ag3 (6) | 0 / 1 | `done` | -5361.213378 | 1.908 | -- | 0 | 1 / -- | Bimetallic mixed basis/ECP; normal convergence. |
 | `al12cu` | Al12Cu (13) | 0 / 2 | `done` | -4546.981501 | 0.277 | 0.8047 | 0 | 1 / -- | ImaginaryFreqHandler perturbed Jahn-Teller saddle to true minimum. |
 | `fault_imag_freq` | Au4 saddle (4) | 0 / 1 | `done` | -543.167628 | 0.990 | -- | 0 | 1 / -- | ImaginaryFreqHandler displaced along normal mode (step_scale=0.25). |
-| `fault_opt_maxsteps` | L9999 test (3) | 0 / 2 | `done` | -3427.042431 | 0.257 | 0.7500 | 0 | 1 / -- | SafeGaussianErrorHandler resumed geometry & raised opt_max_cycles=100. |
+| `fault_opt_maxsteps` | L9999 test (3) | 0 / 2 | `done` | -3427.042431 | 0.257 | 0.7500 | 0 | 1 / -- | Step-limit handler resumed geometry & raised opt_max_cycles=100. |
 | `fault_scf_noconv` | L502 test (4) | 0 / 5 | `failed` | -5052.846030 | -- | 8.4967 | 0 | 1 / -- | Escalated maxcycle=100 -> xqc; cleanly marked failed & needs_human=True. |
 | `link1_stable_opt` | Link1 test (2) | 0 / 3 | `done` | -3015.648103 | 2.287 | 2.0013 | 0 | 2 / True | 2-section Link1 parsed cleanly; wavefunction confirmed stable=True. |
 
@@ -130,7 +130,7 @@ uv run pytest
 
 ### S3.4 Optimized Cartesian Coordinates (Angstrom)
 
-#### S3.4.1 Six Converged Golden Benchmark Clusters
+#### S3.4.1 Six Converged Reference Benchmark Clusters
 
 **na6** (q=0, M=1, E=-972.741909 Ha)
 ```xyz
