@@ -91,6 +91,8 @@ QuantumChem AI orchestrates standard external quantum-chemistry and visualizatio
 
 Released under the **MIT License** ([LICENSE](LICENSE)).
 
+If you use the QuantumChem AI software release (`v0.1.0`), please cite the Zenodo software archive:
+
 ```bibtex
 @software{qian2026quantumchemai,
   author  = {Qian, Changtian},
@@ -100,3 +102,6 @@ Released under the **MIT License** ([LICENSE](LICENSE)).
   doi     = {10.5281/zenodo.24501860}
 }
 ```
+
+Associated manuscript submitted to *Journal of Chemical Theory and Computation* (transfer from ACS *JCIM*):  
+C. Qian, *"QuantumChem AI: A Rule-Governed Electronic-Structure Workflow Platform with Grounded LLM Assistance for All-Element Atomic Clusters"* (manuscript files and Supporting Information in [`paper/jctc_submission/`](paper/jctc_submission/)).

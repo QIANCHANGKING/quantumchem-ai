@@ -37,5 +37,16 @@ docs/spikes/out/
 .DS_Store
 Thumbs.db
 
-# Local upload-ready convenience copy
+# Local upload-ready convenience copies
 paper/jcim_upload_ready/
+paper/jctc_upload_ready/
+
+# LaTeX build intermediates & submission scratch archives
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+paper/jctc_submission/*.log
+paper/jctc_submission/*.zip
